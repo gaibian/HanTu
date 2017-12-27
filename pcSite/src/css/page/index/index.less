@@ -1,1 +1,257 @@
 @import "../../common/init.less";
+@import "../../common/template/page_nav.less";
+@import "../../page/index/common/index_content_header.less";
+
+.page_wrapper{
+  width:100%;
+  margin-top:80px;
+  padding-top:78px;
+  .content_box{
+    width:1200px;
+    margin:0 auto;
+  }
+}
+/*菜单导航*/
+.page_menu_box{
+  width:1200px;
+  height:188px;
+  margin:65px auto;
+  .menu_list{
+    width:100%;
+    overflow:hidden;
+    .list{
+      position: relative;
+      float:left;
+      display:block;
+      width:188px;
+      height:188px;
+      background:#fff;
+      margin-right:14px;
+      text-align: center;
+      .pos{
+        .box_position();
+      }
+      .menu_icon{
+        width:80px;
+        height:80px;
+        margin:0 auto;
+      }
+      .mflf{
+        background:url('../../../img/icons/index_menu_mflf.png') no-repeat;
+      }
+      .xfzx{
+        background:url('../../../img/icons/index_menu_xfzx.png') no-repeat;
+      }
+      .mfbj{
+        background:url('../../../img/icons/index_menu_mfbj.png') no-repeat;
+      }
+      .bszx{
+        background:url('../../../img/icons/index_menu_bszx.png') no-repeat;
+      }
+      .jffx{
+        background:url('../../../img/icons/index_menu_jffx.png') no-repeat;
+      }
+      .zztz{
+        background:url('../../../img/icons/index_menu_zztz.png') no-repeat;
+      }
+      .menu_text{
+        margin-top:19px;
+        font-size:16px;
+        color:@color6;
+      }
+    }
+    .list:hover{
+      .mflf{
+        background:url('../../../img/icons/index_menu_mflf_active.png') no-repeat;
+      }
+      .xfzx{
+        background:url('../../../img/icons/index_menu_xfzx_active.png') no-repeat;
+      }
+      .mfbj{
+        background:url('../../../img/icons/index_menu_mfbj_active.png') no-repeat;
+      }
+      .bszx{
+        background:url('../../../img/icons/index_menu_bszx_active.png') no-repeat;
+      }
+      .jffx{
+        background:url('../../../img/icons/index_menu_jffx_active.png') no-repeat;
+      }
+      .zztz{
+        background:url('../../../img/icons/index_menu_zztz_active.png') no-repeat;
+      }
+      .menu_text{
+        color:#c6a364;
+      }
+    }
+    .list:last-child{
+      margin-right:0;
+    }
+  }
+}
+
+/*装修案例*/
+.page_case_box{
+  .page_wrapper;
+  background:#fff;
+  .case_img_box{
+      width:1200px;
+      overflow:hidden;
+      @margin:12px;
+      .img_note_text{
+        position: absolute;
+        left:0;
+        bottom:0;
+        width:100%;
+        font-size:16px;
+        color:#fff;
+        height:60px;
+        line-height:60px;
+        text-align: center;
+        background:linear-gradient(to bottom,rgba(0,0,0,0.1),rgba(0,0,0,1));
+        background:-webkit-linear-gradient(to bottom,rgba(0,0,0,0.1),rgba(0,0,0,1));
+      }
+      .left_img_box{
+        float:left;
+        width:796px;
+        .big_img_box{
+          position: relative;
+          width:100%;
+          height:480px;
+          margin-bottom:@margin;
+          font-size:0;
+        }
+        .small_img_box{
+          width:100%;
+          height:240px;
+          font-size:0;
+          .img_box{
+            position: relative;
+            float:left;
+            width:392px;
+            height:240px;
+            font-size:0;
+            margin-right:@margin;
+          }
+          .img_box:last-child{
+            margin-right:0;
+          }
+        }
+      }
+      .right_img_box{
+        float:right;
+        width:392px;
+        .big_img_box{
+          position: relative;
+          width:100%;
+          height:480px;
+          font-size:0;
+          margin-bottom:@margin;
+        }
+        .small_img_box{
+          position: relative;
+          width:100%;
+          height:240px;
+          font-size:0;
+        }
+      }
+    }
+
+}
+
+/*装修工地*/
+.page_site_box{
+  .page_wrapper;
+}
+
+/*VR动态*/
+.page_dynamic_box{
+  .page_wrapper;
+  background:#fff;
+  .dynamic_img_box{
+      width:100%;
+      overflow:hidden;
+      .left_img_box{
+        position: relative;
+        float:left;
+        width:580px;
+        height:440px;
+        font-size:0;
+      }
+      .right_img_box{
+        float:left;
+        width:290px;
+        margin-left:20px;
+        .img_box{
+          position: relative;
+          width:100%;
+          height:210px;
+          margin-bottom:20px;
+          .img_note_text{
+            .box_position();
+            width:180px;
+            height:120px;
+            background:rgba(255,255,255,0.8);
+            padding-top:10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            .text_content{
+              position: relative;
+              width:158px;
+              height:98px;
+              border:#c6a364 1px solid;
+              margin:0 auto;
+              .pos{
+                .box_position();
+                width:100%;
+                text-align: center;
+                .tit{
+                  font-size:22px;
+                  color:#c6a364;
+                }
+                .eng{
+                  font-size:14px;
+                  color:#333;
+                  margin-top:10px;
+                  font-weight:bold;
+                  span{
+                    font-weight:normal;
+                    margin:0 6px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+}
+
+/*精英团队*/
+.page_team_box{
+  .page_wrapper;
+}
+/*客户见证*/
+.page_witness_box{
+  .page_wrapper;
+  background:#fff;
+
+}
+/*合作伙伴*/
+.page_partner_box{
+  .page_wrapper;
+  .partner_list_box{
+    margin-right:-20px;
+    overflow:hidden;
+    .list{
+      float:left;
+      display:block;
+      width:224px;
+      height:100px;
+      margin-right:20px;
+      margin-bottom:20px;
+    }
+  }
+}
+
