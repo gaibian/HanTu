@@ -16,7 +16,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-index_menu_mflf_active {
+.icon-index_menu_mflf {
   background-image: url(../sprite/sprite.png);
   background-position: 0px 0px;
   width: 80px;
@@ -52,13 +52,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 80px;
   height: 80px;
 }
-.icon-index_menu_bszx {
+.icon-index_menu_mflf_active {
   background-image: url(../sprite/sprite.png);
   background-position: 0px -480px;
   width: 80px;
   height: 80px;
 }
-.icon-index_menu_mflf {
+.icon-index_menu_bszx {
   background-image: url(../sprite/sprite.png);
   background-position: 0px -560px;
   width: 80px;
@@ -87,4 +87,16 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: 0px -880px;
   width: 80px;
   height: 80px;
+}
+.icon-index_team_next_bg {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -960px;
+  width: 52px;
+  height: 100px;
+}
+.icon-index_team_prev_bg {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -1060px;
+  width: 52px;
+  height: 100px;
 }
