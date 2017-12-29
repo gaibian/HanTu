@@ -16,3 +16,75 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-index_menu_mflf_active {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px 0px;
+  width: 80px;
+  height: 80px;
+}
+.icon-index_menu_bszx_active {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -80px;
+  width: 80px;
+  height: 80px;
+}
+.icon-index_menu_jffx_active {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -160px;
+  width: 80px;
+  height: 80px;
+}
+.icon-index_menu_jffx {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -240px;
+  width: 80px;
+  height: 80px;
+}
+.icon-index_menu_mfbj_active {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -320px;
+  width: 80px;
+  height: 80px;
+}
+.icon-index_menu_mfbj {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -400px;
+  width: 80px;
+  height: 80px;
+}
+.icon-index_menu_bszx {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -480px;
+  width: 80px;
+  height: 80px;
+}
+.icon-index_menu_mflf {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -560px;
+  width: 80px;
+  height: 80px;
+}
+.icon-index_menu_xfzx_active {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -640px;
+  width: 80px;
+  height: 80px;
+}
+.icon-index_menu_xfzx {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -720px;
+  width: 80px;
+  height: 80px;
+}
+.icon-index_menu_zztz_active {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -800px;
+  width: 80px;
+  height: 80px;
+}
+.icon-index_menu_zztz {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -880px;
+  width: 80px;
+  height: 80px;
+}
