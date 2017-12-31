@@ -1,7 +1,7 @@
 /*
 * 轮播组件开发
 * <div class="carousel">
-*     <ul class="carousel_ul">
+*     <ul class="carousel_ul" data-autoplay="true">
 *         <li></li>
 *     </ul>
 *     <button class="prev_btn"></button>
@@ -9,7 +9,6 @@
 *     <div class="indicator"></div>
 * </div>
 * */
-
 const carousel = (()=>{
     "use strict";
     const _queue = [];
