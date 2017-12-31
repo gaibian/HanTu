@@ -30,7 +30,7 @@ const carousel = (()=>{
             this.setInter = 2000;
             this.speed = 500;
             this.timer = null;
-            this.flagPlay = true;
+            this.flagPlay = false;
             this.init();
         }
         init(){
@@ -38,7 +38,14 @@ const carousel = (()=>{
             this.ul.css({
                 width:ulWidth
             });
-            this.autoPlay === 'true' ? this.setinterFun() : this.flagPlay = false;
+
+            if(this.li.length <=1){ //不执行轮播
+                this.prevBtn.hide();
+                this.nextBtn.hide();
+            }else{
+                this.autoPlay === 'true' ? this.setinterFun() : this.flagPlay = false;
+            }
+
             for(let i=0;i<this.li.length;i++){
                 let span = $('<span></span>');
                 this.indicator.append(span);

@@ -4,7 +4,6 @@
 
 .page_wrapper{
   width:100%;
-  margin-top:80px;
   padding-top:78px;
   .content_box{
     width:1200px;
@@ -80,7 +79,7 @@
         background:url('../../../img/icons/index_menu_zztz_active.png') no-repeat;
       }
       .menu_text{
-        color:#c6a364;
+        color:@main;
       }
     }
     .list:last-child{
@@ -131,6 +130,7 @@
 /*装修案例*/
 .page_case_box{
   .page_wrapper;
+  padding-bottom:80px;
   background:#fff;
   .case_img_box{
       width:1200px;
@@ -197,7 +197,42 @@
     }
 
 }
-
+/*装修计算*/
+.page_calc_box{
+  position: relative;
+  width:1920px;
+  height:757px;
+  left:50%;
+  margin-left:-960px;
+  font-size:0;
+  .calc_content_box{
+    position: absolute;
+    left:50%;
+    top:280px;
+    width:1000px;
+    height:414px;
+    background:#fff;
+    margin-left:-500px;
+    .form_box{
+      width:368px;
+      padding-top:54px;
+      margin-left:38px;
+      .header_title{
+        width:100%;
+        font-size:20px;
+        color:@color3;
+        .note_tit{
+          font-size:12px;
+          color:#ef2525;
+          margin-left:15px;
+          em{
+            margin:0 7px;
+          }
+        }
+      }
+    }
+  }
+}
 /*装修工地*/
 .page_site_box{
   .page_wrapper;
@@ -239,7 +274,7 @@
               position: relative;
               width:158px;
               height:98px;
-              border:#c6a364 1px solid;
+              border:@main 1px solid;
               margin:0 auto;
               .pos{
                 .box_position();
@@ -247,7 +282,7 @@
                 text-align: center;
                 .tit{
                   font-size:22px;
-                  color:#c6a364;
+                  color:@main;
                 }
                 .eng{
                   font-size:14px;
@@ -271,6 +306,7 @@
 /*精英团队*/
 .page_team_box{
   .page_wrapper;
+  padding-bottom:80px;
   .team_content_box{
     width:100%;
     .team_btn_box{
@@ -291,7 +327,7 @@
         cursor: pointer;
       }
       .tab_btn.active{
-        color:#c6a364;
+        color:@main;
       }
       .tab_btn:last-child{
         border-right:#ebebeb 1px solid;
@@ -373,15 +409,199 @@
 .page_witness_box{
   .page_wrapper;
   background:#fff;
-
+  padding-bottom:80px;
+  .header_box{
+    width:100%;
+    text-align: center;
+    font-size:36px;
+    color:#000;
+    margin-bottom:77px;
+    span{
+      color:@main;
+      margin:0 5px;
+    }
+  }
+  .witness_list_box{
+    margin-right:-12px;
+    overflow:hidden;
+    .img_list{
+      float:left;
+      width:392px;
+      height:260px;
+      font-size:0;
+      margin-right:12px;
+    }
+  }
+  .interlocution_box{
+    margin-right:-15px;
+    overflow:hidden;
+    margin-top:82px;
+    .inter_box{
+      float:left;
+      width:390px;
+      margin-right:15px;
+      border:#e6e6e6 1px solid;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      .header_title{
+        width:100%;
+        height:59px;
+        line-height:59px;
+        background:#f5f5f5;
+        border-bottom:#e6e6e6 1px solid;
+        padding:0 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        i{
+          .box_left_position(0);
+          display:block;
+        }
+        .wd_bg{
+          width:28px;
+          height:22px;
+          background:url('../../../img/icons/index_wd_title_bg.png') no-repeat;
+          background-size:contain;
+        }
+        .zx_bg{
+          width:26px;
+          height:30px;
+          background:url('../../../img/icons/index_zx_title_bg.png') no-repeat;
+          background-size:contain;
+        }
+        .hy_bg{
+          width:30px;
+          height:30px;
+          background:url('../../../img/icons/index_hy_title_bg.png') no-repeat;
+          background-size:contain;
+        }
+        .title{
+          position: relative;
+          float:left;
+          width:50%;
+          font-size:18px;
+          color:@color3;
+          padding-left:42px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        .more_btn{
+          float:left;
+          width:50%;
+          text-align: right;
+          font-size:14px;
+          color:@main;
+        }
+      }
+      .scroll_content{
+        max-height:420px;
+        overflow-y:scroll;
+      }
+      .content_box{
+        width:100%;
+        padding:19px;
+        height:420px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        .content_list{
+          width:100%;
+          margin-bottom:20px;
+          .in_list{
+            width:100%;
+            overflow:hidden;
+            margin-bottom:8px;
+            .zm{
+              float:Left;
+              width:20px;
+              height:20px;
+              line-height:20px;
+              text-align: center;
+              border-radius:2px;
+              color:#fff;
+              font-size:14px;
+            }
+            .w{
+              background:#000;
+            }
+            .d{
+              background:@main;
+            }
+            .text{
+              float:left;
+              margin-left:12px;
+              width:298px;
+              font-size:14px;
+              color:@color3;
+            }
+          }
+          .in_list:last-child{
+            margin-bottom:0;
+          }
+          .l_more_btn{
+            font-size:14px;
+            color:@main;
+            margin-left:32px;
+          }
+        }
+        .content_list:last-child{
+          margin-bottom:0;
+        }
+        .img_box{
+          width:352px;
+          height:180px;
+          font-size:0;
+        }
+        .text_list_box{
+          width:100%;
+          .text_list{
+            width:100%;
+            overflow:hidden;
+            margin-top:14px;
+          }
+          .p_title{
+            position: relative;
+            float:left;
+            width:200px;
+            .text_hidden();
+            font-size:14px;
+            color:@color3;
+            padding-left:18px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            .spot{
+              display:inline-block;
+              .box_left_position(0);
+              width:6px;
+              height:6px;
+              background:#000;
+              border-radius:50%;
+            }
+          }
+          .time{
+            float:right;
+            width:100px;
+            text-align: right;
+            font-size:14px;
+            color:@color3;
+          }
+        }
+      }
+    }
+  }
 }
 /*合作伙伴*/
 .page_partner_box{
   .page_wrapper;
+  padding-bottom:80px;
   .partner_list_box{
     margin-right:-20px;
     overflow:hidden;
     .list{
+      float:left;
       float:left;
       display:block;
       width:224px;
