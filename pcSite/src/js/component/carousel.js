@@ -1,6 +1,6 @@
 /*
 * 轮播组件开发
-* <div class="carousel_box">
+* <div class="carousel">
 *     <ul class="carousel_ul">
 *         <li></li>
 *     </ul>
@@ -31,6 +31,7 @@ const carousel = (()=>{
             this.speed = 500;
             this.timer = null;
             this.flagPlay = false;
+            this.minNum = Number(this.dom.attr('data-num'));
             this.init();
         }
         init(){
@@ -39,7 +40,7 @@ const carousel = (()=>{
                 width:ulWidth
             });
 
-            if(this.li.length <=1){ //不执行轮播
+            if(this.minNum <=1){ //不执行轮播
                 this.prevBtn.hide();
                 this.nextBtn.hide();
             }else{

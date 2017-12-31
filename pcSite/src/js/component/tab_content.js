@@ -10,7 +10,6 @@
 
 var tabContent = (function(){
     var _queue = [];
-
     class tabContentFun{
         constructor(dom){
             this.dom = dom;
