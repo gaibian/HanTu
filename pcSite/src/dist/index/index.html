@@ -102,20 +102,20 @@
             <div class="left_img_box">
                 <div class="big_img_box">
                     <a>
-                        <img width="100%" height="100%" src="../../img/index_case_img1.jpg">
+                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_case_img1.jpg" src="">
                         <div class="img_note_text">现代风格</div>
                     </a>
                 </div>
                 <div class="small_img_box">
                     <div class="img_box">
                         <a>
-                            <img width="100%" height="100%" src="../../img/index_case_img2.jpg">
+                            <img class="lazy" width="100%" height="100%" data-src="../../img/index_case_img2.jpg" src="">
                             <div class="img_note_text">现代风格</div>
                         </a>
                     </div>
                     <div class="img_box">
                         <a>
-                            <img width="100%" height="100%" src="../../img/index_case_img2.jpg">
+                            <img class="lazy" width="100%" height="100%" data-src="../../img/index_case_img2.jpg" src="">
                             <div class="img_note_text">现代风格</div>
                         </a>
                     </div>
@@ -124,13 +124,13 @@
             <div class="right_img_box">
                 <div class="big_img_box">
                     <a>
-                        <img width="100%" height="100%" src="../../img/index_case_img3.jpg">
+                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_case_img3.jpg" src="">
                         <div class="img_note_text">现代风格</div>
                     </a>
                 </div>
                 <div class="small_img_box">
                     <a>
-                        <img width="100%" height="100%" src="../../img/index_case_img2.jpg">
+                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_case_img2.jpg" src="">
                         <div class="img_note_text">现代风格</div>
                     </a>
                 </div>
@@ -140,20 +140,110 @@
 </div>
 <!--装修计算-->
 <div class="page_calc_box">
-    <img width="100%" height="100%" src="../../img/index_calc_bg.jpg">
+    <img class="lazy" width="100%" height="100%" data-src="../../img/index_calc_bg.jpg" src="">
     <div class="calc_content_box">
         <div class="calc_left_box">
             <div class="form_box">
                 <div class="header_title">
                     装修计算器<span class="note_tit">今天已有<em>1234</em>位业主获取了装修预算</span>
                 </div>
+                <div class="input_list">
+                    <label>所在城市：<span>*</span></label>
+                    <div class="input_box">
+                        <div class="select_box">
+                            <p class="val">省/市</p>
+                            <i class="down_bg"></i>
+                            <ul class="select_menu_box">
+                                <li>浙江省</li>
+                                <li>浙江省</li>
+                                <li>浙江省</li>
+                                <li>浙江省</li>
+                                <li>浙江省</li>
+                                <li>浙江省</li>
+                                <li>浙江省</li>
+                                <li>浙江省</li>
+                                <li>浙江省</li>
+                                <li>浙江省</li>
+
+                            </ul>
+                        </div>
+                        <div class="select_box">
+                            <p class="val">市/地区</p>
+                            <i class="down_bg"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_list">
+                    <label>房屋面积：<span>*</span></label>
+                    <div class="input_box">
+                        <div class="select_box area_select">
+                            <input type="text" placeholder="输入您的房屋面积">
+                            <em>m2</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_list f_input_list">
+                    <label>房屋户型：<span>*</span></label>
+                    <div class="input_box">
+                        <div class="f_input_box">
+                            <div class="select_box ">
+                                <p class="val">1室</p>
+                                <i class="down_bg"></i>
+                            </div>
+                            <div class="select_box">
+                                <p class="val">1厅</p>
+                                <i class="down_bg"></i>
+                            </div>
+                            <div class="select_box">
+                                <p class="val">1厨</p>
+                                <i class="down_bg"></i>
+                            </div>
+                        </div>
+                        <div class="f_input_box">
+                            <div class="select_box f_select_box">
+                                <p class="val">1卫</p>
+                                <i class="down_bg"></i>
+                            </div>
+                            <div class="select_box f_select_box">
+                                <p class="val">1阳台</p>
+                                <i class="down_bg"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clean"></div>
+                </div>
+                <div class="input_list">
+                    <label>手机号码：<span>*</span></label>
+                    <div class="input_box">
+                        <div class="select_box area_select">
+                            <input type="text" placeholder="报价结果将发送到您的手机">
+                            <em>m2</em>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="calc_btn_box">
-
+            <div class="calc_btn">
+                <button class="btn">开始<br>计算</button>
+            </div>
         </div>
         <div class="calc_right_box">
-
+            <div class="content_box">
+                <div class="header_title">
+                    您的家装预算<span>123456</span>元
+                </div>
+                <div class="result_box">
+                    <div class="pos">
+                        <p>材料费：<span>37243</span>元</p>
+                        <p>人工费：<span>37243</span>元</p>
+                        <p>设计费：<span>37243</span>元</p>
+                        <p>质检费：<span>37243</span>元</p>
+                    </div>
+                </div>
+                <p class="note_text">因材料品牌及工程量不同，具体报价以量房实测为准</p>
+            </div>
         </div>
     </div>
 </div>
@@ -165,6 +255,1224 @@
     <span class="eng_text">Decoration site</span>
     <p class="note_text">（真实开工工地，装修进度一目了然）</p>
 </div>
+        <div class="site_content_box">
+            <div class="list_content_box carousel" data-autoplay="false" data-num="1">
+                <div class="hidden_box">
+                    <ul class="carousel_ul">
+                        <li>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_list_content">
+                                <div class="top_content_box">
+                                    <div class="img_box">
+                                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_site_img.jpg" src="">
+                                    </div>
+                                    <div class="right_text_box">
+                                        <h2 class="title">远大美域装修 - 现代</h2>
+                                        <div class="opt_box">
+                                            <div class="opt">
+                                                <span>户型：三室两厅一卫</span>
+                                                <span>面积：92平</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>风格：现代</span>
+                                                <span>工期：90</span>
+                                            </div>
+                                            <div class="opt">
+                                                <span>业主：陆先生</span>
+                                                <span>预算：</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn">预约参观</button>
+                                            <button class="btn">工地欣赏</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_status_box">
+                                    <div class="status_box">
+                                        <div class="status active">
+                                            <div class="first_line"></div>
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">开工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status active">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">水电</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">泥工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">木工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">油工</p>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="line"></div>
+                                            <div class="cli_box">
+                                                <div class="cli"></div>
+                                                <p class="text">完工</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="prev_btn"></button>
+                <button class="next_btn"></button>
+            </div>
+        </div>
     </div>
 </div>
 <!--VR动态-->
@@ -178,7 +1486,7 @@
         <div class="dynamic_img_box">
             <div class="left_img_box">
                 <a>
-                    <img width="100%" height="100%" src="../../img/index_dynamic_img1.jpg">
+                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_dynamic_img1.jpg" src="">
                 </a>
             </div>
             <div class="right_img_box">
@@ -192,7 +1500,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="lazy" width="100%" height="100%" src="../../img/index_dynamic_img2.jpg">
+                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_dynamic_img2.jpg" src="">
                     </a>
                 </div>
                 <div class="img_box">
@@ -205,7 +1513,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img width="100%" height="100%" src="../../img/index_dynamic_img3.jpg">
+                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_dynamic_img3.jpg" src="">
                     </a>
                 </div>
             </div>
@@ -220,7 +1528,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img width="100%" height="100%" src="../../img/index_dynamic_img4.jpg">
+                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_dynamic_img4.jpg" src="">
                     </a>
                 </div>
                 <div class="img_box">
@@ -233,7 +1541,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img width="100%" height="100%" src="../../img/index_dynamic_img5.jpg">
+                        <img class="lazy" width="100%" height="100%" data-src="../../img/index_dynamic_img5.jpg" src="">
                     </a>
                 </div>
             </div>
@@ -261,7 +1569,7 @@
                         <ul class="carousel_ul">
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -272,7 +1580,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -283,7 +1591,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -294,7 +1602,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -305,7 +1613,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -316,7 +1624,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -327,7 +1635,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -338,7 +1646,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -357,7 +1665,7 @@
                         <ul class="carousel_ul">
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -368,7 +1676,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -387,7 +1695,7 @@
                         <ul class="carousel_ul">
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -398,7 +1706,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -409,7 +1717,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -420,7 +1728,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -431,7 +1739,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -442,7 +1750,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -453,7 +1761,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -464,7 +1772,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -483,7 +1791,7 @@
                         <ul class="carousel_ul">
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -494,7 +1802,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -505,7 +1813,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -516,7 +1824,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -527,7 +1835,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -538,7 +1846,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -549,7 +1857,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -560,7 +1868,7 @@
                             </li>
                             <li>
                                 <div class="img_box">
-                                    <img width="100%" height="100%" src="../../img/index_team_img.jpg">
+                                    <img class="lazy" width="100%" height="100%" data-src="../../img/index_team_img.jpg" src="">
                                 </div>
                                 <div class="img_text">
                                     <div class="pos">
@@ -589,13 +1897,13 @@
         <div class="header_box">"我们服务过<span>108</span><span>，168</span>位用户，听听他们的声音"</div>
         <ul class="witness_list_box">
             <li class="img_list">
-                <img width="100%" height="100%" src="../../img/index_witness_img.jpg">
+                <img class="lazy" width="100%" height="100%" data-src="../../img/index_witness_img.jpg" src="">
             </li>
             <li class="img_list">
-                <img width="100%" height="100%" src="../../img/index_witness_img.jpg">
+                <img class="lazy" width="100%" height="100%" data-src="../../img/index_witness_img.jpg" src="">
             </li>
             <li class="img_list">
-                <img width="100%" height="100%" src="../../img/index_witness_img.jpg">
+                <img class="lazy" width="100%" height="100%" data-src="../../img/index_witness_img.jpg" src="">
             </li>
         </ul>
         <!--常见问答-->
@@ -719,7 +2027,7 @@
                 </div>
                 <div class="content_box">
                     <div class="img_box">
-                        <img width="100%" height="100%" src="../../img/zx_img.jpg">
+                        <img class="lazy" width="100%" height="100%" data-src="../../img/zx_img.jpg" src="">
                     </div>
                     <div class="text_list_box">
                         <div class="text_list">
@@ -757,7 +2065,7 @@
                 </div>
                 <div class="content_box">
                     <div class="img_box">
-                        <img width="100%" height="100%" src="../../img/zx_img.jpg">
+                        <img class="lazy" width="100%" height="100%" data-src="../../img/zx_img.jpg" src="">
                     </div>
                     <div class="text_list_box">
                         <div class="text_list">
@@ -800,34 +2108,34 @@
 </div>
         <div class="partner_list_box">
                 <a class="list">
-                    <img width="100%" height="100%" src="../../img/partner_img.jpg">
+                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg" src="">
                 </a>
                 <a class="list">
-                    <img width="100%" height="100%" src="../../img/partner_img.jpg">
+                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg" src="">
                 </a>
                 <a class="list">
-                    <img width="100%" height="100%" src="../../img/partner_img.jpg">
+                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg" src="">
                 </a>
                 <a class="list">
-                    <img width="100%" height="100%" src="../../img/partner_img.jpg">
+                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg" src="">
                 </a>
                 <a class="list">
-                    <img width="100%" height="100%" src="../../img/partner_img.jpg">
+                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg" src="">
                 </a>
                 <a class="list">
-                    <img width="100%" height="100%" src="../../img/partner_img.jpg">
+                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg" src="">
                 </a>
                 <a class="list">
-                    <img width="100%" height="100%" src="../../img/partner_img.jpg">
+                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg" src="">
                 </a>
                 <a class="list">
-                    <img width="100%" height="100%" src="../../img/partner_img.jpg">
+                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg" src="">
                 </a>
                 <a class="list">
-                    <img width="100%" height="100%" src="../../img/partner_img.jpg">
+                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg" src="">
                 </a>
                 <a class="list">
-                    <img width="100%" height="100%" src="../../img/partner_img.jpg">
+                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg" src="">
                 </a>
         </div>
     </div>
