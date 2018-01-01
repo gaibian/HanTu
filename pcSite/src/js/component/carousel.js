@@ -39,7 +39,7 @@ const carousel = (()=>{
                 width:ulWidth
             });
 
-            if(this.minNum <=1){ //不执行轮播
+            if(this.minNum >= this.liLength){ //不执行轮播
                 this.prevBtn.hide();
                 this.nextBtn.hide();
             }else{
