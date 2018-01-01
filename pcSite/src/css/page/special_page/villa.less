@@ -1,0 +1,25 @@
+@import '../../common/init.less';
+@import "../../common/template/page_nav.less";
+
+.page_box{
+  width:200px;
+  height:100px;
+  .page_content{
+    .btn{
+      width:100px;
+      height:100px;
+      font-size:16px;
+    }
+    .back(@background){
+      background:@background;
+    }
+    .red{
+      .btn;
+      .back(red);
+    }
+    .yellow{
+      .btn;
+      .back(yellow);
+    }
+  }
+}

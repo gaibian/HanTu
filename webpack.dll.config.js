@@ -3,7 +3,7 @@
 let serverFlag = false;  //true 打包启动cdn地址  false启动本地虚拟地址
 let site = 'pc';
 let csCdn = '';
-serverFlag ? csCdn = 'http://cdn.upingou.com' : csCdn = '';
+
 
 module.exports = {
     site:site + 'Site',  //打包配置启动根目录
