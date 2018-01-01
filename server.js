@@ -28,7 +28,7 @@ var WebpackDevServer = require('webpack-dev-server');
 var exec = require('child_process').exec;
 //const site = 'msphSite';
 for(var i in config.entry){
-	config.entry[i].unshift("webpack-dev-server/client?http://localhost:8080/","webpack/hot/dev-server")
+	config.entry[i].unshift("webpack-dev-server/client?http://localhost:9090/","webpack/hot/dev-server")
 }
 config.plugins.push(new webpack.HotModuleReplacementPlugin());
 var compiler = webpack(config);
@@ -46,7 +46,7 @@ var server = new WebpackDevServer(compiler,{
 	compress:true
 });
 
-server.listen(8080,function(err){
+server.listen(9090,function(err){
 	if(err){
 		console.log(err)
 	}

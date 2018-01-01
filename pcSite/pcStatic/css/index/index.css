@@ -211,6 +211,7 @@ label {
 .content_header {
   width: 100%;
   text-align: center;
+  margin-bottom: 46px;
 }
 .content_header .title {
   font-size: 45px;
@@ -232,7 +233,7 @@ label {
   margin-top: 80px;
   padding-top: 78px;
 }
-.page_wrapper content_box {
+.page_wrapper .content_box {
   width: 1200px;
   margin: 0 auto;
 }
@@ -325,13 +326,12 @@ label {
   padding-top: 78px;
   background: #fff;
 }
-.page_case_box content_box {
+.page_case_box .content_box {
   width: 1200px;
   margin: 0 auto;
 }
 .page_case_box .case_img_box {
   width: 1200px;
-  margin-top: 43px;
   overflow: hidden;
 }
 .page_case_box .case_img_box .img_note_text {
@@ -397,7 +397,7 @@ label {
   margin-top: 80px;
   padding-top: 78px;
 }
-.page_site_box content_box {
+.page_site_box .content_box {
   width: 1200px;
   margin: 0 auto;
 }
@@ -408,14 +408,13 @@ label {
   padding-top: 78px;
   background: #fff;
 }
-.page_dynamic_box content_box {
+.page_dynamic_box .content_box {
   width: 1200px;
   margin: 0 auto;
 }
 .page_dynamic_box .dynamic_img_box {
   width: 100%;
   overflow: hidden;
-  margin-top: 46px;
 }
 .page_dynamic_box .dynamic_img_box .left_img_box {
   position: relative;
@@ -491,7 +490,7 @@ label {
   margin-top: 80px;
   padding-top: 78px;
 }
-.page_team_box content_box {
+.page_team_box .content_box {
   width: 1200px;
   margin: 0 auto;
 }
@@ -502,7 +501,7 @@ label {
   padding-top: 78px;
   background: #fff;
 }
-.page_witness_box content_box {
+.page_witness_box .content_box {
   width: 1200px;
   margin: 0 auto;
 }
@@ -512,7 +511,7 @@ label {
   margin-top: 80px;
   padding-top: 78px;
 }
-.page_partner_box content_box {
+.page_partner_box .content_box {
   width: 1200px;
   margin: 0 auto;
 }
@@ -523,7 +522,7 @@ label {
 .page_partner_box .partner_list_box .list {
   float: left;
   display: block;
-  width: 244px;
+  width: 224px;
   height: 100px;
   margin-right: 20px;
   margin-bottom: 20px;
