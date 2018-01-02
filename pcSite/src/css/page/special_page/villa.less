@@ -105,19 +105,116 @@
 .page_site_box{
     padding-top:100px;
     background:#fff;
+    .site_table{
+        width:100%;
+        text-align:center;
+        th{
+            height:49px;
+            font-size:18px;
+            color:#fff;
+            background:#ababab;
+            text-align:center;
+        }
+        td{
+            height:48px;
+            font-size:16px;
+            color:#313332;
+            border-bottom:1px solid #e6e6e6;
+            .site_visit{
+                width:98px;
+                height:28px;
+                line-height:28px;
+                border:1px solid #000;
+                border-radius:2px;
+                font-size:16px;
+                cursor:pointer;
+            }
+        }
+        .site_w1{
+            width:300px;
+            border-left:1px solid #e6e6e6;
+        }
+        .site_w2{
+            width:178px;
+            border-left:1px solid #e6e6e6;
+            border-right:1px solid #e6e6e6;
+        }
+    }
+}
+
+.tab_btn {
+    float: left;
+    width: 118px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #000;
+    margin-left: -1px;
+    font-size: 16px;
+    color: @main;
+    cursor: pointer;
+}
+.active {
+    background: #000;
+}
+
+.page_team_box{
+    background:#fff;
+    padding-top:190px;
+    .tab_box {
+        .team_tab_box {
+            width: 358px;
+            margin: 0 auto 56px;
+        }
+        .team_content_box {
+            height: 326px;
+            background: #eee;
+        }
+    }
+}
+
+.page_team2_box{
+    background:#fff;
+    padding-top:170px;
+    .team2_note{
+        font-size:36px;
+        color:@color3;
+        text-align:center;
+        margin-bottom:30px;
+        span{
+            color:@main;
+        }
+    }
+    .tab_box {
+        .team_tab_box {
+            width: 240px;
+            margin: 0 auto 56px;
+        }
+        .team_content_box {
+            height: 326px;
+            background: #eee;
+        }
+    }
 }
 
 
+
+
+
+
+
+
+
 .villa_head{
-    position:relative;
     width:438px;
     height:54px;
     border:1px solid #000;
     border-radius:3px;
     margin:0 auto 66px;
+    text-align:center;
     .villa_title{
-        position:absolute;
-        top:-18px;
+        display:inline-block;
+        margin-top:-22px;
         font-size:44px;
         height:44px;
         line-height:44px;
@@ -126,8 +223,8 @@
         background:#fff;
     }
     .villa_note{
-        position:absolute;
-        bottom:-5px;
+        display:inline-block;
+        margin-top:28px;
         height:10px;
         padding:0 24px 0 24px;
         line-height:10px;
