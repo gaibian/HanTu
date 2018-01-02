@@ -160,23 +160,8 @@
 
 .page_team_box{
     background:#fff;
-    padding-top:190px;
-    .tab_box {
-        .team_tab_box {
-            width: 358px;
-            margin: 0 auto 56px;
-        }
-        .team_content_box {
-            height: 326px;
-            background: #eee;
-        }
-    }
-}
-
-.page_team2_box{
-    background:#fff;
     padding-top:170px;
-    .team2_note{
+    .team_note{
         font-size:36px;
         color:@color3;
         text-align:center;
@@ -187,8 +172,26 @@
     }
     .tab_box {
         .team_tab_box {
-            width: 240px;
+            width: 358px;
             margin: 0 auto 56px;
+            .tab_btn {
+                float: left;
+                width: 118px;
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+                border: 1px solid #000;
+                margin-left: -1px;
+                font-size: 16px;
+                color: @main;
+                cursor: pointer;
+            }
+            .active {
+                background: #000;
+            }
+        }
+        .team2_tab_box{
+            width:240px;
         }
         .team_content_box {
             height: 326px;
@@ -196,6 +199,7 @@
         }
     }
 }
+
 
 
 
