@@ -1,6 +1,6 @@
 @import '../../common/init.less';
-@import "../../common/template/page_nav.less";
-@import '../../common/template/top_carousel.less';
+@import '../../common/template/page_nav.less';
+@import '../../common/top_carousel.less';
 
 /*.page_box{
   width:200px;
@@ -24,3 +24,116 @@
     }
   }
 }*/
+
+.clearfix:after{content:""; display:block; clear:both;}
+
+
+.page_appointment_box{
+    padding:89px 0 95px 0;
+    .content_box{
+        position:relative;
+        width:990px;
+        height:146px;
+        margin:0 auto;
+        border:1px solid #000;
+        border-radius:3px;
+        .appointment_head{
+            position:absolute;
+            top:-9px;
+            left:442px;
+            width:94px;
+            height:18px;
+            line-height:18px;
+            font-size:18px;
+            color:@main;
+            text-align:center;
+            background:#f5f5f5;
+        }
+        .appointment_ul{
+            margin-top:40px;
+            .list{
+                float:left;
+                width:210px;
+                margin:0 66px 0 54px;
+                .appointment_tips{
+                    margin-bottom:18px;
+                    font-size:12px;
+                    color:#000;
+                }
+                .appointment_input{
+                    padding:3px 10px 3px 10px;
+                    border:1px solid #000;
+                    border-radius:3px;
+                    background:#fff;
+                }
+            }
+        }
+        .appointment_submit{
+           position:absolute;
+           bottom:-15px;
+           left:442px;
+           width:94px;
+           height:30px;
+           line-height:30px;
+           font-size:16px;
+           color:#fff;
+           background:#000;
+           border-radius:3px;
+           cursor:pointer;
+        }
+    }
+}
+
+
+.content_box{
+    width:1200px;
+    margin:0 auto;
+}
+.page_case_box{
+    padding-top:100px;
+    background:#fff;
+    .case_box{
+        .list{
+            display:block;
+            float:left;
+            width:300px;
+            height:186px;;
+        }
+    }
+}
+
+
+.villa_head{
+    position:relative;
+    width:438px;
+    height:54px;
+    border:1px solid #000;
+    border-radius:3px;
+    margin:0 auto 66px;
+    .villa_title{
+        position:absolute;
+        top:-18px;
+        font-size:44px;
+        height:44px;
+        line-height:44px;
+        padding:0 15px 0 15px;
+        color:#000;
+        background:#fff;
+    }
+    .villa_note{
+        position:absolute;
+        bottom:-5px;
+        left:140px;
+        width:160px;
+        height:10px;
+        line-height:10px;
+        text-align:center;
+        font-size:14px;
+        color:@main;
+        background:#fff;
+    }
+}
+
+
+
+
