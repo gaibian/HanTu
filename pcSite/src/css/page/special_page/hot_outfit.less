@@ -68,4 +68,48 @@ body{
     font-size:12px;
     color:@color3;
   }
+  .main_content_box{
+    width:1200px;
+    margin:0 auto;
+    .left_list_content{
+      float:left;
+      width:900px;
+      .nav_list_box{
+        width:100%;
+        height:42px;
+        line-height:42px;
+        border:#e6e6e6 1px solid;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        .title{
+          float:left;
+          width:110px;
+          text-align: center;
+          background:#f5f5f5;
+          font-size:12px;
+          color:@color6;
+          border-right:#e6e6e6 1px solid;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        .nav_ul{
+          float:left;
+          width:780px;
+          .nav_li{
+            float:left;
+            height:42px;
+            margin:0 20px;
+            font-size:12px;
+            color:@color3;
+            cursor: pointer;
+          }
+          .nav_li.active{
+            color:@main;
+          }
+        }
+      }
+    }
+  }
 }
