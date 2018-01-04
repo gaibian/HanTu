@@ -61,10 +61,14 @@
                     color:#000;
                 }
                 .appointment_input{
-                    padding:3px 10px 3px 10px;
+                    padding:3px 10px 5px 10px;
                     border:1px solid #000;
                     border-radius:3px;
                     background:#fff;
+                    input{
+                        font-size:14px;
+                        color:#adadad;
+                    }
                 }
             }
         }
@@ -158,18 +162,19 @@
     background: #000;
 }
 
+.sidenote{
+    font-size:36px;
+    color:@color3;
+    text-align:center;
+    margin-bottom:30px;
+    span {
+        color: @main;
+    }
+}
+
 .page_team_box{
     background:#fff;
     padding-top:170px;
-    .team_note{
-        font-size:36px;
-        color:@color3;
-        text-align:center;
-        margin-bottom:30px;
-        span{
-            color:@main;
-        }
-    }
     .tab_box {
         .team_tab_box {
             width: 358px;
@@ -200,11 +205,158 @@
     }
 }
 
+.page_hot_box{
+    background:#fff;
+    padding-top:190px;
+    .hot_ul{
+        width:1210px;
+        .list{
+            float:left;
+            width:232px;
+            height:180px;
+            margin:0 10px 15px 0;
+            position:relative;
+            .hot_tags{
+                position:absolute;
+                top:-4px;
+                right:0;
+                width:86px;
+                height:48px;
+                padding-top:11px;
+                text-align:center;
+                color:#fff;
+                background:url(../../../img/special_page/icons/hot_tags.png);
+                p{
+                  font-size:12px;
+                }
+                span{
+                    font-size:18px;
+                    font-weight:bold;
+                }
+            }
+            .hot_describe{
+                position:absolute;
+                left:0;
+                bottom:0;
+                padding:0 18px;
+                width:196px;
+                height:40px;
+                line-height:40px;
+                font-size:14px;
+                color:#fff;
+                background:rgba(0,0,0,.6);
+                .text_hidden();
+            }
+        }
+    }
+}
 
+.page_system_box{
+    background:#fff;
+    padding-top:190px;
+    .system_note{
+        font-size:18px;
+        color:@color3;
+        line-height:28px;
+        text-align:center;
+        margin-bottom:25px;;
+    }
+    .system_outer{
+        padding-bottom:20px;
+        .system_box {
+            width: 1200px;
+            height: 200px;
+            margin-bottom: 12px;
+            position: relative;
+            .system_text {
+                position: absolute;
+                top: 50px;
+                color: #fff;
+                h6 {
+                    font-size: 34px;
+                    line-height: 34px;
+                    position: relative;
+                    margin-bottom: 30px;
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 72px;
+                        height: 2px;
+                        background: #fff;
+                        position: absolute;
+                        left: 0;
+                        bottom: -14px;
+                    }
+                }
+                span {
+                    display: inline-block;
+                    padding: 6px 15px;
+                    font-size: 20px;
+                    line-height: 20px;
+                    border: 1px solid #fff;
+                }
+            }
+            .st_l {
+                left: 120px;
+            }
+            .st_r {
+                left: 785px;
+            }
+        }
+    }
+}
 
-
-
-
+.page_construction_box{
+    background:#fff;
+    padding-top:190px;
+    .construction_ul{
+        width:1060px;
+        margin:0 auto 110px;
+        padding-top:65px;
+        .list{
+            float:left;
+            width:212px;
+            color:#000;
+            text-align:center;
+            .constr_icon{
+            width:80px;
+            height:80px;
+            margin:0 auto 32px;
+            }
+            .c_zx{
+                background:url(../../../img/special_page/icons/constr_zx.png) no-repeat;
+            }
+            .c_yq{
+                background:url(../../../img/special_page/icons/constr_yq.png) no-repeat;
+            }
+            .c_fx{
+                background:url(../../../img/special_page/icons/constr_fx.png) no-repeat;
+            }
+            .c_jh{
+                background:url(../../../img/special_page/icons/constr_jh.png) no-repeat;
+            }
+            .c_hk{
+                background:url(../../../img/special_page/icons/constr_hk.png) no-repeat;
+            }
+            .constr_num{
+                font-size:30px;
+                line-height:30px;
+                margin-bottom:8px;
+            }
+            .constr_zx{
+                font-size:18px;
+                font-family:"宋体";
+                line-height:18px;
+                margin-bottom:10px;
+            }
+            .constr_text{
+                font-size:14px;
+                line-height:22px;
+                color:@color6;
+            }
+        }
+    }
+}
 
 
 
