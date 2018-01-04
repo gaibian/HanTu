@@ -61,13 +61,31 @@
                     color:#000;
                 }
                 .appointment_input{
-                    padding:3px 10px 5px 10px;
+                    padding:0 10px;
                     border:1px solid #000;
                     border-radius:3px;
                     background:#fff;
+                    font-size:14px;
                     input{
-                        font-size:14px;
-                        color:#adadad;
+                        height:28px;
+                        line-height:28px;
+                        color:#010101;
+                        &::-webkit-input-placeholder {
+                            color:#adadad;
+                        }
+                        
+                        &::-moz-placeholder {
+                            color:#adadad;
+                        }
+                        
+                        &::-ms-input-placeholder {
+                            color:#adadad;
+                        }
+                    }
+                    select{
+                        width:190px;
+                        height:28px;
+                        color:#010101;
                     }
                 }
             }
@@ -146,21 +164,6 @@
     }
 }
 
-.tab_btn {
-    float: left;
-    width: 118px;
-    height: 38px;
-    line-height: 38px;
-    text-align: center;
-    border: 1px solid #000;
-    margin-left: -1px;
-    font-size: 16px;
-    color: @main;
-    cursor: pointer;
-}
-.active {
-    background: #000;
-}
 
 .sidenote{
     font-size:36px;
@@ -311,8 +314,8 @@
     padding-top:190px;
     .construction_ul{
         width:1060px;
-        margin:0 auto 110px;
-        padding-top:65px;
+        margin:0 auto;
+        padding:65px 0 110px 0;
         .list{
             float:left;
             width:212px;
@@ -358,9 +361,103 @@
     }
 }
 
+.page_select_box{
+    padding-top:120px;
+    height:516px;
+    background:url(../../../img/special_page/select_ht_bg.jpg) no-repeat;
+    .select_title{
+        font-size:44px;
+        line-height:44px;
+        color:#fff;
+        text-align:center;
+    }
+    .select_line{
+        width:120px;
+        height:28px;
+        border-bottom:2px solid #fff;
+        margin:0 auto 90px;
+    }
+    .select_ul{
+        width:1120px;
+        margin:0 auto;
+        .list{
+            float:left;
+            width:280px;
+            text-align:center;
+            color:#fff;
+            .select_icon{
+                width:120px;
+                height:113px;
+                margin:0 auto 42px;
+            }
+            .s_zzbs{
+                background:url(../../../img/special_page/icons/select_zzbs.png) no-repeat;
+            }
+            .s_clqa{
+                background:url(../../../img/special_page/icons/select_clqa.png) no-repeat;
+            }
+            .s_zscp{
+                background:url(../../../img/special_page/icons/select_zscp.png) no-repeat;
+            }
+            .s_xffw{
+                background:url(../../../img/special_page/icons/select_xffw.png) no-repeat;
+            }
+            .select_text1{
+                font-size:18px;
+                line-height:18px;
+                margin-bottom:15px;
+            }
+            .select_text2{
+                font-size:14px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+.villa_footer{
+    background:#000;
+    padding:30px 0;
+    .foot_text{
+       float:left;
+       font-size:18px; 
+       line-height:40px;
+       color:@main;
+       margin-right:20px;
+    }
+    .foot_input{
+        float:left;
+        width:216px;
+        height:40px;
+        padding:0 12px;
+        color:#fff;
+        font-size:14px;
+        background:@color3;
+        line-height:40px;
+        margin-right:12px;
+        &::-webkit-input-placeholder{
+            color:#fff;
+        }
+        &::-moz-placeholder {
+            color: #fff;
+        }
+        &::-ms-input-placeholder {
+            color: #fff;
+        }
+    }
+    .foot_submit{
+        float:left;
+        width:258px;
+        height:40px;
+        font-size:16px;
+        color:#fff;
+        background:@main;
+        cursor:pointer;
+    }
+}
 
 
-
+//别墅专题公共head
 .villa_head{
     width:438px;
     height:54px;
