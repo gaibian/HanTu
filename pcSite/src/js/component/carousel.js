@@ -25,8 +25,8 @@ const carousel = (()=>{
             this.liWidth = this.li.outerWidth();
             this.marginRight = parseInt(this.li.css('marginRight'));
             this.moveWidth = this.liWidth + this.marginRight;
-            this.currentIndex = 1;  //默然当前的index下标
-            this.setInter = 2000;
+            this.currentIndex = 0;  //默然当前的index下标
+            this.setInter = 5000;
             this.speed = 500;
             this.timer = null;
             this.flagPlay = false;
@@ -43,7 +43,13 @@ const carousel = (()=>{
                 this.prevBtn.hide();
                 this.nextBtn.hide();
             }else{
-                this.autoPlay === 'true' ? this.setinterFun() : this.flagPlay = false;
+                if(this.autoPlay === 'true'){
+                    this.setinterFun()
+                    this.flagPlay = true;
+                }else{
+                    this.flagPlay = false;
+                    this.timer = null;
+                }
             }
 
             for(let i=0;i<this.li.length;i++){
@@ -51,7 +57,7 @@ const carousel = (()=>{
                 this.indicator.append(span);
             }
             this.span = this.indicator.find('>span');
-            this.span.eq(this.currentIndex-1).addClass('active');
+            this.span.eq(this.currentIndex).addClass('active');
             this.bind();
         }
         bind(){
@@ -64,6 +70,12 @@ const carousel = (()=>{
             this.dom.on('mouseover',()=>{
                 clearInterval(this.timer);
             });
+            this.span.each((index)=>{
+                let $this = this.span.eq(index);
+                $this.on('click',()=>{
+                    this.go(index);
+                })
+            })
             if(this.flagPlay){
                 this.dom.on('mouseleave',()=>{
                     this.setinterFun();
@@ -74,11 +86,43 @@ const carousel = (()=>{
 
 
         }
+        go(num){
+            this.num = num;
+            this.newIndex = this.num - (this.currentIndex);
+            if(this.newIndex > 0){
+                console.log(this.newIndex)
+                this.ul.animate({'left':-(this.moveWidth * this.newIndex)},this.speed,()=>{
+                    let i = this.newIndex;
+                    while(i>0){
+                        i--;
+                        let items = this.ul.find('li');
+                        items.last().after(items.first());
+                    }
+                    this.span.siblings().removeClass('active').eq(this.num).addClass('active');
+                    this.ul.css('left',0)
+                });
+                this.currentIndex = this.num;
+            }
+            if(this.newIndex < 0){
+                this.span.siblings().removeClass('active').eq(this.num).addClass('active');
+                let i = Math.abs(this.newIndex);
+                this.ul.css('left',-this.moveWidth);
+                while(i>0){
+                    i--;
+                    let items = this.ul.find('li');
+                    items.first().before(items.last());
+                }
+                this.ul.animate({'left':0},this.speed);
+                this.currentIndex = this.num;
+            }
+            console.log(this.currentIndex)
+        }
         prevGo(){
             this.currentIndex --;
-            if(this.currentIndex < 1){
-                this.currentIndex = this.liLength;
+            if(this.currentIndex < 0){
+                this.currentIndex = this.liLength -1;
             }
+            this.span.siblings().removeClass('active').eq(this.currentIndex).addClass('active');
             let items = this.ul.find('li');
             items.first().before(items.last());
             this.ul.css('left',-this.moveWidth);
@@ -86,15 +130,16 @@ const carousel = (()=>{
         }
         nextGo(){
             this.currentIndex ++;
-            if(this.currentIndex > this.liLength){
-                this.currentIndex = 1;
+            if(this.currentIndex > this.liLength - 1){
+                this.currentIndex = 0;
             }
+            this.span.siblings().removeClass('active').eq(this.currentIndex).addClass('active');
             let items = this.ul.find('li');
             this.ul.animate({'left':-this.moveWidth},this.speed,()=>{
                 items.last().after(items.first());
                 this.ul.css('left',0)
             });
-            this.span.siblings().removeClass('active').eq(this.currentIndex-1).addClass('active');
+
         }
         setinterFun(){
             this.timer = setInterval(()=>{
