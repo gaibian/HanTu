@@ -115,7 +115,6 @@ const carousel = (()=>{
                 this.ul.animate({'left':0},this.speed);
                 this.currentIndex = this.num;
             }
-            console.log(this.currentIndex)
         }
         prevGo(){
             this.currentIndex --;
