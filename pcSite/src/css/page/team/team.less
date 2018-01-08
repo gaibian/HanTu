@@ -10,7 +10,15 @@ body{
 	width:1200px;
 	margin:0 auto;
 }
-
+.btn(@btn_width){
+    width:@btn_width;
+    height:40px;
+    color:@main;
+    background:#000;
+    font-size:16px;
+    border-radius:2px;
+    cursor:pointer;
+}
 
 .page_team_banner{
 	.team_banner{
@@ -103,15 +111,12 @@ body{
             color:#000;
             input{
                 width:160px;
-
                 &::-webkit-input-placeholder {
                     color: #000;
                 }
-                
                 &::-moz-placeholder {
                     color: #000;
                 }
-                
                 &::-ms-input-placeholder {
                     color: #000;
                 }
@@ -139,11 +144,13 @@ body{
 .page_main_box{
     padding:28px 0 100px 0;
     .main_box{
+        float:left;
         width:898px;
         height:1000px;
         border:1px solid #e6e6e6;
     }
     .side_box{
+        float:right;
         width:280px;
         height:1500px;
     }
@@ -151,9 +158,145 @@ body{
 
 
 
+//预约设计师免费出方案
+.text_in(@sa_font;@sa_lineheight;@sa_width;){
+    border:1px solid #ccc;
+    margin-bottom:10px;
+    color:@color3;
+    width:@sa_width;
+    line-height:@sa_lineheight;
+    font-size:@sa_font;
+}
+
+.side_appoint{
+    width:278px;
+    height:430px;
+    border:1px solid #e6e6e6;
+    margin-bottom:20px;
+    color:@color3;
+    font-size:12px;
+    .sa_title{
+      font-size:18px;  
+      line-height:18px;
+      margin:18px 0 12px;
+      text-align:center;
+    }
+    .sa_note{
+        font-size:12px;
+        line-height:12px;
+        margin-bottom:22px;
+        text-align:center;
+    }
+    .sa_box{
+        padding:0 19px 30px 19px;
+        border-bottom:1px solid #e6e6e6;
+        color:@color3;
+        .sa_select{
+            .text_in(14px;30px;240px);
+            height:32px;
+            padding-left:3px;
+        }
+        .sa_input{
+            .text_in(14px;30px;224px);
+            padding:0 7px;
+            &::-webkit-input-placeholder {
+                color: #999;
+            }
+            
+            &::-moz-placeholder {
+                color: #999;
+            }
+            
+            &::-ms-input-placeholder {
+                color: #999;
+            }
+        }
+        .sa_textarea{
+            .text_in(12px;20px;224px);
+            height:54px;
+            padding:0 7px;
+            resize:none;
+            &::-webkit-input-placeholder {
+                color: #999;
+            }
+            
+            &::-moz-placeholder {
+                color: #999;
+            }
+            
+            &::-ms-input-placeholder {
+                color: #999;
+            }
+        }
+        .sa_tips{
+            line-height:12px;
+            margin-bottom:16px;
+            text-align:right;
+            color:@color6;
+        }
+        .sa_btn{
+            .btn(240px);           
+        }
+        }
+        .sa_order{
+            padding:17px 0 0 48px;
+            .sa_order_ul{
+                height:66px;
+                .list{
+                   line-height:22px; 
+                   .time_color{
+                       color:#f17046;
+                   }
+                }
+            }
+        }
+}
 
 
-
+.boutique_box{
+    border:1px solid #e6e6e6;
+    .boutique_inner{
+        border-top:1px solid #e6e6e6;
+        padding-top:20px;
+        .boutique{
+            width:238px;
+            height:238px;
+            border:1px solid #e6e6e6;
+            margin:0 auto 10px;
+            position:relative;
+            .boutique_p{
+                width:226px;
+                height:38px;
+                padding:0 6px;
+                line-height:38px;
+                border-top:1px solid #e6e6e6;
+                font-size:16px;
+                color:#fff;
+                background:rgba(0,0,0,.2);
+                position:absolute;
+                left:0;
+                bottom:0;
+                .text_hidden();
+            }
+        }
+    }
+}
+.side_head{
+    font-size:18px;
+    line-height:18px;
+    margin:20px 0 20px 30px;
+    position:relative;
+    &:after{
+        content:"";
+        display:block;
+        width:2px;
+        height:18px;
+        background:@main;
+        position:absolute;
+        top:0;
+        left:-11px;
+    }
+}
 
 
 
