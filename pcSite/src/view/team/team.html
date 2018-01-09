@@ -81,44 +81,74 @@
 <div class="page_main_box">
 	<div class="content_box clearfix">
 		<div class="main_box">
-			
+			<ul class="main_ul">
+				<li class="list">
+					<div class="main_head">
+						<div class="main_photo">
+							<img class="lazy" data-src="../../img/main_photo.jpg" width="100%" height="100%"/>
+						</div>
+						<div class="main_text clearfix">
+							<div class="information">
+								<span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</span>陈家浩
+							</div>
+							<div class="information">
+								<span>工作年限：</span>10年以上
+							</div>
+							<div class="information">
+								<span>擅长风格：</span>家装、工装
+							</div>
+							<div class="information">
+								<span>作品数量：</span>130
+							</div>
+							<div class="idea">
+								<span>设计理念：</span>设计的核心是一种创造行为，设计要求新、求异、求变、求不同
+							</div>
+						</div>
+						<div class="btn_box">
+							<button class="main_btn">免费预约设计</button>
+							<p class="people">已有17人预约</p>
+						</div>
+					</div>
+					<div class="works_box clearfix">
+						<div class="works">
+							<img class="lazy" data-src="../../img/works_pic1.jpg" alt="" width="100%" height="100%"/>
+						</div>
+						<div class="works">
+							<img class="lazy" data-src="../../img/works_pic2.jpg" alt="" width="100%" height="100%" />
+						</div>
+						<div class="works">
+							<img class="lazy" data-src="../../img/works_pic3.jpg" alt="" width="100%" height="100%" />
+						</div>
+						<div class="works">
+							<img class="lazy" data-src="../../img/works_pic4.jpg" alt="" width="100%" height="100%" />
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
 		<div class="side_box">
 			<!--预约设计师免费出方案-->
-			<div class="side_appoint">
-				<h4 class="sa_title">预约设计师免费出方案</h4>
-				<p class="sa_note">一键预约，设计师上门服务</p>
-				<div class="sa_box">
-					<select class="sa_select" name="">
-						<option value="">装修类型</option>
-					</select>
-					<input type="text" class="sa_input" name="" id="" value="" placeholder="输入您的电话号码"/>
-					<textarea class="sa_textarea" placeholder="您可以备注想要的装修风格"></textarea>
-					<p class="sa_tips">还可以输入<span>120</span>个字</p>
-					<button class="sa_btn">免费申请</button>
-				</div>
-				<div class="sa_order">
-					<ul class="sa_order_ul">
-						<li class="list"><span class="time_color">42分钟前</span>刘女士139****发布订单</li>
-						<li class="list"><span class="time_color">42分钟前</span>刘女士139****发布订单</li>
-						<li class="list"><span class="time_color">42分钟前</span>刘女士139****发布订单</li>
-					</ul>
-				</div>
-			</div>
+			@@include('./common/side_appoint.html')
 			<!--精选设计作品-->
 			<div class="boutique_box">
 				<h3 class="side_head">精选设计作品</h3>
 				<div class="boutique_inner">
 					<div class="boutique">
-						<img class="lazy" data-src="../../img/boutique_pic.jpg" width="100%" height="100%"/>
-						<p class="boutique_p">梅江东苑美式普通住宅装修设计</p>
+						<a href="">
+							<img class="lazy" data-src="../../img/boutique_pic.jpg" width="100%" height="100%" />
+							<p class="boutique_p">梅江东苑美式普通住宅装修设计</p>
+						</a>
 					</div>
 					<div class="boutique">
-						<img class="lazy" data-src="../../img/boutique_pic.jpg" width="100%" height="100%" />
-						<p class="boutique_p">梅江东苑美式普通住宅装修设计</p>
+						<a href="">
+							<img class="lazy" data-src="../../img/boutique_pic.jpg" width="100%" height="100%" />
+							<p class="boutique_p">梅江东苑美式普通住宅装修设计</p>
+						</a>
 					</div>
 				</div>
 			</div>
+			<!--设计师排行榜-->
+			@@include('./common/side_ranking.html')
 		</div>
 	</div>
 </div>

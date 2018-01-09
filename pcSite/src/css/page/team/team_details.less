@@ -1,0 +1,80 @@
+@import '../../common/init.less';
+@import '../../common/template/page_nav.less';
+
+body {
+    background: #fff;
+}
+.page_nav_box{
+    background:#000;
+    .nav_content .nav_box .nav_a{
+        color:@color9;
+    }
+}
+
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content_box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.page_archives_box{
+    .archives_box{
+        width:1200px;
+        height:300px;
+        margin-bottom:30px;
+        background:url(../../../img/team_details_bg.jpg) no-repeat;
+        position:relative;
+        overflow:hidden;
+        .archives_photo{
+            width:108px;
+            height:108px;
+            border:1px solid #e6e6e6;
+            border-radius:50%;
+            overflow:hidden;
+            position:absolute;
+            top:95px;
+            left:194px;
+        }
+        .archives{
+            width:500px;
+            color: #fff;
+            margin:88px 0 22px 367px;
+            .archives_head {
+                font-size: 16px;
+                line-height:16px;
+                margin-bottom:25px;
+            }
+            .archives_text {
+                font-size: 14px;
+                color: #fff;
+                .information {
+                    float: left;
+                    width: 230px;
+                    margin-right: 20px;
+                    line-height: 22px;
+                    margin-bottom: 10px;
+                    span {
+                        display: inline-block;
+                        width: 72px;
+                    }
+                }
+                .idea {
+                    float: left;
+                    width: 500px;
+                    line-height: 22px;
+                }
+            } 
+        }
+    }
+}
+
+
+
+
+

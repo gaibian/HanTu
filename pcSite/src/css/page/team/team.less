@@ -1,11 +1,18 @@
 @import '../../common/init.less';
 @import '../../common/template/page_nav.less';
 
+body {
+    background: #fff;
+}
+.page_nav_box {
+    background: #000;
+    .nav_content .nav_box .nav_a {
+        color: @color9;
+    }
+}
 
 .clearfix:after{content:""; display:block; clear:both;}
-body{
-    background:#fff;
-}
+
 .content_box{
 	width:1200px;
 	margin:0 auto;
@@ -145,9 +152,75 @@ body{
     padding:28px 0 100px 0;
     .main_box{
         float:left;
-        width:898px;
-        height:1000px;
+        width:840px;
+        padding:29px 29px 0 29px;
         border:1px solid #e6e6e6;
+        .main_ul{
+            .list{
+                width:840px;
+                margin-bottom:30px;
+                border-bottom:1px solid #e6e6e6;
+                .main_head{
+                    position:relative;
+                    .main_photo{
+                        width:110px;
+                        height:110px;
+                        border-radius:50%;
+                        overflow:hidden;
+                        position:absolute;
+                    }
+                    .main_text{
+                        padding-left:140px;
+                        padding-top:11px;
+                        font-size:14px;
+                        color:@color3;
+                        margin-bottom:30px;
+                        .information{
+                            float:left;
+                            width:230px;
+                            margin-right:20px;
+                            line-height:22px;
+                            margin-bottom:10px;
+                            span{
+                                display:inline-block;
+                                width:72px;
+                            }
+                        }
+                        .idea{
+                            float:left;
+                            width:500px;
+                            line-height:22px;
+                        }
+                    }
+                    .btn_box{
+                        width:160px;
+                        position:absolute;
+                        top:14px;
+                        right:-2px;
+                        .main_btn{
+                            .btn(160px);
+                            margin-bottom:8px;
+                        }
+                        .people {
+                            text-align:right;
+                            color:@color6;
+                            font-size:12px;
+                            line-height:12px;
+                        }
+                    }
+                }
+                .works_box{
+                    width:848px;
+                    margin-bottom:30px;
+                    .works{
+                    float:left;
+                        width:204px;
+                        height:204px;
+                        margin-right:8px;
+                    }
+                }
+            }
+        }
     }
     .side_box{
         float:right;
@@ -252,9 +325,65 @@ body{
         }
 }
 
+//设计师排行榜
+.side_ranking{
+    width:278px;
+    border:1px solid #e6e6e6;
+    margin-bottom:20px;
+    color:@color3;
+    font-size:12px;
+    .sr_box{
+        border-top:1px solid #e6e6e6;
+        padding:19px 0 10px 19px;
+        .ranking_ul{
+            .list{
+                line-height:12px;
+                margin-bottom:10px;
+                line-height:40px;
+                position:relative;
+                .sr_num{
+                    display:inline-block;
+                    width:20px;
+                }
+                .sr_photo{
+                    display:inline-block;
+                    width:38px;
+                    height:38px;
+                    border:1px solid #e7e7e7;
+                    border-radius:50%;
+                    overflow:hidden;
+                    margin-left:-4px;
+                    margin-right:10px;
+                    vertical-align:middle;
+                }
+                .sr_name{
+                    display:inline-block;
+                    width:45px;
+                    font-size:14px;
+                }
+                .sr_text{
+                    display:inline-block;
+                    width:45px;
+                    text-align:right;
+                }
+                .ranking_up{
+                    width:6px;
+                    height:14px;
+                    position:absolute;
+                    top:13px;
+                    right:20px;
+                    background:url(../../../img/icons/ranking_up.png) no-repeat;
+                }
+            }
+        }
+    }
+}
+
+
 
 .boutique_box{
     border:1px solid #e6e6e6;
+    margin-bottom:20px;
     .boutique_inner{
         border-top:1px solid #e6e6e6;
         padding-top:20px;
