@@ -1,5 +1,8 @@
 @import '../../common/init.less';
 @import '../../common/template/page_nav.less';
+@import './common/team_side.less';
+
+
 
 body {
     background: #fff;
@@ -17,15 +20,7 @@ body {
 	width:1200px;
 	margin:0 auto;
 }
-.btn(@btn_width){
-    width:@btn_width;
-    height:40px;
-    color:@main;
-    background:#000;
-    font-size:16px;
-    border-radius:2px;
-    cursor:pointer;
-}
+
 
 .page_team_banner{
 	.team_banner{
@@ -143,6 +138,7 @@ body {
             color:#000;
             background:@main;
             margin-left:10px;
+            cursor:pointer;
         }
     }
 }
@@ -231,156 +227,6 @@ body {
 
 
 
-//预约设计师免费出方案
-.text_in(@sa_font;@sa_lineheight;@sa_width;){
-    border:1px solid #ccc;
-    margin-bottom:10px;
-    color:@color3;
-    width:@sa_width;
-    line-height:@sa_lineheight;
-    font-size:@sa_font;
-}
-
-.side_appoint{
-    width:278px;
-    height:430px;
-    border:1px solid #e6e6e6;
-    margin-bottom:20px;
-    color:@color3;
-    font-size:12px;
-    .sa_title{
-      font-size:18px;  
-      line-height:18px;
-      margin:18px 0 12px;
-      text-align:center;
-    }
-    .sa_note{
-        font-size:12px;
-        line-height:12px;
-        margin-bottom:22px;
-        text-align:center;
-    }
-    .sa_box{
-        padding:0 19px 30px 19px;
-        border-bottom:1px solid #e6e6e6;
-        color:@color3;
-        .sa_select{
-            .text_in(14px;30px;240px);
-            height:32px;
-            padding-left:3px;
-        }
-        .sa_input{
-            .text_in(14px;30px;224px);
-            padding:0 7px;
-            &::-webkit-input-placeholder {
-                color: #999;
-            }
-            
-            &::-moz-placeholder {
-                color: #999;
-            }
-            
-            &::-ms-input-placeholder {
-                color: #999;
-            }
-        }
-        .sa_textarea{
-            .text_in(12px;20px;224px);
-            height:54px;
-            padding:0 7px;
-            resize:none;
-            &::-webkit-input-placeholder {
-                color: #999;
-            }
-            
-            &::-moz-placeholder {
-                color: #999;
-            }
-            
-            &::-ms-input-placeholder {
-                color: #999;
-            }
-        }
-        .sa_tips{
-            line-height:12px;
-            margin-bottom:16px;
-            text-align:right;
-            color:@color6;
-        }
-        .sa_btn{
-            .btn(240px);           
-        }
-        }
-        .sa_order{
-            padding:17px 0 0 48px;
-            .sa_order_ul{
-                height:66px;
-                .list{
-                   line-height:22px; 
-                   .time_color{
-                       color:#f17046;
-                   }
-                }
-            }
-        }
-}
-
-//设计师排行榜
-.side_ranking{
-    width:278px;
-    border:1px solid #e6e6e6;
-    margin-bottom:20px;
-    color:@color3;
-    font-size:12px;
-    .sr_box{
-        border-top:1px solid #e6e6e6;
-        padding:19px 0 10px 19px;
-        .ranking_ul{
-            .list{
-                line-height:12px;
-                margin-bottom:10px;
-                line-height:40px;
-                position:relative;
-                .sr_num{
-                    display:inline-block;
-                    width:20px;
-                }
-                .sr_photo{
-                    display:inline-block;
-                    width:38px;
-                    height:38px;
-                    border:1px solid #e7e7e7;
-                    border-radius:50%;
-                    overflow:hidden;
-                    margin-left:-4px;
-                    margin-right:10px;
-                    vertical-align:middle;
-                }
-                .sr_name{
-                    display:inline-block;
-                    width:45px;
-                    font-size:14px;
-                }
-                .sr_text{
-                    display:inline-block;
-                    width:45px;
-                    text-align:right;
-                }
-                .ranking_up{
-                    width:6px;
-                    height:14px;
-                    position:absolute;
-                    top:13px;
-                    right:20px;
-                    background:url(../../../img/icons/ranking_up.png) no-repeat;
-                }
-            }
-        }
-    }
-}
-
-
-
 .boutique_box{
     border:1px solid #e6e6e6;
     margin-bottom:20px;
@@ -401,7 +247,7 @@ body {
                 border-top:1px solid #e6e6e6;
                 font-size:16px;
                 color:#fff;
-                background:rgba(0,0,0,.2);
+                background:rgba(0,0,0,.3);
                 position:absolute;
                 left:0;
                 bottom:0;
@@ -410,22 +256,7 @@ body {
         }
     }
 }
-.side_head{
-    font-size:18px;
-    line-height:18px;
-    margin:20px 0 20px 30px;
-    position:relative;
-    &:after{
-        content:"";
-        display:block;
-        width:2px;
-        height:18px;
-        background:@main;
-        position:absolute;
-        top:0;
-        left:-11px;
-    }
-}
+
 
 
 
