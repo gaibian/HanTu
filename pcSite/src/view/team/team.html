@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>装修团队</title>
+</head>
+<body>
+@@include('../common/page_nav.html',{"team":"active"})
+<div class="page_team_banner">
+	<div class="content_box">
+		<div class="team_banner">
+			<img class="lazy" data-src="../../img/design_banner_bg.jpg" width="100%" height="100%" />
+		</div>
+	</div>
+</div>
+<!--团队导航-->
+<div class="page_team_nav">
+	<div class="content_box">
+		<div class="crumbs">
+			<span>当前位置：</span><a href="">首页</a>&gt;<span>设计团队</span>
+		</div>
+		<div class="groups">
+			<div class="group_row clearfix">
+				<div class="group_title">所在区域</div>
+				<div class="group_item">
+					<a href="#" class="group_list active">不限</a>
+					<a href="#" class="group_list">顺德区</a>
+					<a href="#" class="group_list">南海区</a>
+					<a href="#" class="group_list">三水区</a>
+					<a href="#" class="group_list">高明区</a>
+				</div>
+			</div>
+			<div class="group_row clearfix">
+				<div class="group_title">工作年限</div>
+				<div class="group_item">
+					<a href="#" class="group_list active">全部</a>
+					<a href="#" class="group_list">1-2年</a>
+					<a href="#" class="group_list">2-3年</a>
+					<a href="#" class="group_list">3-5年</a>
+					<a href="#" class="group_list">5-8年</a>
+				</div>
+			</div>
+			<div class="group_row clearfix">
+				<div class="group_title">擅长风格</div>
+				<div class="group_item">
+					<a href="#" class="group_list active">全部</a>
+					<a href="#" class="group_list">现代简约</a>
+					<a href="#" class="group_list">简约</a>
+					<a href="#" class="group_list">美式</a>
+					<a href="#" class="group_list">新中式</a>
+					<a href="#" class="group_list">后代式</a>
+					<a href="#" class="group_list">欧式</a>
+					<a href="#" class="group_list">简欧</a>
+					<a href="#" class="group_list">中式</a>
+				</div>
+				<div class="group_open">展开<span class="open_arrow"></span></div>
+			</div>
+			<div class="group_row clearfix">
+				<div class="group_title">擅长类型</div>
+				<div class="group_item">
+					<a href="#" class="group_list active">全部</a>
+					<a href="#" class="group_list">普通住宅</a>
+					<a href="#" class="group_list">别墅</a>
+					<a href="#" class="group_list">旧房</a>
+					<a href="#" class="group_list">公寓</a>
+				</div>
+			</div>
+		</div>
+		<div class="appoint_box clearfix">
+			<div class="appoint_line"></div>
+			<div class="appoint_input"><input type="text" name="" id="" value="" placeholder="您的称呼"/></div>
+			<div class="appoint_input"><input type="text" name="" id="" value="" placeholder="联系电话"/></div>
+			<div class="appoint_input"><input type="text" name="" id="" value="" placeholder="楼盘名称"/></div>
+			<div class="appoint_input"><input type="text" name="" id="" value="" placeholder="建筑面积"/><span class="unit">m2</span></div>
+			<button class="appoint_btn">预约设计师</button>
+		</div>
+	</div>
+</div>
+
+<!--团队正文-->
+<div class="page_main_box">
+	<div class="content_box clearfix">
+		<div class="main_box">
+			<ul class="main_ul">
+				<li class="list">
+					<div class="main_head">
+						<div class="main_photo">
+							<a href=""><img class="lazy" data-src="../../img/main_photo.jpg" width="100%" height="100%"/></a>
+						</div>
+						<div class="main_text clearfix">
+							<div class="information">
+								<span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</span>陈家浩
+							</div>
+							<div class="information">
+								<span>工作年限：</span>10年以上
+							</div>
+							<div class="information">
+								<span>擅长风格：</span>家装、工装
+							</div>
+							<div class="information">
+								<span>作品数量：</span>130
+							</div>
+							<div class="idea">
+								<span>设计理念：</span>设计的核心是一种创造行为，设计要求新、求异、求变、求不同
+							</div>
+						</div>
+						<div class="btn_box">
+							<button class="main_btn">免费预约设计</button>
+							<p class="people">已有17人预约</p>
+						</div>
+					</div>
+					<div class="works_box clearfix">
+						<div class="works">
+							<a href="">
+								<img class="lazy" data-src="../../img/works_pic1.jpg" alt="" width="100%" height="100%"/>
+							</a>
+						</div>
+						<div class="works">
+							<a href="">
+								<img class="lazy" data-src="../../img/works_pic2.jpg" alt="" width="100%" height="100%"/>
+							</a>
+						</div>
+						<div class="works">
+							<a href="">
+								<img class="lazy" data-src="../../img/works_pic3.jpg" alt="" width="100%" height="100%"/>
+							</a>
+						</div>
+						<div class="works">
+							<a href="">
+								<img class="lazy" data-src="../../img/works_pic4.jpg" alt="" width="100%" height="100%"/>
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="side_box">
+			<!--预约设计师免费出方案-->
+			@@include('./common/side_appoint.html')
+			<!--精选设计作品-->
+			<div class="boutique_box">
+				<h3 class="side_head">精选设计作品</h3>
+				<div class="boutique_inner">
+					<div class="boutique">
+						<a href="">
+							<img class="lazy" data-src="../../img/boutique_pic.jpg" width="100%" height="100%" />
+							<p class="boutique_p">梅江东苑美式普通住宅装修设计</p>
+						</a>
+					</div>
+					<div class="boutique">
+						<a href="">
+							<img class="lazy" data-src="../../img/boutique_pic.jpg" width="100%" height="100%" />
+							<p class="boutique_p">梅江东苑美式普通住宅装修设计</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--设计师排行榜-->
+			@@include('./common/side_ranking.html')
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-require('../../../css/page/special_page/hot_outfit.less');
+require('../../../css/page/raiders_page/hot_outfit_details.less');
 
 $(()=>{
     "use strict";

@@ -1,0 +1,164 @@
+@import '../../common/init.less';
+@import '../../common/template/page_nav.less';
+@import './common/team_side.less';
+
+
+
+body {
+    background: #fff;
+}
+.page_nav_box{
+    background:#000;
+    .nav_content .nav_box .nav_a{
+        color:@color9;
+    }
+}
+
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content_box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.page_archives_box{
+    .archives_box{
+        width:1200px;
+        height:300px;
+        margin-bottom:30px;
+        background:url(../../../img/team_details_bg.jpg) no-repeat;
+        position:relative;
+        overflow:hidden;
+        .archives_photo{
+            width:108px;
+            height:108px;
+            border:1px solid #e6e6e6;
+            border-radius:50%;
+            overflow:hidden;
+            position:absolute;
+            top:95px;
+            left:194px;
+        }
+        .archives{
+            width:500px;
+            color: #fff;
+            margin:88px 0 22px 367px;
+            .archives_head {
+                font-size: 16px;
+                line-height:16px;
+                margin-bottom:25px;
+            }
+            .archives_text {
+                font-size: 14px;
+                color: #fff;
+                .information {
+                    float: left;
+                    width: 230px;
+                    margin-right: 20px;
+                    line-height: 22px;
+                    margin-bottom: 10px;
+                    span {
+                        display: inline-block;
+                        width: 72px;
+                    }
+                }
+                .idea {
+                    float: left;
+                    width: 500px;
+                    line-height: 22px;
+                }
+            } 
+        }
+    }
+}
+
+
+
+.page_details_box{
+    .crumbs{
+        font-size:12px;
+        line-height:12px;
+        color:@color3;
+        margin-bottom:20px;
+        a{
+            color:@color3;
+        }
+    }
+    .container{
+        position:relative;
+        .details_tab_box{
+            border:1px solid #e6e6e6;
+            border-left:none;
+            margin-bottom:20px;
+            background:#000;
+            .tab_btn{
+                float:left;
+                width:299px;
+                height:48px;
+                line-height:48px;
+                font-size:16px;
+                color:#ccc;
+                text-align:center;
+                border-left:1px solid #e6e6e6;
+                cursor:pointer;
+            }
+            .active{
+                color:@main;
+                height:44px;
+                border-bottom:4px solid @main;
+                margin-left:-1px;
+                cursor:default;
+            }
+        }
+        .details_content_box{
+            .tab_content{
+                width:840px;
+                padding:29px 29px 18px 29px;
+                border:1px solid #e6e6e6;
+                .case_title{
+                    width:840px;
+                    font-size:18px;
+                    line-height:18px;
+                    color:@color3;
+                    padding-bottom:11px;
+                    border-bottom:1px solid #e6e6e6;
+                    margin-bottom:30px;
+                    position:relative;
+                    &:after{
+                        content:"";
+                        display:block;
+                        width:140px;
+                        height:1px;
+                        background:@main; 
+                        position:absolute;
+                        bottom:-1px;
+                        left:0;
+                    }
+                }
+                .cases{
+                    width:852px;
+                    .case{
+                        float:left;
+                        width:272px;
+                        height:272px;
+                        margin:0 12px 12px 0;
+                    }
+                }
+            }
+        }
+        .details_side{
+            position:absolute;
+            top:70px;
+            right:0;
+        }
+    }
+}
+
+
+
+

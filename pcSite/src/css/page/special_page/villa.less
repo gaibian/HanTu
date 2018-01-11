@@ -2,31 +2,8 @@
 @import '../../common/template/page_nav.less';
 @import '../../common/top_carousel.less';
 
-/*.page_box{
-  width:200px;
-  height:100px;
-  .page_content{
-    .btn{
-      width:100px;
-      height:100px;
-      font-size:16px;
-    }
-    .back(@background){
-      background:@background;
-    }
-    .red{
-      .btn;
-      .back(red);
-    }
-    .yellow{
-      .btn;
-      .back(yellow);
-    }
-  }
-}*/
 
 .clearfix:after{content:""; display:block; clear:both;}
-
 
 .page_appointment_box{
     padding:89px 0 95px 0;
@@ -84,7 +61,7 @@
                     }
                     select{
                         width:190px;
-                        height:28px;
+                        padding:3px 0 4px 0;
                         color:#010101;
                     }
                 }
@@ -202,8 +179,91 @@
             width:240px;
         }
         .team_content_box {
-            height: 326px;
-            background: #eee;
+            .team2_out{
+                position:relative;
+                .arrow_btn{
+                    position:absolute;
+                    top:140px;
+                    width:51px;
+                    height:100px;
+                    cursor:pointer;
+                }
+                .prev_btn{
+                    left:-95px;
+                    background:url(../../../img/special_page/icons/team2_prev_btn.png);
+                }
+                .next_btn{
+                    right:-95px;
+                    background:url(../../../img/special_page/icons/team2_next_btn.png);
+                }
+            }
+            .team2_box{
+                width:1200px;
+                height:380px;
+                padding-top:1px;
+                overflow:hidden;
+            }
+            .team2_ul{
+                position:relative;
+                .list{
+                    float:left;
+                    width:232px;
+                    height:378px;
+                    margin-right:10px;
+                    position:relative;
+                    &:hover{
+                        .team2_hover{
+                            display:block;
+                            }
+                    }
+                    .team2_img{
+                        width:232px;
+                        height:300px;
+                    }
+                    .team2_text{
+                        height:57px;
+                        padding:20px 0 0  20px;
+                        border:1px solid #e6e6e6;
+                        border-top:none;
+                        .team2_name{
+                            font-size:16px;
+                            line-height:16px;
+                            margin-bottom:8px;
+                            color:@color3;
+                        }
+                        .team2_job{
+                            font-size:14px;
+                            line-height:14px;
+                            color:@color9;
+                            .text_hidden();
+                        }
+                    }
+                    .team2_hover{
+                        display:none;
+                        position:absolute;
+                        top:-1px;
+                        left:-1px;
+                        z-index:1;
+                        width:232px;
+                        height:230px;
+                        padding-top:148px;
+                        border:1px solid #e6e6e6;
+                        background:rgba(0,0,0,.8);
+                        .team2_btn{
+                            display:block;
+                            width:113px;
+                            height:28px;
+                            line-height:28px;
+                            margin:0 auto;
+                            text-align:center;
+                            color:@main;
+                            border:1px solid @main;
+                            border-radius:2px;
+                            margin-bottom:20px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -348,7 +408,6 @@
             }
             .constr_zx{
                 font-size:18px;
-                font-family:"宋体";
                 line-height:18px;
                 margin-bottom:10px;
             }
@@ -462,7 +521,7 @@
     width:438px;
     height:54px;
     border:1px solid #000;
-    border-radius:3px;
+    border-radius:2px;
     margin:0 auto 66px;
     text-align:center;
     .villa_title{
