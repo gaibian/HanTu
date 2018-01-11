@@ -16,5 +16,7 @@ $(function(){
     const tabContent = require('../../component/tab_content');
     tabContent('.tab_box');
 
+    const select = require('../../component/select');
+    select('.select_box');
 
 })

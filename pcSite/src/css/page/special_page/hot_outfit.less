@@ -1,0 +1,187 @@
+@import '../../common/init.less';
+@import '../../common/template/page_nav.less';
+
+body{
+  background:#fff;
+}
+/*顶部banner*/
+.page_banner_box{
+  position: relative;
+  width:1920px;
+  left:50%;
+  margin-left:-960px;
+  height:640px;
+  font-size:0;
+  .input_btm_box{
+    position: absolute;
+    left:50%;
+    width:1200px;
+    height:48px;
+    bottom:25px;
+    margin-left:-600px;
+    padding:30px 0;
+    background:rgba(0,0,0,0.8);
+    text-align: center;
+    .inline{
+      float:left;
+      display:block;
+      width:260px;
+      height:48px;
+      line-height:48px;
+      margin-right:20px;
+    }
+    .inline:first-child{
+      margin-left:50px;
+    }
+    .input_box{
+      background:#fff;
+      input{
+        display:block;
+        width:100%;
+        height:30px;
+        margin-top:9px;
+        font-size:14px;
+        color:#ccc;
+        padding:0 12px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+    }
+    .btn{
+      background:@main;
+      color:#fff;
+      font-size:24px;
+      cursor: pointer;
+    }
+  }
+}
+
+/*main*/
+.page_main_content_box{
+  width:1200px;
+  margin:4px auto;
+  .header_nav{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    font-size:12px;
+    color:@color3;
+  }
+  .main_content_box{
+    width:1200px;
+    margin:20px auto 0 auto;
+    .left_list_content{
+      float:left;
+      width:900px;
+      .nav_list_box{
+        width:100%;
+        height:42px;
+        line-height:42px;
+        border:#e6e6e6 1px solid;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        .title{
+          float:left;
+          width:110px;
+          text-align: center;
+          background:#f5f5f5;
+          font-size:12px;
+          color:@color6;
+          border-right:#e6e6e6 1px solid;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        .nav_ul{
+          float:left;
+          width:780px;
+          .nav_li{
+            float:left;
+            height:42px;
+            margin:0 20px;
+            font-size:12px;
+            color:@color3;
+            cursor: pointer;
+          }
+          .nav_li.active{
+            color:@main;
+          }
+        }
+      }
+      .product_list_box{
+        width:100%;
+        border:#e6e6e6 1px solid;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding:0 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        .list_box{
+          width:100%;
+          height:226px;
+          padding:30px 0;
+          .img_box{
+            float:left;
+            width:300px;
+            height:226px;
+            font-size:0;
+          }
+          .product_content_box{
+            float:right;
+            width:502px;
+            height:226px;
+            .product_title{
+              width:100%;
+              font-size:18px;
+              color:@color3;
+            }
+            .label_num_box{
+              width:100%;
+              padding:12px 0;
+              border-bottom:#e6e6e6 1px solid;
+              .label{
+                font-size:14px;
+                color:@color6;
+                margin-right:63px;
+                em{
+                  color:#b10012;
+                }
+              }
+              .label:last-child{
+                margin-right:0;
+              }
+            }
+            .text{
+              width:100%;
+              font-size:12px;
+              color:@color6;
+              line-height:24px;
+              .text_d_hidden(3);
+              margin-top:12px;
+              margin-bottom:45px;
+            }
+            .btn_box{
+              width:100%;
+              .btn{
+                float:left;
+                display:block;
+                width:120px;
+                height:30px;
+                line-height:30px;
+                text-align: center;
+                font-size:14px;
+                color:@main;
+                border:@main 1px solid;
+                margin-right:30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

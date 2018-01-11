@@ -61,10 +61,32 @@
                     color:#000;
                 }
                 .appointment_input{
-                    padding:3px 10px 3px 10px;
+                    padding:0 10px;
                     border:1px solid #000;
                     border-radius:3px;
                     background:#fff;
+                    font-size:14px;
+                    input{
+                        height:28px;
+                        line-height:28px;
+                        color:#010101;
+                        &::-webkit-input-placeholder {
+                            color:#adadad;
+                        }
+                        
+                        &::-moz-placeholder {
+                            color:#adadad;
+                        }
+                        
+                        &::-ms-input-placeholder {
+                            color:#adadad;
+                        }
+                    }
+                    select{
+                        width:190px;
+                        height:28px;
+                        color:#010101;
+                    }
                 }
             }
         }
@@ -142,34 +164,20 @@
     }
 }
 
-.tab_btn {
-    float: left;
-    width: 118px;
-    height: 38px;
-    line-height: 38px;
-    text-align: center;
-    border: 1px solid #000;
-    margin-left: -1px;
-    font-size: 16px;
-    color: @main;
-    cursor: pointer;
-}
-.active {
-    background: #000;
+
+.sidenote{
+    font-size:36px;
+    color:@color3;
+    text-align:center;
+    margin-bottom:30px;
+    span {
+        color: @main;
+    }
 }
 
 .page_team_box{
     background:#fff;
     padding-top:170px;
-    .team_note{
-        font-size:36px;
-        color:@color3;
-        text-align:center;
-        margin-bottom:30px;
-        span{
-            color:@main;
-        }
-    }
     .tab_box {
         .team_tab_box {
             width: 358px;
@@ -200,15 +208,256 @@
     }
 }
 
+.page_hot_box{
+    background:#fff;
+    padding-top:190px;
+    .hot_ul{
+        width:1210px;
+        .list{
+            float:left;
+            width:232px;
+            height:180px;
+            margin:0 10px 15px 0;
+            position:relative;
+            .hot_tags{
+                position:absolute;
+                top:-4px;
+                right:0;
+                width:86px;
+                height:48px;
+                padding-top:11px;
+                text-align:center;
+                color:#fff;
+                background:url(../../../img/special_page/icons/hot_tags.png);
+                p{
+                  font-size:12px;
+                }
+                span{
+                    font-size:18px;
+                    font-weight:bold;
+                }
+            }
+            .hot_describe{
+                position:absolute;
+                left:0;
+                bottom:0;
+                padding:0 18px;
+                width:196px;
+                height:40px;
+                line-height:40px;
+                font-size:14px;
+                color:#fff;
+                background:rgba(0,0,0,.6);
+                .text_hidden();
+            }
+        }
+    }
+}
+
+.page_system_box{
+    background:#fff;
+    padding-top:190px;
+    .system_note{
+        font-size:18px;
+        color:@color3;
+        line-height:28px;
+        text-align:center;
+        margin-bottom:25px;;
+    }
+    .system_outer{
+        padding-bottom:20px;
+        .system_box {
+            width: 1200px;
+            height: 200px;
+            margin-bottom: 12px;
+            position: relative;
+            .system_text {
+                position: absolute;
+                top: 50px;
+                color: #fff;
+                h6 {
+                    font-size: 34px;
+                    line-height: 34px;
+                    position: relative;
+                    margin-bottom: 30px;
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 72px;
+                        height: 2px;
+                        background: #fff;
+                        position: absolute;
+                        left: 0;
+                        bottom: -14px;
+                    }
+                }
+                span {
+                    display: inline-block;
+                    padding: 6px 15px;
+                    font-size: 20px;
+                    line-height: 20px;
+                    border: 1px solid #fff;
+                }
+            }
+            .st_l {
+                left: 120px;
+            }
+            .st_r {
+                left: 785px;
+            }
+        }
+    }
+}
+
+.page_construction_box{
+    background:#fff;
+    padding-top:190px;
+    .construction_ul{
+        width:1060px;
+        margin:0 auto;
+        padding:65px 0 110px 0;
+        .list{
+            float:left;
+            width:212px;
+            color:#000;
+            text-align:center;
+            .constr_icon{
+            width:80px;
+            height:80px;
+            margin:0 auto 32px;
+            }
+            .c_zx{
+                background:url(../../../img/special_page/icons/constr_zx.png) no-repeat;
+            }
+            .c_yq{
+                background:url(../../../img/special_page/icons/constr_yq.png) no-repeat;
+            }
+            .c_fx{
+                background:url(../../../img/special_page/icons/constr_fx.png) no-repeat;
+            }
+            .c_jh{
+                background:url(../../../img/special_page/icons/constr_jh.png) no-repeat;
+            }
+            .c_hk{
+                background:url(../../../img/special_page/icons/constr_hk.png) no-repeat;
+            }
+            .constr_num{
+                font-size:30px;
+                line-height:30px;
+                margin-bottom:8px;
+            }
+            .constr_zx{
+                font-size:18px;
+                font-family:"宋体";
+                line-height:18px;
+                margin-bottom:10px;
+            }
+            .constr_text{
+                font-size:14px;
+                line-height:22px;
+                color:@color6;
+            }
+        }
+    }
+}
+
+.page_select_box{
+    padding-top:120px;
+    height:516px;
+    background:url(../../../img/special_page/select_ht_bg.jpg) no-repeat;
+    .select_title{
+        font-size:44px;
+        line-height:44px;
+        color:#fff;
+        text-align:center;
+    }
+    .select_line{
+        width:120px;
+        height:28px;
+        border-bottom:2px solid #fff;
+        margin:0 auto 90px;
+    }
+    .select_ul{
+        width:1120px;
+        margin:0 auto;
+        .list{
+            float:left;
+            width:280px;
+            text-align:center;
+            color:#fff;
+            .select_icon{
+                width:120px;
+                height:113px;
+                margin:0 auto 42px;
+            }
+            .s_zzbs{
+                background:url(../../../img/special_page/icons/select_zzbs.png) no-repeat;
+            }
+            .s_clqa{
+                background:url(../../../img/special_page/icons/select_clqa.png) no-repeat;
+            }
+            .s_zscp{
+                background:url(../../../img/special_page/icons/select_zscp.png) no-repeat;
+            }
+            .s_xffw{
+                background:url(../../../img/special_page/icons/select_xffw.png) no-repeat;
+            }
+            .select_text1{
+                font-size:18px;
+                line-height:18px;
+                margin-bottom:15px;
+            }
+            .select_text2{
+                font-size:14px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+.villa_footer{
+    background:#000;
+    padding:30px 0;
+    .foot_text{
+       float:left;
+       font-size:18px; 
+       line-height:40px;
+       color:@main;
+       margin-right:20px;
+    }
+    .foot_input{
+        float:left;
+        width:216px;
+        height:40px;
+        padding:0 12px;
+        color:#fff;
+        font-size:14px;
+        background:@color3;
+        line-height:40px;
+        margin-right:12px;
+        &::-webkit-input-placeholder{
+            color:#fff;
+        }
+        &::-moz-placeholder {
+            color: #fff;
+        }
+        &::-ms-input-placeholder {
+            color: #fff;
+        }
+    }
+    .foot_submit{
+        float:left;
+        width:258px;
+        height:40px;
+        font-size:16px;
+        color:#fff;
+        background:@main;
+        cursor:pointer;
+    }
+}
 
 
-
-
-
-
-
-
-
+//别墅专题公共head
 .villa_head{
     width:438px;
     height:54px;
