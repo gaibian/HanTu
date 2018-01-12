@@ -1,0 +1,240 @@
+@import '../../common/init.less';
+@import '../../common/template/page_nav.less';
+
+
+
+
+
+
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+body {
+    background: #fff;
+}
+.page_nav_box{
+    background:#000;
+    .nav_content .nav_box .nav_a{
+        color:@color9;
+    }
+}
+
+.content_box{
+	width:1200px;
+	margin:0 auto;
+}
+
+.page_about_banner{
+	margin-bottom:30px;
+	.banner{
+		width:1200px;
+		height:300px;
+	}
+}
+
+.page_about_box{
+	.crumbs{
+	    font-size:12px;
+	    line-height:12px;
+	    color:@color3;
+	    margin-bottom:20px;
+	    a{
+	       color:@color3;
+	    }
+	}
+	.container{
+		position:relative;
+		.about_tab_box{
+			float:left;
+			width:278px;
+			border:1px solid #e6e6e6;
+			margin-bottom:20px;
+			.tab_btn{
+				width:277px;
+				height:58px;
+				line-height:58px;
+				font-size:18px;
+				text-indent:60px;
+				color:@color3;
+				background:#f5f5f5;
+				border-left:1px solid #f5f5f5;
+				position:relative;
+				cursor:pointer;
+				.icon{
+					display:block;
+					width:20px;
+					height:20px;
+					position:absolute;
+					top:19px;
+					left:30px;
+				}
+				.htjj{
+					background:url(../../../img/icons/about_menu_htjj.png) no-repeat;
+				}
+				.htdt{
+					background:url(../../../img/icons/about_menu_htdt.png) no-repeat;
+				}
+				.htzp{
+					background:url(../../../img/icons/about_menu_htzp.png) no-repeat;
+				}
+				.wysh{
+					background:url(../../../img/icons/about_menu_wysh.png) no-repeat;
+				}
+				.lxht{
+					background:url(../../../img/icons/about_menu_lxht.png) no-repeat;
+				}
+				.arrow{
+					display:block;
+					width:6px;
+					height:12px;
+					position:absolute;
+					top:22px;
+					right:19px;
+					background:url(../../../img/icons/arrow_off.png) no-repeat;
+				}
+				&:nth-child(even){
+					background:#fcfcfc;
+					border-left:1px solid #fcfcfc;
+				}
+			}
+			.active{
+				background:#000 !important;
+				color:@main;
+				border-left:1px solid @main !important;
+				cursor:default;
+				.arrow{
+					background:url(../../../img/icons/arrow_on.png) no-repeat;
+				}
+				.htjj{
+					background:url(../../../img/icons/about_menu_htjj_active.png) no-repeat;
+				}
+				.htdt{
+					background:url(../../../img/icons/about_menu_htdt_active.png) no-repeat;
+				}
+				.htzp{
+					background:url(../../../img/icons/about_menu_htzp_active.png) no-repeat;
+				}
+				.wysh{
+					background:url(../../../img/icons/about_menu_wysh_active.png) no-repeat;
+				}
+				.lxht{
+					background:url(../../../img/icons/about_menu_lxht_active.png) no-repeat;
+				}
+			}
+		}
+		.about_content_box{
+			float:right;
+			width:898px;
+			border:1px solid #e6e6e6;
+		}
+		.about_side{
+			position:absolute;
+			top:310px;
+			left:0;
+			width:280px;
+			.about_appoint{
+				width:240px;
+				padding:18px 19px 28px 19px;
+				border:1px solid #e6e6e6;
+				color:@color3;
+				font-size:12px;
+				margin-bottom:20px;
+				.appoint_head{
+					font-size:18px;
+					line-height:18px;
+					margin-bottom:12px;
+					text-align:center;
+				}
+				.appoint_note{
+					font-size:12px;
+					line-height:12px;
+					margin-bottom:23px;
+					text-align:center;
+				}
+				.input{
+					width:222px;
+					padding:0 8px;
+					height:30px;
+					line-height:30px;
+					border:1px solid #ccc;
+					color:@color3;
+					margin-bottom:10px;
+					position:relative;
+					input{
+						width:200px;
+						color:@color3;
+						&::-webkit-input-placeholder {
+						    color: #999;
+						}
+						
+						&::-moz-placeholder {
+						    color: #999;
+						}
+						
+						&::-ms-input-placeholder {
+						    color: #999;
+						}
+					}
+					.unit{
+						position:absolute;
+						top:10px;
+						right:7px;
+						font-size:12px;
+						line-height:12px;
+					}
+				}
+				.appoint_submit{
+					width:240px;
+					height:40px;
+					color:@main;
+					background:#000;
+					font-size:16px;
+					border-radius:2px;
+					cursor:pointer;
+					margin-top:8px;
+				}
+			}
+		}
+		.about_offer{
+			width:280px;
+			height:225px;
+			margin-bottom:20px;
+			position:relative;
+			.offer{
+				display:block;
+				width:180px;
+				height:40px;
+				text-indent:-9999px;
+				overflow:hidden;
+				border-radius:20px;
+				position:absolute;
+				top:152px;
+				left:50px;
+			}
+		}
+		.about_promotion{
+			width:278px;
+			border:1px solid #e6e6e6;
+			.promotion_head{
+				height:56px;
+				line-height:56px;
+				font-size:18px;
+				text-indent:18px;
+				border-bottom:1px solid #e6e6e6;
+			}
+			.promotion_box{
+				padding:20px 19px 20px 19px;
+				.promotion_a{
+					width:240px;
+					height:180px;
+					margin-bottom:10px;
+				}
+			}
+		}
+	}
+}
+
+
