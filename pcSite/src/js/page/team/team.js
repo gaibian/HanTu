@@ -10,6 +10,9 @@ $(()=>{
     	this.setAttribute('src', srcValue);
     	this.className = this.className + ' la';
     });
+
+    const scrollText = require('../../component/scroll_text');
+    scrollText('.scroll_text');
     
 });
 
