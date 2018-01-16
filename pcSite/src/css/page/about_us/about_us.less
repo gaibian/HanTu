@@ -1,0 +1,428 @@
+@import '../../common/init.less';
+@import '../../common/template/page_nav.less';
+
+
+
+
+
+
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+body {
+    background: #fff;
+}
+.page_nav_box{
+    background:#000;
+    .nav_content .nav_box .nav_a{
+        color:@color9;
+    }
+}
+
+.content_box{
+	width:1200px;
+	margin:0 auto;
+}
+
+.page_about_banner{
+	margin-bottom:30px;
+	.banner{
+		width:1200px;
+		height:300px;
+	}
+}
+
+.page_about_box{
+	.crumbs{
+	    font-size:12px;
+	    line-height:12px;
+	    color:@color3;
+	    margin-bottom:20px;
+	    a{
+	       color:@color3;
+	    }
+	}
+	.container{
+		position:relative;
+		.about_tab_box{
+			float:left;
+			width:278px;
+			border:1px solid #e6e6e6;
+			margin-bottom:20px;
+			.tab_btn{
+				width:277px;
+				height:58px;
+				line-height:58px;
+				font-size:18px;
+				text-indent:60px;
+				color:@color3;
+				background:#f5f5f5;
+				border-left:1px solid #f5f5f5;
+				position:relative;
+				cursor:pointer;
+				.icon{
+					display:block;
+					width:20px;
+					height:20px;
+					position:absolute;
+					top:19px;
+					left:30px;
+				}
+				.htjj{
+					background:url(../../../img/icons/about_menu_htjj.png) no-repeat;
+				}
+				.htdt{
+					background:url(../../../img/icons/about_menu_htdt.png) no-repeat;
+				}
+				.htzp{
+					background:url(../../../img/icons/about_menu_htzp.png) no-repeat;
+				}
+				.wysh{
+					background:url(../../../img/icons/about_menu_wysh.png) no-repeat;
+				}
+				.lxht{
+					background:url(../../../img/icons/about_menu_lxht.png) no-repeat;
+				}
+				.arrow{
+					display:block;
+					width:6px;
+					height:12px;
+					position:absolute;
+					top:22px;
+					right:19px;
+					background:url(../../../img/icons/arrow_off.png) no-repeat;
+				}
+				&:nth-child(even){
+					background:#fcfcfc;
+					border-left:1px solid #fcfcfc;
+				}
+			}
+			.active{
+				background:#000 !important;
+				color:@main;
+				border-left:1px solid @main !important;
+				cursor:default;
+				.arrow{
+					background:url(../../../img/icons/arrow_on.png) no-repeat;
+				}
+				.htjj{
+					background:url(../../../img/icons/about_menu_htjj_active.png) no-repeat;
+				}
+				.htdt{
+					background:url(../../../img/icons/about_menu_htdt_active.png) no-repeat;
+				}
+				.htzp{
+					background:url(../../../img/icons/about_menu_htzp_active.png) no-repeat;
+				}
+				.wysh{
+					background:url(../../../img/icons/about_menu_wysh_active.png) no-repeat;
+				}
+				.lxht{
+					background:url(../../../img/icons/about_menu_lxht_active.png) no-repeat;
+				}
+			}
+		}
+		.about_content_box{
+			float:right;
+			width:840px;
+			padding:29px 29px 29px 29px;
+			border:1px solid #e6e6e6;
+			color:@color3;
+			/* 翰图简介 */
+			.introduce{
+				.introduce_text{
+					font-size:14px;
+					line-height:30px;
+					margin:20px 0 50px 0;
+				}
+				.introduce_pic{
+					width:840px;
+					height:360px;
+					margin-bottom:30px;
+				}
+			}
+			/* 翰图动态 */
+			.dynamic{
+				.dynamic_ul{
+					.list{
+						padding-bottom:30px;
+						border-bottom:1px solid #e6e6e6;
+						margin-bottom:30px;
+						font-size:12px;
+						.dynamic_pic{
+							float:left;
+							width:180px;
+							height:120px;
+							border-radius:2px;
+							overflow:hidden;
+						}
+						.dynamic_text{
+							float:right;
+							width:640px;
+							height:120px;
+							position:relative;
+							.dynamic_title{
+								font-size:24px;
+								line-height:24px;
+								margin-bottom:15px;
+								a{
+									color:@color3;
+								}
+							}
+							.dynamic_summary{
+								font-size:14px;
+								line-height:24px;
+								color:@color6;
+								.dynamic_to{
+									color:@color3;
+								}
+							}
+							.browse_box{
+								position:absolute;
+								left:0;
+								bottom:0;
+								color:@color9;
+								.icon{
+									float:left;
+									width:40px;
+									padding-left:25px;
+									line-height:14px;
+									i{
+										display:block;
+										width:18px;
+										height:14px;
+										position:absolute;
+										top:0;
+										left:0;
+									}
+								}
+								.browse{
+									position:relative;
+									margin-right:30px;
+									i{
+										background:url(../../../img/icons/dynamic_brouse.png) no-repeat;
+									}
+								}
+								.favorite{
+									position:relative;
+									i{
+										background:url(../../../img/icons/dynamic_favorite.png) no-repeat;
+									}
+								}
+							}
+							.dynamic_time{
+								position:absolute;
+								bottom:0;
+								right:0;
+								color:@color9;
+							}
+						}
+					}
+				}
+			}
+			/* 翰图招聘 */
+			.recruit{
+				.recruit_head{
+					margin:26px 0 10px 0;
+					font-size:18px;
+					line-height:18px;
+				}
+				.occupation{
+					display:inline-block;
+					height:20px;
+					line-height:20px;
+					font-size:14px;
+					color:#fff;
+					background:#fe343f;
+					padding:0 10px 0 24px;
+					margin:10px 0 14px 0;
+					position:relative;
+					&:after{
+						content:"";
+						display:block;
+						width:14px;
+						height:14px;
+						background:url(../../../img/icons/about_occupation_bg.png) no-repeat;
+						position:absolute;
+						top:2px;
+						left:10px;
+					}
+				}
+				.duty{
+					margin-bottom:5px;
+					dt{
+						font-size:16px;
+						margin-bottom:8px;
+					}
+					dd{
+						font-size:14px;
+						line-height:30px;
+					}
+				}
+			}
+			/* 无忧售后 */
+			.service{
+				.service_img{
+					width:840px;
+					height:900px;
+					margin-bottom:30px;
+				}
+			}
+			/* 联系翰图 */
+			.map_box{
+				width:840px;
+				height:540px;
+				margin-bottom:30px;
+			}
+		}
+		.about_side{
+			position:absolute;
+			top:310px;
+			left:0;
+			width:280px;
+			.about_appoint{
+				width:240px;
+				padding:18px 19px 28px 19px;
+				border:1px solid #e6e6e6;
+				color:@color3;
+				font-size:12px;
+				margin-bottom:20px;
+				.appoint_head{
+					font-size:18px;
+					line-height:18px;
+					margin-bottom:12px;
+					text-align:center;
+				}
+				.appoint_note{
+					font-size:12px;
+					line-height:12px;
+					margin-bottom:23px;
+					text-align:center;
+				}
+				.input{
+					width:222px;
+					padding:0 8px;
+					height:30px;
+					line-height:30px;
+					border:1px solid #ccc;
+					color:@color3;
+					margin-bottom:10px;
+					position:relative;
+					input{
+						width:200px;
+						color:@color3;
+						&::-webkit-input-placeholder {
+						    color: #999;
+						}
+						
+						&::-moz-placeholder {
+						    color: #999;
+						}
+						
+						&::-ms-input-placeholder {
+						    color: #999;
+						}
+					}
+					.unit{
+						position:absolute;
+						top:10px;
+						right:7px;
+						font-size:12px;
+						line-height:12px;
+					}
+				}
+				.appoint_submit{
+					width:240px;
+					height:40px;
+					color:@main;
+					background:#000;
+					font-size:16px;
+					border-radius:2px;
+					cursor:pointer;
+					margin-top:8px;
+				}
+			}
+		}
+		.about_offer{
+			width:280px;
+			height:225px;
+			margin-bottom:20px;
+			position:relative;
+			.offer{
+				display:block;
+				width:180px;
+				height:40px;
+				text-indent:-9999px;
+				overflow:hidden;
+				border-radius:20px;
+				position:absolute;
+				top:152px;
+				left:50px;
+			}
+		}
+		.about_promotion{
+			width:278px;
+			border:1px solid #e6e6e6;
+			margin-bottom:20px;
+			.promotion_head{
+				height:56px;
+				line-height:56px;
+				font-size:18px;
+				text-indent:18px;
+				border-bottom:1px solid #e6e6e6;
+			}
+			.promotion_box{
+				padding:20px 19px 20px 19px;
+				.promotion_a{
+					width:240px;
+					height:180px;
+					margin-bottom:10px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/* 底部计算 */
+.page_bottom_calculation{
+	width:100%;
+	height:140px;
+	position:fixed;
+	left:0;
+	bottom:0;
+	background:#000;
+	.bottom_box{
+		position:relative;
+		.bottom_img{
+			float:left;
+			width:382px;
+			height:140px;
+		}
+		.calculation_box{
+			float:left;
+			width:500px;
+			height:140px;
+		}
+		.bottom_tel{
+			float:right;
+			width:318px;
+			height:140px;
+		}
+		.bottom_close{
+			width:30px;
+			height:28px;
+			position:absolute;
+			top:2px;
+			right:0;
+			background:url(../../../img/icons/about_bottom_close_bg.jpg) no-repeat;
+			cursor:pointer;
+		}
+	}
+}
+
