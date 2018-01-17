@@ -13,6 +13,13 @@ $(()=>{
 
     const tabContent = require('../../component/tab_content');
     tabContent('.tab_box');
+
+    let pageBottomCalc = $('.page_bottom_calculation');
+    let calcCloseBtn = pageBottomCalc.find('.bottom_close');
+
+    calcCloseBtn.on('click',()=>{
+        pageBottomCalc.hide();
+    })
     
 });
 

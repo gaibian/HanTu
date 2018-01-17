@@ -1,11 +1,6 @@
 @import '../../common/init.less';
 @import '../../common/template/page_nav.less';
 
-
-
-
-
-
 .clearfix:after{
 	content:'';
 	display:block;
@@ -408,6 +403,56 @@ body {
 			float:left;
 			width:500px;
 			height:140px;
+			background:#37383a;
+			padding:26px 20px 0 20px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			.form_input_box{
+				float:left;
+				width:296px;
+				overflow:hidden;
+				.input_box{
+					position: relative;
+					float:left;
+					width:144px;
+					height:40px;
+					margin-right:8px;
+					margin-bottom:8px;
+					background:#fff;
+					input{
+						width:100%;
+						height:30px;
+						line-height:30px;
+						margin-top:5px;
+						padding:0 12px;
+						-webkit-box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						box-sizing: border-box;
+						font-size:12px;
+						color:#999;
+					}
+					em{
+						.box_right_position(12px);
+						font-size:12px;
+						color:#999;
+					}
+				}
+				.input_box:nth-child(2n){
+					margin-right:0;
+				}
+			}
+			.obtain_btn{
+				float:right;
+				width:144px;
+				height:88px;
+				line-height:88px;
+				text-align: center;
+				background:#c6a364;
+				font-size:20px;
+				color:#fff;
+				cursor: pointer;
+			}
 		}
 		.bottom_tel{
 			float:right;

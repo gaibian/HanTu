@@ -27,7 +27,7 @@ const navList = (()=>{
       });
     }
     closeFun(){
-      this.showBtn.text('展开');
+      this.showBtn.find('.text').text('展开');
       this.label.css({
         height:this.ulBoxHeight * this.row + 'px',
       });
@@ -37,7 +37,7 @@ const navList = (()=>{
       this.showBtn.removeClass('active');
     }
     openFun(){
-      this.showBtn.text('收起');
+      this.showBtn.find('.text').text('收起');
       this.label.css({
         height:this.ulBoxHeight * (this.row + 1) + 'px',
       });
