@@ -1,4 +1,4 @@
-require('../../../css/page/raiders_page/hot_outfit.less');
+require('../../../css/page/special_page/second_hand_house.less');
 
 $(()=>{
     "use strict";
@@ -11,6 +11,6 @@ $(()=>{
         this.className = this.className + ' la';
     });
 
-    const scrollText = require('../../component/scroll_text');
-    scrollText('.scroll_text');
+    const select = require('../../component/select');
+    select('.select_box');
 });

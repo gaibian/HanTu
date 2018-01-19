@@ -10,6 +10,15 @@ $(()=>{
     	this.setAttribute('src', srcValue);
     	this.className = this.className + ' la';
     });
+
+    const scrollText = require('../../component/scroll_text');
+    scrollText('.scroll_text');
+
+    const select = require('../../component/select');
+    select('.select_box');
+
+    const navList = require('../../component/list_drop_down');
+    navList('.js_nav_list');
     
 });
 
