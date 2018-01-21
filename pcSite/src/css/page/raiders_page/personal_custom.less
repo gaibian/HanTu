@@ -1,0 +1,251 @@
+@import '../../common/init.less';
+@import '../../common/template/page_nav.less';
+
+
+
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+body {
+    background: #fff;
+}
+.page_nav_box{
+    background:#000;
+    .nav_content .nav_box .nav_a{
+        color:@color9;
+    }
+}
+
+.content_box{
+	width:1200px;
+	margin:0 auto;
+}
+
+
+.page_banner_box{
+	width:100%;
+	.banner{
+		height:640px;
+		position:relative;
+		img{
+			width:1920px;
+			height:640px;
+			position:absolute;
+			top:0;
+			left:50%;
+			margin-left:-960px;
+		}
+	}
+}
+
+.page_custom_column{
+	width:100%;
+	height:135px;
+	padding-top:45px;
+	background:#000;
+	.content_box{
+		width:1060px;
+	}
+	.custom_column_head{
+		font-size:24px;
+		line-height:24px;
+		margin-bottom:24px;
+		color:@main;
+	}
+	.custom_column_box{
+		.column_input{
+			float:left;
+ 			width:184px;
+ 			height:40px;
+ 			padding:0 8px;
+ 			margin-right:10px;
+ 			font-size:14px;
+ 			line-height:40px;
+ 			color:#000;
+ 			background:#fff;
+ 			&::-webkit-input-placeholder {
+ 			    color: #333;
+ 			}
+ 			&::-moz-placeholder {
+ 			    color: #333;
+ 			}
+ 			&::-ms-input-placeholder {
+ 			    color: #333;
+ 			}
+		}
+		.column_btn{
+			float:right;
+			width:200px;
+			height:40px;
+			font-size:16px;
+			line-height:40px;
+			color:#000;
+			background:@main;
+		}
+	}
+}
+
+.page_step_box{
+	margin-top:142px;
+	margin-bottom:120px;
+	.step_box{
+		width:1198px;
+		height:354px;
+		border:1px solid @main;
+		border-radius:5px;
+		.step_head{
+			width:400px;
+			font-size:44px;
+			line-height:44px;
+			color:#000;
+			text-align:center;
+			margin:-23px auto 15px;
+			background:#fff;
+			.icon{
+				display:inline-block;
+				width:25px;
+				height:44px;
+				background:url(../../../img/icons/personal_step_num.png) no-repeat;
+				vertical-align:middle;
+				margin:-7px 0 0 3px;
+			}
+		}
+		.step_note{
+			font-size:14px;
+			line-height:14px;
+			color:@main;
+			margin-bottom:60px;
+			text-align:center;
+		}
+		.step_ul{
+			width:1194px;
+			margin:0 auto 32px;
+			.list{
+				float:left;
+				width:199px;
+				text-align:center;
+				.step_icon{
+					width:70px;
+					height:80px;
+					margin:0 auto 18px;
+				}
+				.step_icon1{
+					background:url(../../../img/icons/personal_step_icon1.png) no-repeat;
+				}
+				.step_icon2{
+					background:url(../../../img/icons/personal_step_icon2.png) no-repeat;
+				}
+				.step_icon3{
+					background:url(../../../img/icons/personal_step_icon3.png) no-repeat;
+				}
+				.step_icon4{
+					background:url(../../../img/icons/personal_step_icon4.png) no-repeat;
+				}
+				.step_icon5{
+					background:url(../../../img/icons/personal_step_icon5.png) no-repeat;
+				}
+				.step_icon6{
+					background:url(../../../img/icons/personal_step_icon6.png) no-repeat;
+				}
+				.step_text1{
+					font-size:16px;
+					line-height:16px;
+					margin-bottom:8px;
+					color:#000;
+				}
+				.step_text2{
+					font-size:14px;
+					color:@color3;
+				}
+			}
+		}
+		.step_num_ul{
+			width:1036px;
+			border-top:1px solid #e6e6e6;
+			margin:0 auto;
+			.list{
+				float:left;
+				width:24px;
+				height:24px;
+				margin:-12px 164px 0 0;
+				padding:0 6px;
+				background:#fff;
+				span{
+					display:block;
+					width:22px;
+					height:22px;
+					border:1px solid #e6e6e6;
+					border-radius:50%;
+					color:#ccc;
+					text-align:center;
+					line-height:22px;
+				}
+				&:last-child{
+					margin-right:0;
+				}
+			}
+		}
+	}
+}
+
+.page_team_box{
+	.team_head{
+		font-size:44px;
+		line-height:44px;
+		color:#000;
+		margin-bottom:12px;
+		text-align:center;
+	}
+	.team_note{
+		font-size:14px;
+		line-height:22px;
+		color:@main;
+		text-align:center;
+		margin-bottom:30px;
+	}
+	.team_pic{
+		width:560px;
+		height:400px;
+		margin:0 auto 105px;
+	}
+}
+
+.page_owner_box{
+	padding:60px 0;
+	background:#f5f5f5;
+	.owner_head{
+		font-size:44px;
+		line-height:44px;
+		color:#000;
+		text-align:center;
+		margin-bottom:60px;
+	}
+	.team_table{
+		width:998px;
+		margin:0 auto;
+		border:1px solid #999;
+		text-align:center;
+		background:#fff;
+		tr{
+			border-bottom:1px solid #ccc;
+			td{
+				height:48px;
+				color:@color3;
+			}
+			.t_w200{
+				width:200px;
+			}
+			.t_w175{
+				width:175px;
+			}
+			&:last-child{
+				border-bottom:none;
+			}
+		}
+	}
+}
+
+
