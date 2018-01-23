@@ -13,5 +13,8 @@ $(()=>{
     	this.className = this.className + ' la';
     });
 
+    const carousel = require('../../component/carousel');
+    carousel('.carousel');
+
     
 });
