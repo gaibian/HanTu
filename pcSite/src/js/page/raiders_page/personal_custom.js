@@ -15,5 +15,6 @@ $(()=>{
 
     const carousel = require('../../component/carousel');
     carousel('.carousel');
+
     
 });

@@ -16,7 +16,7 @@ const scrollText = (()=>{
     bind(){
       this.timer = setInterval(()=>{
         this.ul.animate({
-          top:-this.li.height() + 'px'
+          top:-this.li.height() - 10 + 'px'
         },300,"linear",()=>{
           let i = this.ul.find('li');
           i.last().after(i.first());
