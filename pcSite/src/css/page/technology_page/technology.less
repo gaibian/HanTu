@@ -1,0 +1,168 @@
+@import '../../common/init.less';
+@import '../../common/template/page_nav.less';
+
+
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+body {
+    background: #fff;
+}
+.page_nav_box{
+    background:#000;
+    .nav_content .nav_box .nav_a{
+        color:@color9;
+    }
+}
+
+.content_box{
+	width:1200px;
+	margin:0 auto;
+}
+
+
+.page_banner_box{
+	width:100%;
+	.banner{
+		height:640px;
+		position:relative;
+		img{
+			width:1920px;
+			height:640px;
+			position:absolute;
+			top:0;
+			left:50%;
+			margin-left:-960px;
+		}
+	}
+}
+
+.page_column_box{
+	height:135px;
+	padding-top:45px;
+	background:#000;
+	.column_box{
+		position:relative;
+	}
+	.column_title{
+		font-size:24px;
+		line-height:24px;
+		margin-bottom:24px;
+		color:@main;
+	}
+	.column_input{
+		input{
+			float:left;
+			width:184px;
+			height:40px;
+			padding:0 8px;
+			line-height:40px;
+			margin-right:10px;
+			font-size:14px;
+			color:#000;
+			background:#fff;
+			&::-webkit-input-placeholder {
+			    color: #333;
+			}
+			&::-moz-placeholder {
+			    color: #333;
+			}
+			&::-ms-input-placeholder {
+			    color: #333;
+			}
+		}
+		.column_btn{
+			float:left;
+			width:200px;
+			height:40px;
+			line-height:41px;
+			font-size:16px;
+			color:#000;
+			background:@main;
+			margin-left:12px;
+			cursor:pointer;
+		}
+	}
+}
+
+
+.nav_outer{
+	height:230px;
+	padding-top:60px;
+	background:#fafafa;
+	.tab_nav_box{
+		width:1200px;
+		margin:0 auto;
+		.tab_btn{
+			float:left;
+			width:136px;
+			margin-right:16px;
+			cursor:pointer;
+			&:last-child{
+				margin-right:0;
+			}
+			.nav_img{
+				width:136px;
+				height:136px;
+				margin-bottom:18px;
+			}
+			.nav_text{
+				font-size:16px;
+				line-height:16px;
+				color:@color3;
+				text-align:center;
+			}
+		}
+		.active{
+			.nav_text{
+				color:@main;
+			}
+		}
+	}
+}
+
+.content_outer{
+	padding:80px 0 200px 0;
+	background:#fff;
+	.tab_content_box{
+		width:1200px;
+		margin:0 auto;
+		color:@color3;
+		.tec_title{
+			font-size:44px;
+			line-height:44px;
+			margin-bottom:40px;
+			text-align:center;
+		}
+		.tec_chunk{
+			margin-bottom:30px;
+			.tec_img{
+				float:left;
+				width:580px;
+				height:580px;
+			}
+			.tec_text{
+				float:left;
+				width:619px;
+				height:578px;
+				border:1px solid @border;
+			}
+			.text_r{
+				border-left:none;
+			}
+			.text_l{
+				border-right:none;
+			}
+		}
+		.chunk_last{
+			width:1198px;
+			height:578px;
+			border:1px solid @border;
+		}
+	}
+}
+
+
