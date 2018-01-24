@@ -97,6 +97,7 @@ label{
 @color9:#999;
 @blue:#238fea;
 @main:#c6a364;
+@border:#e6e6e6;
 .text_hidden{  //单行字体超出宽度省略号...
   overflow:hidden;
   text-overflow:ellipsis;
@@ -107,6 +108,20 @@ label{
   -webkit-box-orient: vertical;
   -webkit-line-clamp: @num;
   overflow: hidden;
+}
+.input_placeholder(@color){
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: @color; opacity:1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: @color;opacity:1;
+  }
+  input:-ms-input-placeholder{
+    color: @color;opacity:1;
+  }
+  input::-webkit-input-placeholder{
+    color: @color;opacity:1;
+  }
 }
 .box_position{
   position: absolute;
