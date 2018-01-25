@@ -35,6 +35,46 @@
 
     </div>
 </div>
+<!--顶部表格-->
+<div class="page_top_form_box">
+    <div class="form_content_box">
+        <div class="form_text_box">
+            <div class="form_title">点击输入您的信息，享受免费设计与报价</div>
+            <div class="form_right_tel">
+                <p class="tel">免费报价电话：</p>
+                <div class="tel_img"></div>
+            </div>
+        </div>
+        <div class="form_box">
+            <div class="input_box">
+                <input type="text" placeholder="姓名">
+            </div>
+            <div class="input_box">
+                <input type="text" placeholder="电话">
+            </div>
+            <div class="input_box">
+                <input type="text" placeholder="建筑面积">
+            </div>
+            <div class="select_box">
+                <p class="val">装修风格</p>
+                <i class="down_bg"></i>
+                <ul class="select_menu_box">
+                    <li>浙江省</li>
+                    <li>浙江省</li>
+                    <li>浙江省</li>
+                    <li>浙江省</li>
+                    <li>浙江省</li>
+                    <li>浙江省</li>
+                    <li>浙江省</li>
+                    <li>浙江省</li>
+                    <li>浙江省</li>
+                    <li>浙江省</li>
+                </ul>
+            </div>
+            <button class="apply_btn">免费设计与报价</button>
+        </div>
+    </div>
+</div>
 <!--菜单导航-->
 <div class="page_menu_box">
     <div class="menu_list">
@@ -122,7 +162,9 @@
 </div>
 <!--装修计算-->
 <div class="page_calc_box">
-    <img class="lazy" width="100%" height="100%" data-src="../../img/index_calc_bg.jpg">
+    @@include('./common/index_content_header.html',{"title":"装修报价","eng":"Decoration quotation","text":"(装修先估价，避免入陷阱)"})
+    <div class="content_box">
+    <img class="lazy" width="100%" height="100%" data-src="../../img/page_offer_img.jpg">
     <div class="calc_content_box">
         <div class="calc_left_box">
             <div class="form_box">
@@ -296,6 +338,41 @@
                     </div>
                 </div>
                 <p class="note_text">因材料品牌及工程量不同，具体报价以量房实测为准</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="page_scroll_text_box">
+        <div class="scroll_box">
+            <div class="scroll_text_box scroll_text">
+                <ul class="scroll_ul">
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                </ul>
+            </div>
+        </div>
+        <div class="scroll_box">
+            <div class="scroll_text_box scroll_text">
+                <ul class="scroll_ul">
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                    <li><span>42分钟前</span>刘女士 139****85㎡</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -1931,18 +2008,36 @@
 <div class="page_witness_box">
     <div class="content_box">
         @@include('./common/index_content_header.html',{"title":"客户见证","eng":"Customer witness","text":"（不是我们在说好，让事实说话）"})
-        <div class="header_box">"我们服务过<span>108</span><span>，168</span>位用户，听听他们的声音"</div>
-        <ul class="witness_list_box">
-            <li class="img_list">
-                <img class="lazy" width="100%" height="100%" data-src="../../img/index_witness_img.jpg">
-            </li>
-            <li class="img_list">
-                <img class="lazy" width="100%" height="100%" data-src="../../img/index_witness_img.jpg">
-            </li>
-            <li class="img_list">
-                <img class="lazy" width="100%" height="100%" data-src="../../img/index_witness_img.jpg">
-            </li>
-        </ul>
+        <div class="header_box">"我们服务过<span>108，168</span>位用户，听听他们的声音"</div>
+        <div class="img_box">
+            <img class="lazy" width="100%" height="100%" data-src="../../img/index_jz_img.jpg">
+        </div>
+        <div class="witness_form_box">
+            <div class="input_box">
+                <input type="text" placeholder="姓名">
+            </div>
+            <div class="input_box">
+                <input type="text" placeholder="电话">
+            </div>
+            <div class="input_box">
+                <input type="text" placeholder="建筑面积">
+            </div>
+            <div class="input_box">
+                <input type="text" placeholder="楼盘名称">
+            </div>
+            <div class="yy_btn">预约瀚图装饰</div>
+        </div>
+        <!--<ul class="witness_list_box">-->
+            <!--<li class="img_list">-->
+                <!--<img class="lazy" width="100%" height="100%" data-src="../../img/index_witness_img.jpg">-->
+            <!--</li>-->
+            <!--<li class="img_list">-->
+                <!--<img class="lazy" width="100%" height="100%" data-src="../../img/index_witness_img.jpg">-->
+            <!--</li>-->
+            <!--<li class="img_list">-->
+                <!--<img class="lazy" width="100%" height="100%" data-src="../../img/index_witness_img.jpg">-->
+            <!--</li>-->
+        <!--</ul>-->
         <!--常见问答-->
         <div class="interlocution_box">
             <div class="inter_box">
@@ -2136,42 +2231,42 @@
     </div>
 </div>
 <!--合作伙伴-->
-<div class="page_partner_box">
-    <div class="content_box">
-        @@include('./common/index_content_header.html',{"title":"合作伙伴","eng":"Cooperative partner","text":"（广开渠道，合作共赢）"})
-        <div class="partner_list_box">
-                <a class="list">
-                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">
-                </a>
-                <a class="list">
-                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">
-                </a>
-                <a class="list">
-                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">
-                </a>
-                <a class="list">
-                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">
-                </a>
-                <a class="list">
-                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">
-                </a>
-                <a class="list">
-                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">
-                </a>
-                <a class="list">
-                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">
-                </a>
-                <a class="list">
-                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">
-                </a>
-                <a class="list">
-                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">
-                </a>
-                <a class="list">
-                    <img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">
-                </a>
-        </div>
-    </div>
-</div>
+<!--<div class="page_partner_box">-->
+    <!--<div class="content_box">-->
+        <!--@@include('./common/index_content_header.html',{"title":"合作伙伴","eng":"Cooperative partner","text":"（广开渠道，合作共赢）"})-->
+        <!--<div class="partner_list_box">-->
+                <!--<a class="list">-->
+                    <!--<img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">-->
+                <!--</a>-->
+                <!--<a class="list">-->
+                    <!--<img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">-->
+                <!--</a>-->
+                <!--<a class="list">-->
+                    <!--<img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">-->
+                <!--</a>-->
+                <!--<a class="list">-->
+                    <!--<img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">-->
+                <!--</a>-->
+                <!--<a class="list">-->
+                    <!--<img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">-->
+                <!--</a>-->
+                <!--<a class="list">-->
+                    <!--<img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">-->
+                <!--</a>-->
+                <!--<a class="list">-->
+                    <!--<img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">-->
+                <!--</a>-->
+                <!--<a class="list">-->
+                    <!--<img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">-->
+                <!--</a>-->
+                <!--<a class="list">-->
+                    <!--<img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">-->
+                <!--</a>-->
+                <!--<a class="list">-->
+                    <!--<img class="lazy" width="100%" height="100%" data-src="../../img/partner_img.jpg">-->
+                <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 </body>
 </html>
