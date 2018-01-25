@@ -11,4 +11,10 @@ $(()=>{
         this.className = this.className + ' la';
     });
 
+    let pageBtmFixed = $('.page_btm_fixed');
+    let btmCloseBtn = pageBtmFixed.find('.close_btn');
+    btmCloseBtn.on('click',function(){
+        pageBtmFixed.hide();
+    })
+
 });

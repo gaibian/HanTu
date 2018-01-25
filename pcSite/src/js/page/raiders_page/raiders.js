@@ -11,6 +11,9 @@ $(()=>{
     	this.className = this.className + ' la';
     });
 
+    const navList = require('../../component/list_drop_down');
+    navList('.js_nav_list');
+
     
 });
 

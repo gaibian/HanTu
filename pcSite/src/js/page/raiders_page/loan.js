@@ -1,4 +1,4 @@
-require('../../../css/page/site_page/site.less');
+require('../../../css/page/raiders_page/loan.less');
 
 $(()=>{
     "use strict";
