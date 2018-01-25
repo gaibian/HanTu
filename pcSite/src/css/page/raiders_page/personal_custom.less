@@ -248,4 +248,304 @@ body {
 	}
 }
 
+.page_apply_box{
+	background:#000;
+	padding:89px 0 71px 0;
+	.apply_box{
+		width:998px;
+		height:146px;
+		border:1px solid #666;
+		border-radius:2px;
+		margin:0 auto;
+		.apply_head{
+			width:160px;
+			font-size:18px;
+			line-height:18px;
+			color:@main;
+			background:#000;
+			margin:-9px auto 32px;
+			text-align:center;
+		}
+		.form_apply_box{
+			width:870px;
+			margin:0 auto;
+			.list{
+				float:left;
+				width:208px;
+				margin-right:120px;
+				&:last-child{
+					margin-right:0;
+				}
+				.apply_title{
+					font-size:12px;
+					line-height:12px;
+					color:#fff;
+					margin-bottom:20px;
+				}
+				.input{
+					width:168px;
+					height:28px;
+					padding:0 30px 0 10px;
+					background:#fff;
+					border-radius:2px;
+					position:relative;
+					.unit{
+						position:absolute;
+						top:0;
+						right:6px;
+						color:@color3;
+						font-size:14px;
+						line-height:30px;
+					}
+					input{
+						font-size:14px;
+						line-height:28px;
+						color:@color3;
+						&::-webkit-input-placeholder {
+						    color: #adadad;
+						}
+						&::-moz-placeholder {
+						    color: #adadad;
+						}
+						&::-ms-input-placeholder {
+						    color: #adadad;
+						}
+					}
+				}
+			}
+		}
+		.apply_btn{
+			display:block;
+			width:94px;
+			height:30px;
+			font-size:16px;
+			line-height:30px;
+			color:#000;
+			background:@main;
+			border-radius:2px;
+			margin:30px auto 0;
+			cursor:pointer;
+		}
+	}
+}
+
+.page_picture_box{
+	padding:80px 0 115px 0;
+	.picture{
+		width:1200px;
+		height:500px;
+		position:relative;
+		overflow:hidden;
+		&:hover .pic_btn{
+			display:block;
+		}
+		.carousel_ul{
+			position:absolute;
+			li{
+				float:left;
+				width:1200px;
+				height:500px;
+			}
+		}
+		.pic_btn{
+			width:120px;
+			height:500px;
+			position:absolute;
+			top:0;
+			background-color:rgba(0,0,0,.6);
+			background-repeat:no-repeat;
+			cursor:pointer;
+			background-position:center center;
+			display:none;
+		}
+		.prev_btn{
+			left:0;
+			background-image:url(../../../img/icons/personal_arrow_left.png);
+		}
+		.next_btn{
+			right:0;
+			background-image:url(../../../img/icons/personal_arrow_right.png);
+		}
+	}
+}
+
+
+
+.page_reform_box{
+	padding-bottom:110px;
+	.reform_head{
+		width:100%;
+		height:40px;
+		background:#000;
+		.reform_title{
+			float:left;
+			width:200px;
+			height:70px;
+			padding-top:4px;
+			font-size:24px;
+			line-height:32px;
+			color:#fff;
+			margin-top:-34px;
+			text-align:center;
+			background:url(../../../img/icons/personal_reform_title_bg.png) no-repeat;
+		}
+		.reform_appoint{
+			float:right;
+			width:200px;
+			height:40px;
+			padding:0 30px;
+			background:#fff;
+			.reform_btn{
+				display:block;
+				width:200px;
+				height:40px;
+				line-height:40px;
+				text-align:center;
+				color:#000;
+				background:@main;
+				border-radius:2px;
+			}
+		}
+	}
+	.reform_acreage_pic{
+		width:940px;
+		height:90px;
+	}
+	.reform_pic{
+		margin:110px auto 25px;
+	}
+	.reform_ul{
+		margin-left:62px;
+		.list{
+			position:relative;
+			padding-left:28px;
+			font-size:16px;
+			line-height:24px;
+			color:@color6;
+			span{
+				display:block;
+				width:16px;
+				height:16px;
+				line-height:15px;
+				color:#fff;
+				background:#bd222a;
+				font-size:12px;
+				text-align:center;
+				border-radius:50%;
+				position:absolute;
+				top:5px;
+				left:0;
+			}
+		}
+	}
+}
+
+
+.page_artisan_box{
+	padding:80px 0 60px 0;
+	background:#000;
+	.villa_head{
+	    width:438px;
+	    height:54px;
+	    border:1px solid #666;
+	    border-radius:2px;
+	    margin:0 auto 69px;
+	    text-align:center;
+	    .villa_title{
+	        display:inline-block;
+	        margin-top:-22px;
+	        font-size:44px;
+	        height:44px;
+	        line-height:44px;
+	        padding:0 40px;
+	        color:#fff;
+	        background:#000;
+	    }
+	    .villa_note{
+	        display:inline-block;
+	        margin-top:28px;
+	        height:10px;
+	        padding:0 24px 0 24px;
+	        line-height:10px;
+	        text-align:center;
+	        font-size:14px;
+	        color:@main;
+	        background:#000;
+	        font-family:"宋体";
+	    }
+	}
+	.artisan_left{
+		float:left;
+		width:740px;
+		height:560px;
+		.artisan_big{
+			float:left;
+			width:460px;
+			height:278px;
+			margin:0 4px 4px 0;
+		}
+		.artisan_small{
+			float:left;
+			width:272px;
+			height:278px;
+			margin:0 4px 4px 0;
+		}
+	}
+	.artisan_right{
+		float:right;
+		width:460px;
+		height:560px;
+	}
+}
+
+.page_hardcover_box{
+	padding:60px 0 120px 0;
+	.hardcover_head{
+		width:310px;
+		height:100px;
+		font-size:44px;
+		line-height:72px;
+		color:#000;
+		margin:0 auto 60px;
+		background:url(../../../img/personal_hardcover_bg.jpg) center top no-repeat;
+	}
+	.hardcover_ul{
+		.list{
+			float:left;
+			width:300px;
+			height:300px;
+			position:relative;
+			.hardcove_text{
+				width:220px;
+				height:195px;
+				padding:105px 40px 0 40px;
+				color:#fff;
+				position:absolute;
+				top:0;
+				left:0;
+				.text_big{
+					font-size:28px;
+					line-height:28px;
+					margin-bottom:15px;
+				}
+				.text_small{
+					font-size:14px;
+					line-height:22px;
+				}
+			}
+			&:hover .hardcove_text{
+				color:#000;
+				background:rgba(198,163,100,.8);
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,370 @@
+@import '../../common/init.less';
+@import '../../common/template/page_nav.less';
+
+
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+body {
+    background: #fff;
+}
+.page_nav_box{
+    background:#000;
+    .nav_content .nav_box .nav_a{
+        color:@color9;
+    }
+}
+
+.content_box{
+	width:1200px;
+	margin:0 auto;
+}
+
+.page_banner_box{
+	margin-bottom:30px;
+	.banner{
+		width:1200px;
+		height:300px;
+	}
+}
+
+.page_visit_box{
+	margin-bottom:30px;
+	.visit_box{
+		width:1200px;
+		height:30px;
+		padding:12px 0;
+		margin-bottom:20px;
+		background:#000;
+		.visit_line{
+			float:left;
+			width:20px;
+			height:18px;
+			border-right:2px solid @main;
+			margin-top:7px;
+			margin-right:12px;
+		}
+		.visit_text{
+			float:left;
+			font-size:18px;
+			color:#fff;
+			line-height:30px;
+			margin-right:25px;
+		}
+		.visit_input{
+			float:left;
+			width:140px;
+			padding:0 30px 0 10px;
+			margin-right:12px;
+			background:#fff;
+			position:relative;
+			input{
+				width:140px;
+				line-height:30px;
+				font-size:12px;
+				color:#000;
+				&::-webkit-input-placeholder {
+				    color: #000;
+				}
+				&::-moz-placeholder {
+				    color: #000;
+				}
+				&::-ms-input-placeholder {
+				    color: #000;
+				}
+			}
+			.unit{
+				position:absolute;
+				top:0;
+				right:8px;
+				line-height:30px;
+				color:#000;
+				font-size:12px;
+			}
+		}
+		.visit_area{
+			width:160px;
+		}
+		.visit_btn{
+			float:right;
+			width:208px;
+			height:30px;
+			font-size:16px;
+			line-height:32px;
+			color:#000;
+			background:@main;
+			margin-right:20px;
+			cursor:pointer;
+		}
+	}
+}
+
+.page_site_content{
+	.site_main{
+		float:left;
+		width:860px;
+		padding:0 19px;
+		border:1px solid @border;
+		.site_ul{
+			.site_list{
+				padding:20px 0 22px 0;
+				border-bottom:1px solid @border;
+				overflow:hidden;
+				.site_img{
+					float:left;
+					width:252px;
+					height:218px;
+				}
+				.site_text{
+					float:right;
+					width:588px;
+					padding-top:10px;
+					color:@color3;
+					.site_title{
+						font-size:18px;
+						line-height:18px;
+						margin-bottom:10px;
+						.text_hidden();
+					}
+					.info_ul{
+						.info_list{
+							float:left;
+							width:150px;
+							font-size:14px;
+							line-height:32px;
+							margin-bottom:10px;
+							margin-right:25px;
+							.money_btn{
+								width:72px;
+								height:20px;
+								line-height:21px;
+								color:@main;
+								background:#000;
+								border-radius:2px;
+								margin-top:6px;
+								cursor:pointer;
+							}
+						}
+					}
+					.speed_ul{
+						height:50px;
+						margin-bottom:15px;
+						.speed_list{
+							width:98px;
+							float:left;
+							.speed_bg{
+								width:98px;
+								height:9px;
+								border-bottom:2px solid @border;
+								margin-bottom:20px;
+								.speed_point{
+									width:8px;
+									height:8px;
+									padding:5px;
+									border:1px solid @border;
+									border-radius:50%;
+									margin:0 auto;
+									background:#fff;
+									.speed_in{
+										width:8px;
+										height:8px;
+										background:@border;
+										border-radius:50%;
+									}
+								}
+							}
+							.speed_text{
+								text-align:center;
+								font-size:12px;
+							}
+						}
+						.active{
+							.speed_bg{
+								border-bottom:2px solid #000;
+								.speed_point{
+									border:1px solid #000;
+									.speed_in{
+										background:#000;
+									}
+								}
+							}
+						}
+					}
+					.btn_box{
+						text-align:right;
+						.site_btn{
+							display:inline-block;
+							width:98px;
+							height:28px;
+							border:1px solid #000;
+							margin-left:20px;
+							font-size:16px;
+							line-height:28px;
+							color:#000;
+							text-align:center;
+							border-radius:2px;
+							cursor:pointer;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.site_side{
+		float:right;
+		width:280px;
+		.design_offer{
+			width:240px;
+			padding:19px 19px 20px 19px;
+			border:1px solid #e6e6e6;
+			margin-bottom:20px;
+			font-size:12px;
+			color:@color3;
+			.do_title{
+				font-size:18px;
+				line-height:18px;
+				margin-bottom:12px;
+				text-align:center;
+			}
+			.do_note{
+				font-size:12px;
+				line-height:12px;
+				margin-bottom:22px;
+				text-align:center;
+			}
+			.do_input{
+				width:222px;
+				height:30px;
+				padding:0px 8px;
+				border:1px solid #ccc;
+				margin-bottom:10px;
+				line-height:30px;
+				color:@color3;
+				&::-webkit-input-placeholder {
+				    color: #666;
+				}
+				&::-moz-placeholder {
+				    color: #666;
+				}
+				&::-ms-input-placeholder {
+				    color: #666;
+				}
+			}
+			.do_btn{
+				width:240px;
+				height:40px;
+				color:@main;
+				background:#000;
+				font-size:18px;
+				line-height:42px;
+				margin:10px 0 15px 0;
+				border-radius:2px;
+				cursor:pointer;
+			}
+			.do_ul{
+				padding-bottom:15px;
+				border-bottom:1px dashed #ccc;
+				margin-bottom:18px;
+				.list{
+					line-height:22px;
+					text-indent:30px;
+					.do_color{
+						color:#ff0000;
+					}
+				}
+			}
+			.do_tel{
+				font-size:14px;
+				text-align:center;
+				.tel_num{
+					position:relative;
+					top:2px;
+				}
+			}
+		}
+
+		.about_offer{
+			width:280px;
+			height:225px;
+			margin-bottom:20px;
+			position:relative;
+			.offer{
+				display:block;
+				width:180px;
+				height:40px;
+				text-indent:-9999px;
+				overflow:hidden;
+				border-radius:20px;
+				position:absolute;
+				top:152px;
+				left:50px;
+			}
+		}
+	/* 热门在建楼盘 */
+	.hot_recommend{
+		width:278px;
+		border:1px solid #e6e6e6;
+		margin-bottom:20px;
+		color:@color3;
+		.hr_title{
+			height:54px;
+			font-size:18px;
+			line-height:54px;
+			text-indent:14px;
+			border-bottom:1px solid #e6e6e6;
+			position:relative;
+			.hr_more{
+				position:absolute;
+				top:0;
+				right:14px;
+				color:@color3;
+				font-size:12px;
+			}
+		}
+		.do_ul{
+			padding:20px 15px 6px 15px;
+			font-size:14px;
+			.list{
+				width:248px;
+				line-height:20px;
+				margin-bottom:16px;
+				position:relative;
+				.text_hidden();
+				// .do_num{
+				// 	width:20px;
+				// 	height:20px;
+				// 	color:#fff;
+				// 	background:#ccc;
+				// 	text-align:center;
+				// 	position:absolute;
+				// 	top:0;
+				// 	left:0;
+				// }
+				a{
+					color:@color3;
+					.do_img{
+						width:248px;
+						height:248px;
+						margin-top:5px;
+					}
+				}
+			}
+		}
+	}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

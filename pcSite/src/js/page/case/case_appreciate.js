@@ -1,17 +1,18 @@
-require('../../../css/page/raiders_page/encyclopedias_details.less')
-
-
+require('../../../css/page/case/case_appreciate.less');
 
 $(()=>{
     "use strict";
     const lazy = require('../../component/lazy');
     let $lazy = document.getElementsByClassName('lazy');
-    lazy.one($lazy, function() {
-    	"use strict";
-    	let srcValue = this.getAttribute('data-src');
-    	this.setAttribute('src', srcValue);
-    	this.className = this.className + ' la';
+    lazy.one($lazy,function(){
+        "use strict";
+        let srcValue = this.getAttribute('data-src');
+        this.setAttribute('src',srcValue);
+        this.className = this.className + ' la';
     });
+
+    const navList = require('../../component/list_drop_down');
+    navList('.js_nav_list');
 
     const scrollText = require('../../component/scroll_text');
     scrollText('.scroll_text');
@@ -22,5 +23,4 @@ $(()=>{
         pageBtmFixed.hide();
     })
 
-    
 });

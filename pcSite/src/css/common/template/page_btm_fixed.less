@@ -1,0 +1,87 @@
+/*底部fixed*/
+.page_btm_fixed{
+  position: fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:140px;
+  background:#000;
+  z-index:999;
+  .fixed_content_box{
+    position: relative;
+    width:1200px;
+    height:140px;
+    margin:0 auto;
+    .logo{
+      float:left;
+      width:192px;
+      height:140px;
+      background:url('../../../img/page_fixed_logo.jpg') no-repeat;
+      background-size:contain;
+      margin-left:123px;
+      margin-right:40px;
+    }
+    .bg_img{
+      float:left;
+      width:314px;
+      height:140px;
+      background:url('../../../img/fixed_btm_bg_img.jpg') no-repeat;
+      background-size:contain;
+      margin-right:50px;
+    }
+    .form_box{
+      float:left;
+      width:374px;
+      height:88px;
+      margin-top:26px;
+      .form_input{
+        float:left;
+        width:144px;
+        .input_box{
+          width:100%;
+          height:40px;
+          background:#fff;
+          margin-bottom:8px;
+          input{
+            float:left;
+            display:block;
+            width:100%;
+            height:30px;
+            margin-top:5px;
+            padding:0 12px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            font-size:12px;
+            color:#666;
+          }
+        }
+        .input_box:last-child{
+          margin-bottom:0;
+        }
+      }
+      .offer_btn{
+        float:right;
+        width:200px;
+        height:88px;
+        line-height:88px;
+        font-size:24px;
+        color:#000;
+        background:@main;
+        text-align: center;
+        border-radius:4px;
+        cursor: pointer;
+      }
+    }
+    .close_btn{
+      position:absolute;
+      top:0px;
+      right:0px;
+      cursor: pointer;
+      width:30px;
+      height:28px;
+      background:url('../../../img/icons/about_bottom_close_bg.jpg') no-repeat;
+      background-size:contain;
+    }
+  }
+}
