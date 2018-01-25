@@ -149,50 +149,6 @@ body {
 							}
 						}
 					}
-					.speed_ul{
-						height:50px;
-						margin-bottom:15px;
-						.speed_list{
-							width:98px;
-							float:left;
-							.speed_bg{
-								width:98px;
-								height:9px;
-								border-bottom:2px solid @border;
-								margin-bottom:20px;
-								.speed_point{
-									width:8px;
-									height:8px;
-									padding:5px;
-									border:1px solid @border;
-									border-radius:50%;
-									margin:0 auto;
-									background:#fff;
-									.speed_in{
-										width:8px;
-										height:8px;
-										background:@border;
-										border-radius:50%;
-									}
-								}
-							}
-							.speed_text{
-								text-align:center;
-								font-size:12px;
-							}
-						}
-						.active{
-							.speed_bg{
-								border-bottom:2px solid #000;
-								.speed_point{
-									border:1px solid #000;
-									.speed_in{
-										background:#000;
-									}
-								}
-							}
-						}
-					}
 					.btn_box{
 						text-align:right;
 						.site_btn{
@@ -245,13 +201,13 @@ body {
 				line-height:30px;
 				color:@color3;
 				&::-webkit-input-placeholder {
-				    color: #666;
+				    color: #999;
 				}
 				&::-moz-placeholder {
-				    color: #666;
+				    color: #999;
 				}
 				&::-ms-input-placeholder {
-				    color: #666;
+				    color: #999;
 				}
 			}
 			.do_btn{
@@ -361,8 +317,52 @@ body {
 
 
 
-
-
+/* 进度条 */
+.speed_ul{
+	width:588px;
+	height:50px;
+	margin:0 auto 15px;
+	.speed_list{
+		width:98px;
+		float:left;
+		.speed_bg{
+			width:98px;
+			height:9px;
+			border-bottom:2px solid @border;
+			margin-bottom:20px;
+			.speed_point{
+				width:8px;
+				height:8px;
+				padding:5px;
+				border:1px solid @border;
+				border-radius:50%;
+				margin:0 auto;
+				background:#fff;
+				.speed_in{
+					width:8px;
+					height:8px;
+					background:@border;
+					border-radius:50%;
+				}
+			}
+		}
+		.speed_text{
+			text-align:center;
+			font-size:12px;
+		}
+	}
+	.active{
+		.speed_bg{
+			border-bottom:2px solid #000;
+			.speed_point{
+				border:1px solid #000;
+				.speed_in{
+					background:#000;
+				}
+			}
+		}
+	}
+}
 
 
 
