@@ -159,7 +159,7 @@ pages.forEach(function(pathname){
 		inject:false
 	};
 	if(pathname in config.entry){
-		conf.favicon = path.resolve(__dirname, configAddress.site + '/src/img/users_ico.ico');
+		conf.favicon = path.resolve(__dirname, configAddress.site + '/src/img/user_ico.ico');
 		conf.inject = 'body';
 		conf.chunks = ['vendors',pathname];
 		conf.hash = true;
