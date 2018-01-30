@@ -1,0 +1,1 @@
+require('../../../css/page/raiders_page/raiders_details.less');
