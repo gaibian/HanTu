@@ -15,6 +15,9 @@ $(()=>{
     const scrollText = require('../../component/scroll_text');
     scrollText('.scroll_text');
 
+    const tabImg = require('../../component/tab_img');
+    tabImg('.js_tabimg');
+
 
     let pageBtmFixed = $('.page_btm_fixed');
     let btmCloseBtn = pageBtmFixed.find('.close_btn');
