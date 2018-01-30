@@ -1,6 +1,11 @@
 @import '../../common/init.less';
 @import '../../common/template/page_nav.less';
 
+.content_box{
+  width:1200px;
+  margin:0 auto;
+}
+
 .page_banner_box{
   position: relative;
   left:50%;
@@ -193,3 +198,253 @@
     }
   }
 }
+
+
+/* 旧房不满意，重新设计 */
+.page_redesign_box{
+  padding:80px 0;
+  background:#000;
+  .title{
+    font-size:44px;
+    line-height:44px;
+    color:@main;
+    text-align:center;
+    padding-bottom:25px;
+    background:url(../../../img/second_redesign_title_bg.png) center bottom no-repeat;
+    margin-bottom:62px;
+  }
+  .redesign_ul{
+    overflow:hidden;
+    .redesign_list{
+      float:left;
+      width:360px;
+      height:360px;
+      margin:0 60px 60px 0;
+      position:relative;
+      .circle{
+        width:160px;
+        height:160px;
+        position:absolute;
+        top:100px;
+        left:100px;
+        font-size:24px;
+        line-height:32px;
+        color:#fff;
+        background:rgba(0,0,0,0.6);
+        text-align:center;
+        padding-top:48px;
+        border-radius:50%;
+        box-sizing:border-box;
+      }
+      &:nth-child(3n){
+        margin-right:0;
+      }
+    }
+  }
+  .mid_form{
+    width:1060px;
+    padding:20px 70px 80px 70px;
+    overflow:hidden;
+    .mid_input{
+      float:left;
+      width:184px;
+      height:32px;
+      padding:8px 8px 0 8px;
+      background:#fff;
+      margin-right:10px;
+      input{
+        height:20px;
+        line-height:20px;
+        font-size:14px;
+        color:#000;
+      }
+    }
+    .mid_btn{
+      float:right;
+      display:block;
+      width: 200px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 16px;
+      color: #000;
+      background: @main;
+      cursor: pointer;
+    }
+  }
+  .change_box{
+    box-sizing:border-box;
+    width:1200px;
+    height:620px;
+    padding:20px 19px 0 19px;
+    background:#333;
+    margin-bottom:80px;
+    .change_img{
+      width:1160px;
+      height:344px;
+    }
+    .change_text{
+      width:1160px;
+      text-align:center;
+      overflow:hidden;
+      color:#fff;
+      .text{
+        float:left;
+        width:580px;
+        .text_title{
+          font-size:24px;
+          line-height:24px;
+          margin:43px 0 20px 0;
+          span{
+            color:#e0556d;
+          }
+        }
+        .text_p{
+          font-size:14px;
+          line-height:28px;
+        }
+      }
+    }
+  }
+  .picture{
+    box-sizing:border-box;
+    width:1200px;
+    height:636px;
+    padding:60px 107px 0 107px;
+    background:#333;
+    .carousel{
+      width:984px;
+      height:516px;
+      position:relative;
+      .hidden{
+        width:984px;
+        height:516px;
+        overflow:hidden;
+      }
+      .carousel_ul{
+        position:absolute;
+        li{
+          float:left;
+          width:984px;
+          height:516px;
+        }
+      }
+      .pic_btn{
+        width:54px;
+        height:248px;
+        position:absolute;
+        top:134px;
+        background-color:#000;
+        background-repeat:no-repeat;
+        background-position:center center;
+        cursor:pointer;
+      }
+      .prev_btn{
+        left:-78px;
+        background-image:url(../../../img/icons/personal_arrow_left.png);
+      }
+      .next_btn{
+        right:-78px;
+        background-image:url(../../../img/icons/personal_arrow_right.png);
+      }
+    }
+  }
+}
+
+.page_my_box{
+  .my_head{
+    box-sizing:border-box;
+    width:100%;
+    height:154px;
+    padding-top:60px;
+    background:#333;
+    position:relative;
+    .icon{
+      display:block;
+      width:60px;
+      height:30px;
+      background:url(../../../img/icons/second_my_head_icon.png) no-repeat;
+      position:absolute;
+      bottom:-30px;
+      left:50%;
+      margin-left:-30px;
+    }
+    .my_title{
+      width:732px;
+      height:58px;
+      border:1px solid #5c5c5c;
+      margin:0 auto;
+      text-align:center;
+      .my_h3{
+        display:inline-block;
+        width:490px;
+        font-size:44px;
+        line-height:44px;
+        position:relative;
+        top:-26px;
+        color:@main;
+        background:#333;
+      }
+      .my_note{
+        display:inline-block;
+        width:280px;
+        font-size:12px;
+        line-height:12px;
+        font-family:"宋体";
+        color:#999;
+        background:#333;
+      }
+    }
+  }
+  .my_content{
+    width:100%;
+    background:#020d09;
+    padding:80px 0 300px 0;
+    .my_form{
+      width:750px;
+      margin:0 auto;
+      overflow:hidden;
+      .my_input{
+        display:block;
+        float:left;
+        width:368px;
+        height:46px;
+        border:1px solid #fff;
+        padding:11px 18px 0 18px;
+        box-sizing:border-box;
+        margin:0 10px 10px 0;
+        &:nth-child(2n){
+          margin-right:0;
+        }
+        input{
+          height:20px;
+          line-height:20px;
+          font-size:14px;
+          color:#fff;
+          &::-webkit-input-placeholder {
+              color: #fff;
+          }
+          &::-moz-placeholder {
+              color: #fff;
+          }
+          &::-ms-input-placeholder {
+              color: #fff;
+          }
+        }
+      }
+      .my_btn{
+        float:left;
+        width:370px;
+        height:48px;
+        line-height:48px;
+        text-align: center;
+        font-size: 16px;
+        color: #000;
+        background: @main;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+

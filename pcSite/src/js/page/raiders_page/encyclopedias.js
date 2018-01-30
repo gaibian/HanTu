@@ -21,6 +21,9 @@ $(()=>{
     btmCloseBtn.on('click',function(){
         pageBtmFixed.hide();
     })
+
+    const tabImg = require('../../component/tab_img');
+    tabImg('.js_tabimg');
     
 });
 
