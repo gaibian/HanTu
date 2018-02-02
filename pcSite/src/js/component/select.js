@@ -7,6 +7,8 @@ const select = (()=>{
             this.dom = dom;
             this.clickDom = this.dom.find('.val');
             this.menuPopup = this.dom.find('.select_menu_box');
+            this.li = this.menuPopup.find('li');
+            this.input = this.dom.find('input');
             this.init();
         }
         init(){
@@ -21,6 +23,16 @@ const select = (()=>{
                     this.menuPopup.show();
                     this.dom.addClass('active');
                 }
+            });
+            this.li.each((index)=>{
+                let $this = this.li.eq(index);
+                $this.on('click',()=>{
+                    let val = $this.text();
+                    this.input.val(val);
+                    this.clickDom.text(val);
+                    this.menuPopup.hide();
+                    this.dom.removeClass('active');
+                })
             })
         }
     }

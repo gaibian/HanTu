@@ -6,6 +6,11 @@
 </head>
 <body>
 @@include('../common/page_nav.html',{"site":"active"})
+<div class="page_list_nav_box">
+	<div class="page_address_box">
+		当前位置：<a>首页</a>>在建工地>佛山-南海区保利紫山施工现场
+	</div>
+</div>
 <div class="page_site_content">
 	<div class="content_box clearfix">
 		<div class="details_main">
@@ -113,11 +118,22 @@
 				<input class="do_input" type="text" name="" placeholder="您的电话">
 				<input class="do_input" type="text" name="" placeholder="你家楼盘名称">
 				<button class="do_btn">预约参观</button>
-				<ul class="do_ul">
-					<li class="list"><span class="do_color">42分钟前</span>刘女士 139****免费预约</li>
-					<li class="list"><span class="do_color">42分钟前</span>刘女士 139****免费预约</li>
-					<li class="list"><span class="do_color">42分钟前</span>刘女士 139****免费预约</li>
-				</ul>
+				<div class="scroll_box">
+					<div class="scroll_text_box scroll_text">
+						<ul class="scroll_ul">
+							<li><span>42分钟前</span>刘女士 139****免费预约</li>
+							<li><span>42分钟前</span>刘女士 139****免费预约</li>
+							<li><span>42分钟前</span>刘女士 139****免费预约</li>
+							<li><span>42分钟前</span>刘女士 139****免费预约</li>
+							<li><span>42分钟前</span>刘女士 139****免费预约</li>
+							<li><span>42分钟前</span>刘女士 139****免费预约</li>
+							<li><span>42分钟前</span>刘女士 139****免费预约</li>
+							<li><span>42分钟前</span>刘女士 139****免费预约</li>
+							<li><span>42分钟前</span>刘女士 139****免费预约</li>
+							<li><span>42分钟前</span>刘女士 139****免费预约</li>
+						</ul>
+					</div>
+				</div>
 				<div class="do_tel">
 					<div class="tel">电话预约：<span class="tel_num"><img src="../../img/side_tel.png"></span></div>
 				</div>
@@ -130,7 +146,7 @@
 			<!-- 热门在建楼盘 -->
 			<div class="hot_recommend">
 				<h3 class="hr_title">热门在建楼盘<a class="hr_more" href="">更多&gt;&gt;</a></h3>
-				<ul class="do_ul">
+				<ul class="do_ul js_tabimg">
 					<li class="list">
 						1.<a href="">
 							保利400m2新中式别墅装修实景图
@@ -140,52 +156,65 @@
 					<li class="list">
 						2.<a href="">
 							保利400m2新中式别墅装修实景图
+							<div class="do_img"><img class="lazy" data-src="../../img/site_hot_house_img.jpg" width="100%" height="100%"></div>
 						</a>
 					</li>
 					<li class="list">
 						3.<a href="">
 							保利400m2新中式别墅装修实景图
+							<div class="do_img"><img class="lazy" data-src="../../img/site_hot_house_img.jpg" width="100%" height="100%"></div>
 						</a>
 					</li>
 					<li class="list">
 						4.<a href="">
 							保利400m2新中式别墅装修实景图
+							<div class="do_img"><img class="lazy" data-src="../../img/site_hot_house_img.jpg" width="100%" height="100%"></div>
 						</a>
 					</li>
 					<li class="list">
 						5.<a href="">
 							保利400m2新中式别墅装修实景图
+							<div class="do_img"><img class="lazy" data-src="../../img/site_hot_house_img.jpg" width="100%" height="100%"></div>
 						</a>
 					</li>
 					<li class="list">
 						6.<a href="">
 							保利400m2新中式别墅装修实景图
+							<div class="do_img"><img class="lazy" data-src="../../img/site_hot_house_img.jpg" width="100%" height="100%"></div>
 						</a>
 					</li>
 					<li class="list">
 						7.<a href="">
 							保利400m2新中式别墅装修实景图
+							<div class="do_img"><img class="lazy" data-src="../../img/site_hot_house_img.jpg" width="100%" height="100%"></div>
 						</a>
 					</li>
 					<li class="list">
 						8.<a href="">
 							保利400m2新中式别墅装修实景图
+							<div class="do_img"><img class="lazy" data-src="../../img/site_hot_house_img.jpg" width="100%" height="100%"></div>
 						</a>
 					</li>
 					<li class="list">
 						9.<a href="">
 							保利400m2新中式别墅装修实景图
+							<div class="do_img"><img class="lazy" data-src="../../img/site_hot_house_img.jpg" width="100%" height="100%"></div>
 						</a>
 					</li>
 					<li class="list">
 						10.<a href="">
 							保利400m2新中式别墅装修实景图
+							<div class="do_img"><img class="lazy" data-src="../../img/site_hot_house_img.jpg" width="100%" height="100%"></div>
 						</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
+
+	@@include('../common/page_btm_fixed.html')
+	
 </div>
+@@include('../common/page_btm_fixed.html')
 </body>
 </html>

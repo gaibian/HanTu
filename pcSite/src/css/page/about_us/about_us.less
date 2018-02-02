@@ -1,5 +1,7 @@
 @import '../../common/init.less';
 @import '../../common/template/page_nav.less';
+@import "../../common/template/page_footer_box.less";
+@import '../../common/template/page_btm_fixed.less';
 
 .clearfix:after{
 	content:'';
@@ -43,10 +45,11 @@ body {
 	    }
 	}
 	.container{
-		position:relative;
-		.about_tab_box{
+		.about_side_box{
 			float:left;
 			width:278px;
+		}
+		.about_tab_box{
 			border:1px solid #e6e6e6;
 			margin-bottom:20px;
 			.tab_btn{
@@ -73,6 +76,9 @@ body {
 				}
 				.htdt{
 					background:url(../../../img/icons/about_menu_htdt.png) no-repeat;
+				}
+				.yhhd{
+					background:url(../../../img/icons/about_menu_yhhd.png) no-repeat;
 				}
 				.htzp{
 					background:url(../../../img/icons/about_menu_htzp.png) no-repeat;
@@ -107,6 +113,9 @@ body {
 				}
 				.htjj{
 					background:url(../../../img/icons/about_menu_htjj_active.png) no-repeat;
+				}
+				.yhhd{
+					background:url(../../../img/icons/about_menu_yhhd_active.png) no-repeat;
 				}
 				.htdt{
 					background:url(../../../img/icons/about_menu_htdt_active.png) no-repeat;
@@ -439,9 +448,6 @@ body {
 			}
 		}
 		.about_side{
-			position:absolute;
-			top:310px;
-			left:0;
 			width:280px;
 			.about_appoint{
 				width:240px;
@@ -533,6 +539,7 @@ body {
 				font-size:18px;
 				text-indent:18px;
 				border-bottom:1px solid #e6e6e6;
+				color:#000;
 			}
 			.promotion_box{
 				padding:20px 19px 20px 19px;

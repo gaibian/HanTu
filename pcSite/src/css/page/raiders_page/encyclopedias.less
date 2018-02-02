@@ -1,7 +1,7 @@
 @import '../../common/init.less';
 @import '../../common/template/page_nav.less';
 @import '../../common/template/page_btm_fixed.less';
-
+@import "../../common/template/page_footer_box.less";
 .clearfix:after{
 	content:'';
 	display:block;
@@ -24,20 +24,13 @@ body {
 }
 
 .page_banner_box{
-	width:100%;
+	width:1920px;
+	position: relative;
+	left:50%;
+	margin-left:-960px;
+	top:0;
+	font-size:0;
 	margin-bottom:30px;
-	.banner{
-		height:640px;
-		position:relative;
-		img{
-			width:1920px;
-			height:640px;
-			position:absolute;
-			top:0;
-			left:50%;
-			margin-left:-960px;
-		}
-	}
 }
 
 .page_enc_nav{
@@ -344,6 +337,7 @@ body {
 						width:120px;
 						height:76px;
 						margin-top:5px;
+						display:none;
 					}
 				}
 			}

@@ -1,6 +1,8 @@
 @import '../../common/init.less';
 @import '../../common/template/page_nav.less';
-
+@import '../../common/template/page_btm_fixed.less';
+@import '../../common/template/nav_list_box.less';
+@import "../../common/template/page_footer_box.less";
 
 .clearfix:after{
 	content:'';
@@ -17,6 +19,16 @@ body {
         color:@color9;
     }
 }
+.page_list_nav_box{
+	width:1200px;
+	margin:0 auto 30px;
+	.page_address_box{
+		width:100%;
+		font-size:12px;
+		color:@color3;
+		margin-bottom:20px;
+	}
+}
 
 .content_box{
 	width:1200px;
@@ -30,6 +42,21 @@ body {
 		height:300px;
 	}
 }
+
+.page_list_nav_box{
+	width:1200px;
+	margin:30px auto;
+	.page_address_box{
+	  width:100%;
+	  font-size:12px;
+	  color:@color3;
+	  margin-bottom:12px;
+	  a{
+	    color:@color3;
+	  }
+	}
+}
+
 
 .page_visit_box{
 	margin-bottom:30px;
@@ -167,6 +194,9 @@ body {
 					}
 				}
 			}
+			.site_list:last-child{
+				border-bottom:none;
+			}
 		}
 	}
 
@@ -221,15 +251,37 @@ body {
 				border-radius:2px;
 				cursor:pointer;
 			}
-			.do_ul{
-				padding-bottom:15px;
-				border-bottom:1px dashed #ccc;
-				margin-bottom:18px;
-				.list{
-					line-height:22px;
-					text-indent:30px;
-					.do_color{
-						color:#ff0000;
+			.scroll_box{
+				display:inline-block;
+				width:100%;
+				.scroll_text_box{
+					width:200px;
+					height:80px;
+					margin:18px auto;
+					overflow:hidden;
+					.scroll_ul{
+						position: relative;
+						width:100%;
+						li{
+							position: relative;
+							width:100%;
+							height:20px;
+							line-height:20px;
+							font-size:12px;
+							color:#999;
+							margin-bottom:10px;
+							padding-left:12px;
+							-webkit-box-sizing: border-box;
+							-moz-box-sizing: border-box;
+							box-sizing: border-box;
+							.text_hidden;
+							span{
+								color:#ff0000;
+							}
+						}
+						li:last-child{
+							margin-bottom:0;
+						}
 					}
 				}
 			}
@@ -306,6 +358,7 @@ body {
 						width:248px;
 						height:248px;
 						margin-top:5px;
+						display:none;
 					}
 				}
 			}

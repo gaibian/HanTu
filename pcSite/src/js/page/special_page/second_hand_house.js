@@ -13,4 +13,7 @@ $(()=>{
 
     const select = require('../../component/select');
     select('.select_box');
+
+    const carousel = require('../../component/carousel');
+    carousel('.carousel');
 });

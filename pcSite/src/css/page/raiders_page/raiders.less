@@ -1,7 +1,7 @@
 @import '../../../css/common/init.less';
 @import '../../../css/common/template/page_nav.less';
-
-
+@import '../../common/template/nav_list_box.less';
+@import "../../common/template/page_footer_box.less";
 .clearfix:after{
 	content:'';
 	display:block;
@@ -33,10 +33,22 @@ body {
 }
 
 .page_raiders_nav{
+	width:1200px;
+	margin:30px auto;
+	.page_address_box{
+	  width:100%;
+	  font-size:12px;
+	  color:@color3;
+	  margin-bottom:12px;
+	  a{
+	    color:@color3;
+	  }
+	}
 	.visit_box{
 		width:1200px;
 		height:30px;
 		padding:12px 0;
+		margin-top:30px;
 		margin-bottom:20px;
 		background:#000;
 		.visit_line{
@@ -175,64 +187,64 @@ body {
 	}
 }
 
-.crumbs{
-    font-size:12px;
-    line-height:12px;
-    color:@color3;
-    margin-bottom:15px;
-    a{
-        color:@color3;
-    }
-}
-.groups{
-    width:1198px;
-    border:1px solid #e6e6e6;
-    border-bottom:none;
-    margin-bottom:30px;
-    .group_row{
-        border-bottom:1px solid #e6e6e6;
-        font-size:12px;
-        height:40px;
-        line-height:40px;
-        .group_title{
-            float:left;
-            width:108px;
-            margin-right:29px;
-            border-right:1px solid #e6e6e6;
-            color:@color6;
-            text-align:center;
-            background:#f5f5f5;
-        }
-        .group_item{
-            float:left;
-            width:1000px;
-            .group_list {
-                float: left;
-                margin-right: 33px;
-                color: @color3;
-            }
-            .active {
-                color: @main;
-            }
-        }
-        .group_open{
-            float:right;
-            width:57px;
-            color:@color6;
-            position:relative;
-            cursor:pointer;
-            .open_arrow{
-                position:absolute;
-                top:17px;
-                left:28px;
-                display:block;
-                width:10px;
-                height:6px;
-                background:url(../../../img/icons/arrow_bg.png) no-repeat;
-            }
-        }
-    }
-}
+// .crumbs{
+//     font-size:12px;
+//     line-height:12px;
+//     color:@color3;
+//     margin-bottom:15px;
+//     a{
+//         color:@color3;
+//     }
+// }
+// .groups{
+//     width:1198px;
+//     border:1px solid #e6e6e6;
+//     border-bottom:none;
+//     margin-bottom:30px;
+//     .group_row{
+//         border-bottom:1px solid #e6e6e6;
+//         font-size:12px;
+//         height:40px;
+//         line-height:40px;
+//         .group_title{
+//             float:left;
+//             width:108px;
+//             margin-right:29px;
+//             border-right:1px solid #e6e6e6;
+//             color:@color6;
+//             text-align:center;
+//             background:#f5f5f5;
+//         }
+//         .group_item{
+//             float:left;
+//             width:1000px;
+//             .group_list {
+//                 float: left;
+//                 margin-right: 33px;
+//                 color: @color3;
+//             }
+//             .active {
+//                 color: @main;
+//             }
+//         }
+//         .group_open{
+//             float:right;
+//             width:57px;
+//             color:@color6;
+//             position:relative;
+//             cursor:pointer;
+//             .open_arrow{
+//                 position:absolute;
+//                 top:17px;
+//                 left:28px;
+//                 display:block;
+//                 width:10px;
+//                 height:6px;
+//                 background:url(../../../img/icons/arrow_bg.png) no-repeat;
+//             }
+//         }
+//     }
+// }
 
 
 

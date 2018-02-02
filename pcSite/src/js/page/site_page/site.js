@@ -11,4 +11,19 @@ $(()=>{
         this.className = this.className + ' la';
     });
 
+    const scrollText = require('../../component/scroll_text');
+    scrollText('.scroll_text');
+
+    const navList = require('../../component/list_drop_down');
+    navList('.js_nav_list');
+
+    const tabImg = require('../../component/tab_img');
+    tabImg('.js_tabimg');
+
+    let pageBtmFixed = $('.page_btm_fixed');
+    let btmCloseBtn = pageBtmFixed.find('.close_btn');
+    btmCloseBtn.on('click',function(){
+        pageBtmFixed.hide();
+    })
+
 });

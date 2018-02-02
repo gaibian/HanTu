@@ -1,0 +1,357 @@
+@import '../../common/init.less';
+@import '../../common/template/page_nav.less';
+@import '../../common/template/page_btm_fixed.less';
+@import "../../common/template/page_footer_box.less";
+
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+body {
+    background: #fff;
+}
+.page_nav_box{
+    background:#000;
+    .nav_content .nav_box .nav_a{
+        color:@color9;
+    }
+}
+
+.content_box{
+	width:1200px;
+	margin:0 auto;
+}
+
+
+.page_loan_head{
+	width:100%;
+	height:640px;
+	margin-bottom:275px;
+	position:relative;
+	img{
+		width:1920px;
+		height:640px;
+		position:absolute;
+		top:0;
+		left:50%;
+		margin-left:-960px;
+	}
+	.apply_box{
+		width:810px;
+		height:198px;
+		padding:30px 75px 0 75px;
+		margin:0 auto;
+		background:rgba(0,0,0,.8);
+		position:absolute;
+		top:526px;
+		left:50%;
+		margin-left:-405px;
+		.apply_title{
+			font-size:22px;
+			color:@main;
+			margin-bottom:25px;
+			span{
+				font-size:14px;
+				color:#fff;
+			}
+		}
+		.input_box{
+			width:690px;
+			float:left;
+			.apply_input{
+				float:left;
+				width:315px;
+				font-size:18px;
+				color:#fff;
+				line-height:48px;
+				margin:0 30px 20px 0;
+				input{
+					width:220px;
+					height:48px;
+					padding:0 20px;
+					font-size:14px;
+					background:#fff;
+					color:#333;
+					vertical-align:top;
+					&::-webkit-input-placeholder {
+					    color: #ccc;
+					}
+					&::-moz-placeholder {
+					    color: #ccc;
+					}
+					&::-ms-input-placeholder {
+					    color: #ccc;
+					}
+				}
+			}
+		}
+		.apply_btn{
+			width:116px;
+			height:116px;
+			float:right;
+			font-size:28px;
+			line-height:42px;
+			color:#000;
+			background:@main;
+			cursor:pointer;
+		}
+	}
+}
+
+
+.loan_title{
+	font-size:44px;
+	line-height:44px;
+	color:#000;
+	text-align:center;
+}
+.loan_line{
+	width:80px;
+	height:28px;
+	border-bottom:1px solid @main;
+	margin:0 auto 30px;
+}
+.loan_note{
+	font-size:14px;
+	line-height:14px;
+	color:@color6;
+	margin-bottom:78px;
+	text-align:center;
+}
+
+.page_user_box{
+	.user_ul{
+		height:350px;
+		margin-bottom:135px;
+		.user_list{
+			float:left;
+			width:360px;
+			margin-right:60px;
+			&:last-child{
+				margin-right:0;
+			}
+			.lan_box{
+				width:298px;
+				height:140px;
+				padding:15px 30px;
+				border:1px solid @border;
+				margin-bottom:60px;
+				position:relative;
+				font-size:14px;
+				line-height:34px;
+				color:@color6;
+				&:after{
+					content:'';
+					display:block;
+					width:27px;
+					height:25px;
+					background:url(../../../img/icons/loan_lan_icon.jpg) no-repeat;
+					position:absolute;
+					bottom:-25px;
+					left:135px;
+				}
+			}
+			.user_info{
+				margin-left:38px;
+				.user_photo{
+					float:left;
+					width:100px;
+					height:100px;
+					border-radius:50%;
+					overflow:hidden;
+					margin-right:18px;
+				}
+				.user_name{
+					float:left;
+					font-size:18px;
+					line-height:100px;
+					color:@color3;
+				}
+			}
+		}
+	}
+	.custom_box{
+		margin-bottom:28px;
+		.custom_img{
+			float:left;
+			width:888px;
+			height:388px;
+		}
+		.custom_text{
+			float:right;
+			width:272px;
+			height:358px;
+			padding:30px 20px 0 20px;
+			.custom_title{
+				font-size:16px;
+				color:#000;
+				margin-bottom:15px;
+				span{
+					font-size:12px;
+					color:@color6;
+					margin-left:20px;
+				}
+			}
+			.custom_input{
+				display:block;
+				width:270px;
+				height:38px;
+				border:1px solid @border;
+				margin-bottom:16px;
+				font-size:14px;
+				.tel{
+					width:158px;
+					padding:0 10px;
+					line-height:38px;
+					color:@color3;
+					&::-webkit-input-placeholder {
+					    color: #ccc;
+					}
+					&::-moz-placeholder {
+					    color: #ccc;
+					}
+					&::-ms-input-placeholder {
+					    color: #ccc;
+					}
+				}
+				.code{
+					display:inline-block;
+					width:90px;
+					height:38px;
+					line-height:38px;
+					text-align:center;
+					color:@main;
+					border-left:1px solid @border;
+				}
+			}
+			.custom_btn{
+				width:272px;
+				height:40px;
+				font-size:18px;
+				color:@main;
+				background:#000;
+				line-height:41px;
+				margin-bottom:30px;
+				cursor:pointer;
+			}
+			.custom_people{
+				font-size:16px;
+				line-height:16px;
+				margin-bottom:15px;
+				color:@color3;
+			}
+			.cunstom_num{
+				text-align:center;
+				span{
+					display:inline-block;
+					width:34px;
+					height:50px;
+					border-radius:2px;
+					line-height:50px;
+					font-size:30px;
+					color:#fff;
+					background:#333;
+					text-align:center;
+				}
+			}
+		}
+	}
+	.intr_ul{
+		width:1040px;
+		margin:0 0 110px 130px;
+		.intr_list{
+			float:left;
+			width:215px;
+			padding-left:45px;
+			position:relative;
+			.intr_icon{
+				width:32px;
+				height:32px;
+				position:absolute;
+				top:7px;
+				left:0;
+			}
+			.icon1{background:url(../../../img/icons/loan_intr_icon1.jpg) no-repeat;}
+			.icon2{background:url(../../../img/icons/loan_intr_icon2.jpg) no-repeat;}
+			.icon3{background:url(../../../img/icons/loan_intr_icon3.jpg) no-repeat;}
+			.icon4{background:url(../../../img/icons/loan_intr_icon4.jpg) no-repeat;}
+			.intr_p1{
+				font-size:18px;
+				line-height:18px;
+				margin-bottom:10px;
+				color:@color3;
+			}
+			.intr_p2{
+				font-size:14px;
+				line-height:14px;
+				color:@color9;
+			}
+		}
+	}
+}
+
+.page_what_box{
+	width:100%;
+	height:490px;
+	padding-top:160px;
+	background:url(../../../img/loan_what_bg.jpg) no-repeat;
+	margin-bottom:160px;
+	.what_loan{
+		width:750px;
+		margin:0 auto;
+		font-size:24px;
+		line-height:44px;
+		color:@color3;
+		font-family:"宋体";
+		text-align:center;
+	}
+}
+
+.page_special_box{
+	.special_ul{
+		width:850px;
+		margin:0 auto 100px;
+		.special_list{
+			float:left;
+			width:100px;
+			margin-right:150px;
+			text-align:center;
+			&:last-child{
+				margin-right:0;
+			}
+			.special_icon{
+				width:90px;
+				height:90px;
+				margin:0 auto 30px;
+			}
+			.icon1{background:url(../../../img/icons/loan_special_icon1.jpg) no-repeat;}
+			.icon2{background:url(../../../img/icons/loan_special_icon2.jpg) no-repeat;}
+			.icon3{background:url(../../../img/icons/loan_special_icon3.jpg) no-repeat;}
+			.icon4{background:url(../../../img/icons/loan_special_icon4.jpg) no-repeat;}
+			.special_p1{
+				font-size:18px;
+				line-height:18px;
+				margin-bottom:15px;
+				color:@color3;
+			}
+			.special_p2{
+				font-size:14px;
+				line-height:22px;
+				color:@color6;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

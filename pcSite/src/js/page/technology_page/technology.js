@@ -14,4 +14,10 @@ $(()=>{
     const tabContent = require('../../component/tab_content');
     tabContent('.tab_box');
 
+    let pageBtmFixed = $('.page_btm_fixed');
+    let btmCloseBtn = pageBtmFixed.find('.close_btn');
+    btmCloseBtn.on('click',function(){
+        pageBtmFixed.hide();
+    })
+
 });
