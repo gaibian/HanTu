@@ -109,6 +109,20 @@ label{
   -webkit-line-clamp: @num;
   overflow: hidden;
 }
+.input_placeholder(@color){
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: @color; opacity:1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: @color;opacity:1;
+  }
+  input:-ms-input-placeholder{
+    color: @color;opacity:1;
+  }
+  input::-webkit-input-placeholder{
+    color: @color;opacity:1;
+  }
+}
 .box_position{
   position: absolute;
   top:50%;
