@@ -18,4 +18,7 @@ $(()=>{
 
     const select = require('../../component/select');
     select('.select_box');
+
+    const carousel3d = require('../../component/carousel3d.js');
+    carousel3d('.flip_items');
 });

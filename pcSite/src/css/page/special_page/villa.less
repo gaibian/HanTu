@@ -228,6 +228,89 @@
 .page_team_box{
     background:#fff;
     padding-top:170px;
+
+    .flip_items{
+        width:218px;
+        height:324px;
+        margin:0 auto;
+        position: relative;
+        webkit-perspective: 2000px;
+        -moz-perspective: 2000px;
+        perspective: 2000px;
+        .flip_item{
+            width:218px;
+            height:324px;
+            position: absolute;
+            -webkit-transition: all 400ms ease-out;
+            -moz-transition: all 400ms ease-out;
+            -ms-transition: all 400ms ease-out;
+            -o-transition: all 400ms ease-out;
+            transition: all 400ms ease-out;
+            border:#fff 1px solid;
+            cursor: pointer;
+            .flip_text_box{
+                position: absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                background:rgba(0,0,0,0.4);
+                display:none;
+                .pos{
+                    width:100%;
+                    .box_position;
+                    .name{
+                        width:100%;
+                        text-align: center;
+                        font-size:18px;
+                        color:#fff;
+                        font-weight: bold;
+                    }
+                    .note_text{
+                        width:100%;
+                        text-align: center;
+                        font-size:14px;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+        .flip_current{
+            z-index:99;
+            transform: translateX(0%) translateZ(0) rotateY(0deg) scale(1);
+        }
+        .flip_you1{
+            z-index:88;
+            width:170px;
+            transform: translateX(135%) translateZ(0) rotateY(-10deg) scale(0.95);
+        }
+        .flip_you2{
+            z-index:77;
+            width:170px;
+            transform: translateX(215%) translateZ(0) rotateY(-30deg) scale(0.95);
+        }
+        .flip_you3{
+            z-index:66;
+            width:170px;
+            transform: translateX(295%) translateZ(0) rotateY(-40deg) scale(0.95);
+        }
+        .flip_zuo1{
+            z-index:89;
+            width:170px;
+            transform: translateX(-107%) translateZ(0) rotateY(10deg) scale(0.95);
+        }
+        .flip_zuo2{
+            z-index:88;
+            width:170px;
+            transform: translateX(-187%) translateZ(0) rotateY(30deg) scale(0.95);
+        }
+        .flip_zuo3{
+            z-index:87;
+            width:170px;
+            transform: translateX(-267%) translateZ(0) rotateY(40deg) scale(0.95);
+        }
+    }
+    
     .tab_box {
         .team_tab_box {
             width: 358px;
