@@ -20,59 +20,62 @@ $(()=>{
         pageBtmFixed.hide();
     });
 
-    const carousel3d = {
-        init:function(dom){
-            this.dom = $(dom);
-            this.li = this.dom.find('.flip_item');
-            this.classArr = ['flip_you1','flip_you2','flip_you3','flip_zuo3','flip_zuo2','flip_zuo1'];
-            let that = this;
-            this.current = 0;
-            // this.li.each(function(){
-            //    let $this = $(this);
-            //    that.classArr.push($this.attr('class').substring(10));
-            // });
-            console.log(this.classArr);
-            this.bind();
-        },
-        bind:function(){
-            let that = this;
-            this.li.on('click',function(){
-                let i = that.li.index($(this));
-                let k = that.li.length - 1;
-                let chaNum = k - i;
-                let jianIndex = 0;
-                let addIndex = 0;
-                that.li.each(function(index){
-                    if(i === index){
-                        that.li.eq(index).attr('class','flip_item flip_current');
-                    }
-                    if(index < i){
-                        that.li.eq(index).attr('class','flip_item '+ that.classArr[chaNum]);
-                        chaNum ++;
-                    }
-                    if(index > i){
-                        that.li.eq(index).attr('class','flip_item '+ that.classArr[addIndex]);
-                        addIndex ++;
-                    }
-                })
-            });
+    const carousel3d = require('../../component/carousel3d.js');
+    carousel3d('.flip_items');
 
-            this.li.on('mouseover',function(){
-                let index = that.li.index($(this));
-                if($(this).hasClass('flip_current')){
-                    $(this).find('.flip_text_box').show();
-                }
-            });
-            this.li.on('mouseleave',function(){
-                let index = that.li.index($(this));
-                if($(this).hasClass('flip_current')){
-                    $(this).find('.flip_text_box').hide();
-                }
-            })
+    // const carousel3d = {
+    //     init:function(dom){
+    //         this.dom = $(dom);
+    //         this.li = this.dom.find('.flip_item');
+    //         this.classArr = ['flip_you1','flip_you2','flip_you3','flip_zuo3','flip_zuo2','flip_zuo1'];
+    //         let that = this;
+    //         this.current = 0;
+    //         // this.li.each(function(){
+    //         //    let $this = $(this);
+    //         //    that.classArr.push($this.attr('class').substring(10));
+    //         // });
+    //         console.log(this.classArr);
+    //         this.bind();
+    //     },
+    //     bind:function(){
+    //         let that = this;
+    //         this.li.on('click',function(){
+    //             let i = that.li.index($(this));
+    //             let k = that.li.length - 1;
+    //             let chaNum = k - i;
+    //             let jianIndex = 0;
+    //             let addIndex = 0;
+    //             that.li.each(function(index){
+    //                 if(i === index){
+    //                     that.li.eq(index).attr('class','flip_item flip_current');
+    //                 }
+    //                 if(index < i){
+    //                     that.li.eq(index).attr('class','flip_item '+ that.classArr[chaNum]);
+    //                     chaNum ++;
+    //                 }
+    //                 if(index > i){
+    //                     that.li.eq(index).attr('class','flip_item '+ that.classArr[addIndex]);
+    //                     addIndex ++;
+    //                 }
+    //             })
+    //         });
 
-        }
-    };
+    //         this.li.on('mouseover',function(){
+    //             let index = that.li.index($(this));
+    //             if($(this).hasClass('flip_current')){
+    //                 $(this).find('.flip_text_box').show();
+    //             }
+    //         });
+    //         this.li.on('mouseleave',function(){
+    //             let index = that.li.index($(this));
+    //             if($(this).hasClass('flip_current')){
+    //                 $(this).find('.flip_text_box').hide();
+    //             }
+    //         })
 
-    carousel3d.init('.flip_items');
+    //     }
+    // };
+
+    // carousel3d.init('.flip_items');
 
 });

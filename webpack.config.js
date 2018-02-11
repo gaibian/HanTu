@@ -25,7 +25,7 @@ const csCdn = 'http://cdn.upingou.com';
 //const scCdn = 'http://cdn.msphcn.com';
 const scCdn = '';
 const siteStatic = 'pcStatic';
-const publicPath = './' + configAddress.siteStatic + '/';
+const publicPath = '/' + configAddress.siteStatic + '/';
 
 var chunks = Object.keys(entries);
 

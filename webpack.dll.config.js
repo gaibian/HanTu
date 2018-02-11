@@ -1,7 +1,7 @@
 
 /*cdn服务器和本地虚拟服务器转换*/
 let serverFlag = false;  //true 打包启动cdn地址  false启动本地虚拟地址
-let site = 'pc';
+let site = 'm';
 let csCdn = '';
 let siteStatic = site + 'Static';
 
