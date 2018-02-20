@@ -1,0 +1,64 @@
+
+.page_header_box{
+  position: fixed;
+  width:7.5rem;
+  max-width:7.5rem;
+  top:0;
+  left:50%;
+  -webkit-transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  height:0.88rem;
+  line-height:0.88rem;
+  background:#000;
+  padding:0 0.2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index:999;
+  .header_content{
+    width:100%;
+    height:100%;
+    .header_logo{
+      display:block;
+      position: relative;
+      top:50%;
+      left:0;
+      -webkit-transform: translate(0,-50%);
+      -moz-transform: translate(0,-50%);
+      -ms-transform: translate(0,-50%);
+      -o-transform: translate(0,-50%);
+      transform: translate(0,-50%);
+      float:left;
+      width:1.78rem;
+      height:0.37rem;
+      font-size:0;
+      img{
+        display:block;
+      }
+    }
+    .right_menu_box{
+      position: relative;
+      float:right;
+      height:100%;
+      font-size:0;
+      .menu_bg{
+        position: absolute;
+        top:50%;
+        right:0;
+        -webkit-transform: translate(0,-50%);
+        -moz-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        -o-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+        display:block;
+        width:0.36rem;
+        height:0.3rem;
+        background:url("../../../img/icons/menu_bg.png") no-repeat;
+        background-size:contain;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+
+.page_footer_box{
+  position: fixed;
+  left:50%;
+  bottom:0;
+  -webkit-transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  width:7.5rem;
+  max-width:7.5rem;
+  height:1rem;
+  background:#080808;
+  z-index:999;
+  overflow:hidden;
+  .a_footer_box{
+    position: relative;
+    display:block;
+    float:left;
+    width:25%;
+    text-align: center;
+    height:100%;
+    .pos{
+      width:100%;
+      .box_position;
+      .bg{
+        display:block;
+        margin:0 auto 0.04rem auto;
+      }
+      .sy{
+        width:0.46rem;
+        height:0.42rem;
+        background:url('../../../img/icons/footer_sy_bg.png') no-repeat;
+        background-size:contain;
+      }
+      .dhzx{
+        width:0.36rem;
+        height:0.42rem;
+        background:url('../../../img/icons/footer_dhzx_bg.png') no-repeat;
+        background-size:contain;
+      }
+      .ksbj{
+        width:0.42rem;
+        height:0.46rem;
+        background:url('../../../img/icons/footer_ksbj_bg.png') no-repeat;
+        background-size:contain;
+      }
+      .srdz{
+        width:0.46rem;
+        height:0.46rem;
+        background:url('../../../img/icons/footer_srdz_bg.png') no-repeat;
+        background-size:contain;
+      }
+      .title{
+        width:100%;
+        font-size:0.2rem;
+        color:#999;
+      }
+    }
+  }
+  .a_footer_box.active{
+    .pos{
+      .title{
+        color:#b2935a;
+      }
+      .sy{
+        background:url('../../../img/icons/footer_sy_active_bg.png') no-repeat;
+        background-size:contain;
+      }
+      .dhzx{
+        background:url('../../../img/icons/footer_dhzx_active_bg.png') no-repeat;
+        background-size:contain;
+      }
+      .ksbj{
+        background:url('../../../img/icons/footer_ksbj_active_bg.png') no-repeat;
+        background-size:contain;
+      }
+      .srdz{
+        background:url('../../../img/icons/footer_srdz_active_bg.png') no-repeat;
+        background-size:contain;
+      }
+    }
+  }
+}
