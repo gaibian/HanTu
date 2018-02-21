@@ -1,0 +1,100 @@
+@import "../../common/init.less";
+@import "../../common/template/page_header.less";
+@import "../../common/template/page_footer.less";
+
+body{
+  background:#f7f7f7;
+}
+.page_max_width{
+  width:7.5rem;
+  max-width:7.5rem;
+  margin:0.88rem auto 0 auto;
+}
+
+.page_nav_box{
+  width:100%;
+  .nav_container{
+    position: relative;
+    width:100%;
+    overflow:hidden;
+    background:#fff;
+    .nav{
+      float:left;
+      width:25%;
+      height:0.88rem;
+      line-height:0.88rem;
+      text-align: center;
+      font-size:0.26rem;
+      color:#333;
+    }
+    .line{
+      position: absolute;
+      left:0;
+      bottom:0;
+      width:25%;
+      height:2px;
+      background:@main;
+    }
+    .nav.active{
+      color:@main;
+    }
+  }
+  .list_container{
+    width:100%;
+    background:#fff;
+    margin-top:0.2rem;
+    .list_content_box{
+      width:100%;
+      padding:0 0.2rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      .list_box{
+        display:block;
+        width:100%;
+        overflow:hidden;
+        padding:0.36rem 0;
+        border-bottom:#ebebeb 1px solid;
+        .left_text_content{
+          float:left;
+          width:4.5rem;
+          height:1.44rem;
+          .title{
+            width:100%;
+            font-size:0.32rem;
+            color:#333;
+            .text_d_hidden(2);
+          }
+          .text_box{
+            width:100%;
+            overflow:hidden;
+            margin-top:0.24rem;
+            .time{
+              float:left;
+              width:50%;
+              font-size:0.24rem;
+              color:#999;
+            }
+            .num{
+              float:right;
+              width:50%;
+              font-size:0.24rem;
+              color:#999;
+              text-align: right;
+            }
+          }
+        }
+        .right_img_box{
+          float:right;
+          width:2.3rem;
+          height:1.44rem;
+          font-size:0;
+          border-radius:0.06rem;
+        }
+      }
+      .list_box:last-child{
+        margin-bottom:0;
+      }
+    }
+  }
+}

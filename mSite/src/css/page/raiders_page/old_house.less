@@ -1,0 +1,277 @@
+@import "../../common/init.less";
+@import "../../common/template/page_header.less";
+@import "../../common/template/page_footer.less";
+
+body{
+  background:#f7f7f7;
+}
+.page_max_width{
+  width:7.5rem;
+  max-width:7.5rem;
+  margin:0.88rem auto 0 auto;
+}
+
+.page_banner_box{
+  width:100%;
+  height:3.08rem;
+  font-size:0;
+  border-bottom:@main 2px solid;
+}
+
+.page_form_box{
+  width:100%;
+  padding:0 0.2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background:#fff;
+  padding-bottom:0.4rem;
+  .title{
+    width:100%;
+    font-size:0.48rem;
+    color:@main;
+    padding:0.42rem 0;
+    font-weight:bold;
+    text-align: center;
+  }
+  .form{
+    width:100%;
+    .form_input{
+      position: relative;
+      width:100%;
+      padding:0.19rem 0;
+      background:#f7f7f7;
+      border:#cccccc 1px solid;
+      margin-bottom:12px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      overflow:hidden;
+      input{
+        display:block;
+        width:100%;
+        height:0.5rem;
+        line-height:0.5rem;
+        font-size:0.26rem;
+        color:#333;
+        padding-left:0.4rem;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .input_placeholder(0.26rem,#999);
+      em{
+        display:inline-block;
+        .box_right_position(0.2rem);
+        font-size:0.26rem;
+        color:#333;
+      }
+      .decoration-type{
+        position: relative;
+        float:left;
+        display:inline-block;
+        width:1.2rem;
+        top:0;
+        left:0.06rem;
+        margin-left:0.3rem;
+        padding-left:0.4rem;
+        font-size:0.26rem;
+        color:#333;
+        i{
+          position: absolute;
+          top:50%;
+          -webkit-transform: translate(0,-50%);
+          -moz-transform: translate(0,-50%);
+          -ms-transform: translate(0,-50%);
+          -o-transform: translate(0,-50%);
+          transform: translate(0,-50%);
+          left:0;
+          width:0.26rem;
+          height:0.26rem;
+          background:url('../../../img/icons/calc_bg.png') no-repeat;
+          background-size:cover;
+        }
+      }
+      .decoration-type.active{
+        i{
+          background:url('../../../img/icons/calc_active_bg.png') no-repeat;
+          background-size:cover;
+        }
+      }
+    }
+    .form_input:last-child{
+      margin-bottom:0;
+    }
+  }
+  .scroll_text_box{
+    width:100%;
+    height:1.6rem;
+    overflow:hidden;
+    text-align: center;
+    margin:0.3rem auto;
+    .scroll_ul{
+      position: relative;
+      width:100%;
+      li{
+        width:100%;
+        height:0.4rem;
+        line-height:0.4rem;
+        font-size:0.22rem;
+        color:#999;
+      }
+    }
+  }
+  .apply_loan_btn{
+    display:block;
+    width:100%;
+    text-align: center;
+    height:0.88rem;
+    line-height:0.88rem;
+    font-size:0.32rem;
+    color:@main;
+    background:#000;
+    border-radius:0.06rem;
+  }
+}
+
+.page_problem_box{
+  width:100%;
+  background:#000;
+  .title{
+    width:100%;
+    text-align: center;
+    font-size:0.32rem;
+    color:#fff;
+    padding-top:0.53rem;
+    margin-bottom:0.27rem;
+  }
+  .problem_ul{
+    width:5.4rem;
+    margin:0 auto;
+    overflow:hidden;
+    .problem_li{
+      position: relative;
+      float:left;
+      width:2.4rem;
+      height:2.4rem;
+      border:@main 0.12rem solid;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-size:0;
+      border-radius:50%;
+      overflow:hidden;
+      margin-right:0.6rem;
+      margin-bottom:0.4rem;
+      .title_box{
+        width:2.33rem;
+        height:0.44rem;
+        line-height:0.44rem;
+        position: absolute;
+        bottom:0.1rem;
+        left:50%;
+        -webkit-transform: translate(-50%,0);
+        -moz-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+        -o-transform: translate(-50%,0);
+        transform: translate(-50%,0);
+        font-size:0.2rem;
+        color:#fff;
+        background:url('../../../img/icons/problem_bg.png') no-repeat;
+        background-size:cover;
+        text-align: center;
+      }
+    }
+    .problem_li:nth-child(2n){
+      margin-right:0;
+    }
+  }
+}
+
+.page_design_box{
+  width:100%;
+  background:#0d0d0d;
+  padding-top:0.57rem;
+  padding-bottom:0.44rem;
+  .title_bg{
+    width:3.2rem;
+    height:0.56rem;
+    background:url('../../../img/old_title_bg.png') no-repeat;
+    background-size:contain;
+    margin:0 auto;
+    margin-bottom:0.43rem;
+  }
+  .design_ul{
+    width:7.1rem;
+    overflow:hidden;
+    margin:0 auto;
+    .design_li{
+      position: relative;
+      float:left;
+      width:3.5rem;
+      height:3.5rem;
+      margin-right:0.1rem;
+      font-size:0;
+      margin-bottom:0.1rem;
+      .text{
+        .box_position;
+        width:1.6rem;
+        height:1.6rem;
+        border-radius:50%;
+        background:rgba(0,0,0,0.6);
+        text-align: center;
+        font-size:0.24rem;
+        color:#fff;
+        .pos{
+          width:100%;
+          .box_position;
+        }
+      }
+    }
+    .design_li:nth-child(2n){
+      margin-right:0;
+    }
+  }
+}
+
+.page_bottom_carousel_box{
+  width:100%;
+  background:#000;
+  padding-top:0.43rem;
+  padding-bottom:0.24rem;
+  .title{
+    width:100%;
+    text-align: center;
+    font-size:0.32rem;
+    color:#fff;
+    margin-bottom:0.43rem;
+    span{
+      color:@main;
+    }
+  }
+  .carousel_container{
+    width:7.1rem;
+    height:5rem;
+    overflow:hidden;
+    margin:0 auto;
+  }
+  .carousel_box{
+    width:7.1rem;
+    height:3.7rem;
+    overflow:visible;
+    .swiper-slide{
+      width:7.1rem;
+      height:3.7rem;
+    }
+    .swiper-pagination{
+      padding:0;
+      bottom:-0.5rem;
+      span.swiper-pagination-bullet{
+        background:#666666;
+      }
+      span.swiper-pagination-bullet-active{
+        background:#c6a364;
+      }
+    }
+  }
+}
