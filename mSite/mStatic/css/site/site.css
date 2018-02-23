@@ -393,7 +393,32 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-top: 0.2rem;
+  margin-top: 0.55rem;
+}
+.page_nav_box .page_content_box .content_header_title {
+  width: 100%;
+  position: relative;
+  font-size: 0.32rem;
+  color: #333;
+  padding-left: 0.2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 0.3rem;
+}
+.page_nav_box .page_content_box .content_header_title i {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 0.04rem;
+  height: 0.32rem;
+  background: #c6a364;
 }
 .page_nav_box .page_content_box .content_box {
   position: relative;
