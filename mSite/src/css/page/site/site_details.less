@@ -10,3 +10,221 @@ body{
   max-width:7.5rem;
   margin:0.88rem auto 0 auto;
 }
+
+.page_top_content_box{
+  width:100%;
+  background:#fff;
+  padding:0 0.2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom:0.2rem;
+  .title{
+    width:100%;
+    font-size:0.32rem;
+    color:#333;
+    padding-top:0.3rem;
+    padding-bottom:0.18rem;
+    border-bottom:#e6e6e6 1px solid;
+    span{
+      font-size:0.2rem;
+      color:#999;
+      margin-left:0.12rem;
+    }
+  }
+  .label_list_box{
+    position: relative;
+    width:100%;
+    overflow:hidden;
+    padding:0.3rem 0;
+    .label_ul{
+      float:left;
+      width:5rem;
+      .label_li{
+        float:left;
+        width:2.5rem;
+        font-size:0.24rem;
+        color:#999;
+        .text_hidden;
+        margin-bottom:0.1rem;
+        span{
+          color:#333;
+          margin-left:0.12rem;
+        }
+      }
+    }
+    .zx_btn{
+      .box_right_position(0);
+      width:1.6rem;
+      height:0.88rem;
+      font-size:0.32rem;
+      line-height:0.88rem;
+      text-align: center;
+      color:@main;
+      background:#000;
+      border-radius:0.04rem;
+    }
+  }
+}
+.page_stage_box{
+  width:100%;
+  background:#fff;
+  padding:0.38rem 0.2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .title{
+    width:100%;
+    font-size:0.24rem;
+    color:#333;
+  }
+  .stage_ul{
+    width:100%;
+    margin-top:0.57rem;
+    .stage_li{
+      float:left;
+      width:1.17rem;
+      margin-bottom:0.4rem;
+      .line{
+        position: relative;
+        width:100%;
+        height:1px;
+        background:#e6e6e6;
+        .spot{
+          .box_position;
+          width:0.36rem;
+          height:0.36rem;
+          border-radius:50%;
+          border:#ccc 1px solid;
+          span{
+            display:block;
+            .box_position;
+            width:0.16rem;
+            height:0.16rem;
+            border-radius:50%;
+            background:#ccc;
+          }
+        }
+      }
+      .n_title{
+        width:100%;
+        text-align: center;
+        font-size:0.2rem;
+        color:#999;
+        margin-top:0.3rem;
+      }
+    }
+    .stage_li.active{
+      .line{
+        background:#000;
+        .spot{
+          border:#000 1px solid;
+          span{
+            background:#000;
+          }
+        }
+      }
+      .n_title{
+        color:#666;
+      }
+    }
+    .chear{
+      clear: both;
+    }
+  }
+}
+.page_btn_box{
+  width:100%;
+  overflow:hidden;
+  padding:0.3rem 0;
+  .btn{
+    width:3.5rem;
+    height:0.88rem;
+    line-height:0.88rem;
+    text-align: center;
+    font-size:0.32rem;
+    border-radius:0.04rem;
+  }
+  .btn1{
+    float:left;
+    color:@main;
+    background:#000;
+    margin-left:0.2rem;
+  }
+  .btn2{
+    float:right;
+    color:#000;
+    background:@main;
+    margin-right:0.2rem;
+  }
+}
+
+.page_node_content_box{
+  width:100%;
+  background:#fff;
+  padding:0.26rem 0.2rem 0.4rem 0.2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .header_title{
+    width:100%;
+    margin-bottom:0.16rem;
+    font-size:0.24rem;
+    color:#333;
+    padding-bottom:0.18rem;
+    border-bottom:#e6e6e6 1px solid;
+  }
+  .node_list_box{
+    width:100%;
+    margin-top:0.3rem;
+    .title{
+      position: relative;
+      width:100%;
+      font-size:0.2rem;
+      color:#333;
+      padding-left:0.2rem;
+      margin-bottom:0.22rem;
+      i{
+        display:block;
+        .box_left_position(0);
+        width:0.04rem;
+        height:100%;
+        background:@main;
+      }
+    }
+    .img_list_box{
+      width:100%;
+      overflow:hidden;
+      .list_box{
+        float:left;
+        width:3.5rem;
+        margin-right:0.1rem;
+        background:#fff;
+        .img_box{
+          width:100%;
+          height:2.46rem;
+          font-size:0;
+        }
+        .text{
+          width:100%;
+          font-size:0.2rem;
+          color:#333;
+          padding:0.2rem 0.18rem;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          .text_hidden;
+          border:#e6e6e6 1px solid;
+          border-top:none;
+          text-align: center;
+        }
+      }
+      .list_box:last-child{
+        margin-right:0;
+      }
+    }
+  }
+}
+
+
+

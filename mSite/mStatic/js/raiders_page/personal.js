@@ -10453,7 +10453,8 @@ $(function () {
         direction: 'horizontal',
         loop: true,
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 20,
+        loopedSlides: 8
     });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
