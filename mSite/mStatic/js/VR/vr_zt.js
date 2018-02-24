@@ -10344,6 +10344,13 @@ __webpack_require__(63);
 
 $(function () {
     "use strict";
+
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0
+    });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 

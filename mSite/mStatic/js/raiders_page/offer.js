@@ -10430,12 +10430,6 @@ module.exports = !__webpack_require__(7)(function () {
 /* 3 */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-/***/ 31:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(32);
-=======
 module.exports = function (it) {
   return typeof it === 'object' ? it !== null : typeof it === 'function';
 };
@@ -10457,7 +10451,7 @@ if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
 /* 5 */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.5.3' };
+var core = module.exports = { version: '2.5.1' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -10481,7 +10475,6 @@ exports.f = __webpack_require__(2) ? Object.defineProperty : function defineProp
   if ('value' in Attributes) O[P] = Attributes.value;
   return O;
 };
->>>>>>> 88ee446283bc2e48282dbb2fb3ead218c1d62fb1
 
 
 /***/ }),
@@ -10496,9 +10489,6 @@ module.exports = function (exec) {
   }
 };
 
-<<<<<<< HEAD
-/***/ 32:
-=======
 
 /***/ }),
 /* 8 */
@@ -10766,24 +10756,19 @@ module.exports = function (bitmap, value) {
 /* 28 */,
 /* 29 */,
 /* 30 */,
-/* 31 */,
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(33);
+module.exports = __webpack_require__(32);
 
 
 /***/ }),
-/* 33 */
->>>>>>> 88ee446283bc2e48282dbb2fb3ead218c1d62fb1
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-<<<<<<< HEAD
-__webpack_require__(33);
-=======
 var _classCallCheck2 = __webpack_require__(8);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
@@ -10794,8 +10779,7 @@ var _createClass3 = _interopRequireDefault(_createClass2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-__webpack_require__(34);
->>>>>>> 88ee446283bc2e48282dbb2fb3ead218c1d62fb1
+__webpack_require__(33);
 
 $(function () {
     "use strict";
@@ -10864,12 +10848,7 @@ $(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-<<<<<<< HEAD
-
-/***/ 33:
-=======
-/* 34 */
->>>>>>> 88ee446283bc2e48282dbb2fb3ead218c1d62fb1
+/* 33 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
