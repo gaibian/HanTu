@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/mStatic/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 44);
+/******/ 	return __webpack_require__(__webpack_require__.s = 43);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -10281,9 +10281,9 @@ jQuery.nodeName = nodeName;
 // https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
 
 if ( true ) {
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
 		return jQuery;
-	}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 }
 
@@ -10420,21 +10420,21 @@ module.exports = Exposure;
 
 /***/ }),
 
-/***/ 44:
+/***/ 43:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(45);
+module.exports = __webpack_require__(44);
 
 
 /***/ }),
 
-/***/ 45:
+/***/ 44:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(46);
+__webpack_require__(45);
 
 $(function () {
     "use strict";
@@ -10453,7 +10453,7 @@ $(function () {
 
 /***/ }),
 
-/***/ 46:
+/***/ 45:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
