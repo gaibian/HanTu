@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/mStatic/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 61);
+/******/ 	return __webpack_require__(__webpack_require__.s = 58);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -10326,21 +10326,21 @@ return jQuery;
 
 /***/ }),
 
-/***/ 61:
+/***/ 58:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(62);
+module.exports = __webpack_require__(59);
 
 
 /***/ }),
 
-/***/ 62:
+/***/ 59:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(63);
+__webpack_require__(60);
 
 $(function () {
     "use strict";
@@ -10356,7 +10356,7 @@ $(function () {
 
 /***/ }),
 
-/***/ 63:
+/***/ 60:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

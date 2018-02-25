@@ -52,207 +52,237 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 20px;
   height: 24px;
 }
-.icon-index_input_bg4 {
+.icon-ready_horn_icon {
   background-image: url(../sprite/sprite.png);
   background-position: 0px -98px;
+  width: 26px;
+  height: 26px;
+}
+.icon-index_input_bg4 {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -124px;
   width: 32px;
   height: 28px;
 }
 .icon-menu_bg {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -126px;
+  background-position: 0px -152px;
   width: 36px;
   height: 30px;
 }
-.icon-index_input_bg1 {
-  background-image: url(../sprite/sprite.png);
-  background-position: 0px -156px;
-  width: 27px;
-  height: 32px;
-}
 .icon-index_input_bg5 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -188px;
+  background-position: 0px -182px;
   width: 25px;
   height: 32px;
 }
-.icon-index_input_bg3 {
+.icon-index_input_bg1 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -220px;
-  width: 32px;
+  background-position: 0px -214px;
+  width: 27px;
   height: 32px;
 }
 .icon-index_input_bg2 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -252px;
+  background-position: 0px -246px;
   width: 22px;
+  height: 32px;
+}
+.icon-index_input_bg3 {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -278px;
+  width: 32px;
   height: 32px;
 }
 .icon-footer_sy_bg {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -284px;
-  width: 46px;
-  height: 42px;
-}
-.icon-footer_sy_active_bg {
-  background-image: url(../sprite/sprite.png);
-  background-position: 0px -326px;
+  background-position: 0px -310px;
   width: 46px;
   height: 42px;
 }
 .icon-footer_dhzx_bg {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -368px;
+  background-position: 0px -352px;
   width: 36px;
   height: 42px;
 }
 .icon-footer_dhzx_active_bg {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -410px;
+  background-position: 0px -394px;
   width: 36px;
+  height: 42px;
+}
+.icon-footer_sy_active_bg {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -436px;
+  width: 46px;
   height: 42px;
 }
 .icon-problem_bg {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -452px;
+  background-position: 0px -478px;
   width: 233px;
   height: 44px;
 }
 .icon-footer_ksbj_bg {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -496px;
+  background-position: 0px -522px;
   width: 42px;
   height: 46px;
 }
 .icon-footer_srdz_bg {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -542px;
+  background-position: 0px -568px;
   width: 46px;
   height: 46px;
 }
 .icon-footer_ksbj_active_bg {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -588px;
+  background-position: 0px -614px;
   width: 42px;
   height: 46px;
 }
 .icon-footer_srdz_active_bg {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -634px;
+  background-position: 0px -660px;
   width: 46px;
   height: 46px;
 }
-.icon-loan_bg3 {
+.icon-villa_bg4 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -680px;
-  width: 110px;
-  height: 110px;
-}
-.icon-loan_bg4 {
-  background-image: url(../sprite/sprite.png);
-  background-position: 0px -790px;
+  background-position: 0px -706px;
   width: 110px;
   height: 110px;
 }
 .icon-loan_bg5 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -900px;
+  background-position: 0px -816px;
   width: 110px;
   height: 110px;
 }
 .icon-loan_bg6 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -1010px;
+  background-position: 0px -926px;
   width: 110px;
   height: 110px;
 }
 .icon-loan_bg7 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -1120px;
+  background-position: 0px -1036px;
   width: 110px;
   height: 110px;
 }
 .icon-loan_bg8 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -1230px;
+  background-position: 0px -1146px;
   width: 110px;
   height: 110px;
 }
 .icon-index_menu_bg1 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -1340px;
+  background-position: 0px -1256px;
   width: 110px;
   height: 110px;
 }
 .icon-index_menu_bg2 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -1450px;
+  background-position: 0px -1366px;
   width: 110px;
   height: 110px;
 }
 .icon-index_menu_bg3 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -1560px;
+  background-position: 0px -1476px;
   width: 110px;
   height: 110px;
 }
 .icon-p_bg1 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -1670px;
+  background-position: 0px -1586px;
   width: 110px;
   height: 110px;
 }
 .icon-p_bg2 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -1780px;
+  background-position: 0px -1696px;
   width: 110px;
   height: 110px;
 }
 .icon-p_bg3 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -1890px;
+  background-position: 0px -1806px;
   width: 110px;
   height: 110px;
 }
 .icon-p_bg4 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -2000px;
+  background-position: 0px -1916px;
   width: 110px;
   height: 110px;
 }
 .icon-loan_bg1 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -2110px;
+  background-position: 0px -2026px;
   width: 110px;
   height: 110px;
 }
-.icon-villa_bg4 {
+.icon-ready_fitment_icon1 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -2220px;
+  background-position: 0px -2136px;
   width: 110px;
   height: 110px;
 }
-.icon-villa_bg1 {
+.icon-ready_fitment_icon2 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -2330px;
+  background-position: 0px -2246px;
   width: 110px;
   height: 110px;
 }
-.icon-villa_bg2 {
+.icon-ready_fitment_icon3 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -2440px;
+  background-position: 0px -2356px;
   width: 110px;
   height: 110px;
 }
-.icon-villa_bg3 {
+.icon-ready_fitment_icon4 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -2550px;
+  background-position: 0px -2466px;
   width: 110px;
   height: 110px;
 }
 .icon-loan_bg2 {
   background-image: url(../sprite/sprite.png);
-  background-position: 0px -2660px;
+  background-position: 0px -2576px;
+  width: 110px;
+  height: 110px;
+}
+.icon-loan_bg3 {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -2686px;
+  width: 110px;
+  height: 110px;
+}
+.icon-villa_bg1 {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -2796px;
+  width: 110px;
+  height: 110px;
+}
+.icon-villa_bg2 {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -2906px;
+  width: 110px;
+  height: 110px;
+}
+.icon-villa_bg3 {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -3016px;
+  width: 110px;
+  height: 110px;
+}
+.icon-loan_bg4 {
+  background-image: url(../sprite/sprite.png);
+  background-position: 0px -3126px;
   width: 110px;
   height: 110px;
 }

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>整装装修</title>
     @@include('../common/layout.html')
+    <link rel="stylesheet" href="../../bin/swiper-4.1.0.min.css">
+    <script src="../../bin/swiper-4.1.0.min.js"></script>
 </head>
 <body>
 @@include('../common/page_header.html')
@@ -11,6 +13,106 @@
 	<!--顶部banner-->
 	<section class="page_banner_box">
 	    <img width="100%" height="100%" src="../../img/ready_banner.jpg">
+	</section>
+	<section class="page_form_box">
+		<h1 class="title">整装套餐装修</h1>
+		<div class="horn_box scroll_text">
+			<ul class="scroll_ul">
+				<li><i class="horn"></i>恭喜李女士9秒前  报名了整装装修套餐</li>
+				<li><i class="horn"></i>恭喜李女士10秒前  报名了整装装修套餐</li>
+				<li><i class="horn"></i>恭喜李女士11秒前  报名了整装装修套餐</li>
+				<li><i class="horn"></i>恭喜李女士12秒前  报名了整装装修套餐</li>
+			</ul>
+		</div>
+		<form class="form">
+		    <div class="form_input">
+		        <input type="text" placeholder="输入您的姓名">
+		    </div>
+		    <div class="form_input">
+		        <input type="text" placeholder="输入您的手机号码">
+		    </div>
+		    <div class="form_input">
+		        <input type="text" placeholder="建筑面积">
+		        <em>m2</em>
+		    </div>
+		    <div class="form_input">
+		        <input type="text" placeholder="楼盘名称">
+		    </div>
+		</form>
+		<button class="apply_loan_btn">立即预约598元/方套餐</button>
+	</section>
+	<!-- 专业设计团队 -->
+	<section class="page_team_box">
+		<h1 class="ready_title">专业设计团队</h1>
+		<p class="ready_note">（从业十年以上设计师，只为追求极致生活的你量身设计）</p>
+	</section>
+	<!-- 定做您的私人空间 -->
+	<section class="page_custom_box">
+		<div class="title_box">
+			<h1 class="title">定做您的私人空间</h1>
+		</div>
+		<div class="carousel_container">
+		    <div class="swiper-container carousel_box">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide">
+		                <img width="100%" height="100%" src="../../img/ready_custom_img1.jpg">
+		            </div>
+		            <div class="swiper-slide">
+		                <img width="100%" height="100%" src="../../img/ready_custom_img1.jpg">
+		            </div>
+		            <div class="swiper-slide">
+		                <img width="100%" height="100%" src="../../img/ready_custom_img1.jpg">
+		            </div>
+		        </div>
+		        <!-- 如果需要分页器 -->
+		        <div class="swiper-pagination"></div>
+		    </div>
+		</div>
+	</section>
+	<!-- 瀚图装饰 匠心工地 -->
+	<section class="page_site_box">
+		<h1 class="ready_title">瀚图装饰 匠心工地</h1>
+		<p class="ready_note">（精湛工艺，细致手工）</p>
+		<ul class="site_ul">
+			<li class="site_li"><img class="lazy" data-src="../../img/ready_site_img1.jpg" width="100%" height="100%"></li>
+			<li class="site_li"><img class="lazy" data-src="../../img/ready_site_img2.jpg" width="100%" height="100%"></li>
+			<li class="site_li"><img class="lazy" data-src="../../img/ready_site_img3.jpg" width="100%" height="100%"></li>
+			<li class="site_li"><img class="lazy" data-src="../../img/ready_site_img4.jpg" width="100%" height="100%"></li>
+		</ul>
+	</section>
+	<!-- 无忧装修 -->
+	<section class="page_fitment_box">
+		<h1 class="ready_title">无忧装修</h1>
+		<p class="ready_note">（多重保障，让您安心装修）</p>
+		<ul class="fitment_ul">
+			<li class="fitment_list">
+				<div class="icon one"></div>
+				<h3 class="name">零假货</h3>
+				<p class="text">假一赔三</p>
+				<p class="text">货真价实</p>
+				<p class="text">不蒙不骗</p>
+			</li>
+			<li class="fitment_list">
+				<div class="icon two"></div>
+				<h3 class="name">零增项</h3>
+				<p class="text">客户被动增项全免费</p>
+				<p class="text">项目透明</p>
+				<p class="text">价格确定</p>
+			</li>
+			<li class="fitment_list">
+				<div class="icon three"></div>
+				<h3 class="name">重售后</h3>
+				<p class="text">水电售后十年</p>
+				<p class="text">泥水木工维护一年</p>
+			</li>
+			<li class="fitment_list">
+				<div class="icon four"></div>
+				<h3 class="name">零回扣</h3>
+				<p class="text">集团统一采购</p>
+				<p class="text">统一定价</p>
+				<p class="text">杜绝回扣</p>
+			</li>
+		</ul>
 	</section>
 </section>
 @@include('../common/page_footer.html')

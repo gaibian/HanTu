@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/mStatic/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 40);
+/******/ 	return __webpack_require__(__webpack_require__.s = 39);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -10420,21 +10420,21 @@ module.exports = Exposure;
 
 /***/ }),
 
-/***/ 40:
+/***/ 39:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(41);
+module.exports = __webpack_require__(40);
 
 
 /***/ }),
 
-/***/ 41:
+/***/ 40:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(42);
+__webpack_require__(41);
 
 $(function () {
     "use strict";
@@ -10453,7 +10453,7 @@ $(function () {
 
 /***/ }),
 
-/***/ 42:
+/***/ 41:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
